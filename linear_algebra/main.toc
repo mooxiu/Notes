@@ -1,0 +1,8 @@
+\contentsline {chapter}{\numberline {1}Eigenvalue and Eigenvector}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Basics}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Diagonalization}{4}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Orthogonal}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Basics}{5}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Symmetric Matrices}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Diagonalization of symmetric matrix}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}The Spectral Theorem}{9}{section.3.2}%

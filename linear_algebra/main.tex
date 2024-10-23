@@ -1,0 +1,37 @@
+\documentclass[a4paper]{report}
+
+\AtBeginDocument{\RenewCommandCopy\qty\SI}
+\input{~/Documents/workspace/Latex-Template/Note/header.tex}
+\usepackage[stable]{footmisc}
+\title{Linear Algebra Review}
+\author{Muyao Xiao}
+
+
+\thispagestyle{empty}
+\addbibresource{reference.bib}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    The ordering of each section is based on the book \textbf{\textit{Linear Algebra and its applications, 5th edition}} by  \textit{David Lay, Steven Lay, Judi McDonald}.
+    \par 
+    This note is written for reviewing.
+\end{abstract}
+
+\tableofcontents
+
+%----------chapter 5----------
+\include{eigenvalue/index.tex}
+
+%----------chapter 6----------
+\include{orthogonal/index.tex}
+
+%----------chapter 7----------
+\include{symmetric/index.tex}
+
+\pagestyle{plain}
+\printbibliography{}
+
+\end{document}
