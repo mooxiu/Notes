@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber main"] 1729685912.44644 "main.bcf" "main.bbl" "main" 1729687300.64594 0
-  "main.bcf" 1729687300.47872 107801 d313208837d4b9e304860b82a39ccea5 "pdflatex"
+["biber main"] 1729685912.44644 "main.bcf" "main.bbl" "main" 1729687410.9729 0
+  "main.bcf" 1729687410.80094 107801 d313208837d4b9e304860b82a39ccea5 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1729687298.72817 "/Users/muyaohsiao/Documents/workspace/latex_notes/linear_algebra/main.tex" "main.pdf" "main" 1729687300.64621 0
+["pdflatex"] 1729687409.0296 "/Users/muyaohsiao/Documents/workspace/latex_notes/linear_algebra/main.tex" "main.pdf" "main" 1729687410.9732 0
   "/Users/muyaohsiao/Documents/workspace/LaTeX-Template/Math.tex" 1729680451.93759 2477 6dcfa87aaef735a8f1f61bb98ea52144 ""
   "/Users/muyaohsiao/Documents/workspace/Latex-Template/Note/header.tex" 1729681092.00501 10666 ddec29b8690695266c9c8df8e131c9fe ""
-  "/Users/muyaohsiao/Documents/workspace/latex_notes/linear_algebra/main.tex" 1729687202.88791 819 e3058e377295d735d8ba65b661594452 ""
+  "/Users/muyaohsiao/Documents/workspace/latex_notes/linear_algebra/main.tex" 1729687408.81012 836 63554b675220407bc651f69104684bae ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbi1000.tfm" 1136768653 3072 e6fe53b666f9cbd66cb135c6fdea66d3 ""
@@ -353,18 +353,18 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727509145 8221429 b85a5c6a82b9e9c1719624fc2b6df7cf ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "eigenvalue/eigenvalues.pdf" 1729674757.70822 3342423 e24570bd0a640f7b43349aa8bad4cf85 ""
-  "eigenvalue/index.aux" 1729687300.27754 5761 6347ab06d6520bbc66154cbabfe76f3a "pdflatex"
+  "eigenvalue/index.aux" 1729687410.59258 5761 6347ab06d6520bbc66154cbabfe76f3a "pdflatex"
   "eigenvalue/index.tex" 1729681766.26072 3642 8aba6be02e067499be26ac9b84ea8e2d ""
-  "main.aux" 1729687300.47372 1035 0ca88332e22e42586a5c7f4ffde3e3f5 "pdflatex"
+  "main.aux" 1729687410.79587 1035 0ca88332e22e42586a5c7f4ffde3e3f5 "pdflatex"
   "main.bbl" 1729685914.90769 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.out" 1729687300.47612 1103 2209eab8c6e69f5170123d4c83a16fd7 "pdflatex"
-  "main.run.xml" 1729687300.47938 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
-  "main.tex" 1729687202.88791 819 e3058e377295d735d8ba65b661594452 ""
-  "main.toc" 1729687300.47945 604 c4c75a7b8f06f493db62868a032e99a7 "pdflatex"
-  "orthogonal/index.aux" 1729687300.36726 5046 2e0cda9b005ebee1ab2d25f270ad3c86 "pdflatex"
+  "main.out" 1729687410.79818 1103 2209eab8c6e69f5170123d4c83a16fd7 "pdflatex"
+  "main.run.xml" 1729687410.80168 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
+  "main.tex" 1729687408.81012 836 63554b675220407bc651f69104684bae ""
+  "main.toc" 1729687410.80175 604 c4c75a7b8f06f493db62868a032e99a7 "pdflatex"
+  "orthogonal/index.aux" 1729687410.68267 5046 2e0cda9b005ebee1ab2d25f270ad3c86 "pdflatex"
   "orthogonal/index.tex" 1729684205.96245 90 d821bdf8e2beb49738e06a2924ac3c8e ""
   "orthogonal/orthorgonal.pdf" 1729674757.69983 8255429 aab3ef1bc849954ab1ca0116277ebe04 ""
-  "symmetric/index.aux" 1729687300.47275 6193 96ef28aba274cac3c2bff8f30348dd16 "pdflatex"
+  "symmetric/index.aux" 1729687410.7949 6193 96ef28aba274cac3c2bff8f30348dd16 "pdflatex"
   "symmetric/index.tex" 1729687298.49411 3278 b13d3335ceb58ab1d0ceca6dfc047b47 ""
   (generated)
   "eigenvalue/index.aux"
