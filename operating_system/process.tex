@@ -1,0 +1,50 @@
+\section{Threads and Process}
+
+\subsection{What's the difference of a thread and a process?}
+There's a classical interview question: \textit{What's the difference of a thread and a process?}.
+
+Personally I think the answer of this question is largely based on the context, but theres is a beautiful explaination from \textit{Linus Torvalds} himself
+(The complete version can be found \href{https://www.evanjones.ca/software/threading-linus-msg.html}{here} or \href{https://lkml.iu.edu/hypermail/linux/kernel/9608/0191.html}{here}.):
+
+\bigbreak
+
+\noindent\fbox{
+    \parbox{\textwidth}{
+On Mon, 5 Aug 1996, Peter P. Eiserloh wrote:\\
+\begin{quote}
+We need to keep a clear the concept of threads.  Too many people seem to confuse a thread with a process.  The following discussion does not reflect the current state of linux, but rather is an attempt to stay at a high level discussion.
+\end{quote}
+
+NO!
+\bigbreak
+\textbf{There is NO reason to think that "threads" and "processes" are separate entities. That's how it's traditionally done, but I personally think it's a major mistake to think that way. The only reason to think that way is historical baggage.}
+\bigbreak
+Both threads and processes are really just one thing: a "context of
+execution". Trying to artificially distinguish different cases is just
+self-limiting. 
+\bigbreak
+A "context of execution", hereby called COE, is just the conglomerate of
+all the state of that COE. That state includes things like CPU state
+(registers etc), MMU state (page mappings), permission state (uid, gid)
+and various "communication states" (open files, signal handlers etc).
+\bigbreak
+Traditionally, the difference between a "thread" and a "process" has been mainly that a threads has CPU state (+ possibly some other minimal state), while all the other context comes from the process. However, that's just\_one\_ way of dividing up the total state of the COE, and there is nothing that says that it's the right way to do it. Limiting yourself to that kind of image is just plain stupid. 
+\bigbreak
+The way Linux thinks about this (and the way I want things to work) is that there \_is\_ no such thing as a "process" or a "thread". There is only the totality of the COE (called "task" by Linux). Different COE's can share parts of their context with each other, and one \_subset\_ of that sharing is the traditional "thread"/"process" setup, but that should really be seen as ONLY a subset (it's an important subset, but that importance comes not from design, but from standards: we obviusly want to run standards-conforming threads programs on top of Linux too). 
+\bigbreak
+In short: do NOT design around the thread/process way of thinking. The 
+kernel should be designed around the COE way of thinking, and then the 
+pthreads \_library\_ can export the limited pthreads interface to users who want to use that way of looking at COE's.
+\\...
+    }
+}
+
+\bigbreak
+
+Besides which, I also found some links might be helpful:
+\begin{itemize}
+    \item \href{https://stackoverflow.com/a/18904917}{Is it true that fork() calls clone() internally?}: \verb|fork()| doesn't call \verb|clone()|, both are functions that use the syscall \verb|clone|.
+    \begin{itemize}
+        \item It's also interesting to check \href{https://man7.org/linux/man-pages/man2/clone.2.html}{the clone syscall}, it has arguments to decide whether to share virtual address space, the table of file descriptors, etc. Basically in my understanding, we distinguish a so-called process or a thread based on those arguments.
+    \end{itemize}
+\end{itemize}

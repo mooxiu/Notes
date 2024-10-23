@@ -1,0 +1,88 @@
+\chapter{Symmetric Matrices}
+
+\begin{definition}
+    A \textbf{Symmetric} matrix is a matrix A such that $A^{T} = A$.
+\end{definition}
+
+
+\section{Diagonalization of symmetric matrix}
+
+Recall that \textbf{linear independent} does not mean \textbf{orthogonal}. If we say 2 vectors are linear independent, which simply means no scalar c except for 0 can make $v_1 = c v_2$, while orthogonal means the dot product of 2 vectors is zero: $v_1 \perp v_2 \Rightarrow v_1 \cdot v_2 = 0$.
+
+Look carefully at following example:
+\begin{eg}
+    diagonalize the matrix $A = \begin{bmatrix}
+        6 & -2 & -1 \\
+        -2 & 6 & -1 \\
+        -1 & -1 & 5 \\
+    \end{bmatrix}$
+
+    The result is $A = PDP^{-1}$, where $P = \begin{bmatrix}
+        -1/\sqrt{2} & -1/\sqrt{6} & 1/\sqrt{3} \\
+        1/\sqrt{2} & -1/\sqrt{6} & 1/\sqrt{3} \\
+        0 & 2/\sqrt{6} & 1/\sqrt{3} \\
+    \end{bmatrix}$, $D = \begin{bmatrix}
+        8 & 0 & 0 \\
+        0 & 6 & 0 \\
+        0 & 0 & 3 \\
+    \end{bmatrix}$.
+\end{eg}
+
+In the above example, because P is sqaure and has orthogonal columns, according to what we have proved in orthogonal section, P is an \textit{orthogonal} matrix, and $P^{-1} = P ^T$.
+
+
+\begin{remark}
+    Does a symmetric matrix necessarily diagonalizable?
+\end{remark}
+
+The answer is yes, will prove this in following theorems. Also, intuitively, a symmetric matrix is similar with a diagonal matrix.
+
+\begin{remark}
+    Does a symmetric matrix necessarily has eigenvalues?
+\end{remark}
+
+The answer is yes, and we can depend this on the previous question: because it is diagonalizable, then it must have eigenvalues and eigenvectors.
+
+\begin{theorem}
+    If A is symmetric, then any 2 eigenvectors from different \\ eigenspaces are orthogonal.
+\end{theorem}
+
+\begin{proof}
+    Suppose matrix A has $\lambda_1, \lambda_2$ as eigenvalues and $v_1, v_2$ as eigenvectors.
+
+    \begin{align*}
+        \lambda_1v_1 \cdot v_2 & = (\lambda_1 v_1)^{T} v_2 \qquad(obviously)\\
+        & = (Av_1)^T v_2 \qquad(definition of eigen)  \\
+        & = v_1^T A^T v_2 \qquad(transpose) \\
+        & = v_1^T A v_2 \qquad(definition of symmetric) \\
+        & = v_1^T \lambda_2 v_2 \qquad(eigen) \\
+        & = \lambda_2 v_1 \cdot v_2
+    \end{align*}
+
+    $$\lambda_1 \neq \lambda_2 \Rightarrow v_1 \cdot v_2 = 0$$
+\end{proof}
+
+\begin{theorem}
+    An $n \times n$ matrix A is orthogonally diagonalizable if and only if A is a symmetric matrix.
+\end{theorem}
+
+\begin{proof}[Part of proof]
+One part of this theorem is easy to prove: if it's orthogonally diagonalizable then it is a symmetric matrix:
+
+(1) What is \textbf{orthogonally diagonalizable}?
+
+An $n \times n$ matrix A is said to be \text{orthogonal diagonalizable} if there are an orthogonal matrix P (a real square matrix whose columns and rows are orthonormal vectors) (with $P^{-1} = P^T$) and a diagonal matrxi D such that:
+$$A = PDP^T = PDP^{-1}$$
+
+(2) How can we prove such A is symmetric?
+
+Always remember by definition we're going to prove $A^T = A$. Let's apply transpose to A:
+
+$$A^T = (PDP^T)^T = P^{TT}DP^T = PDP^T = A$$
+\end{proof}
+
+Another part of the thorem: if symmetric then orthogonally diagonalizable is hard to proof, the book ommitted it here.
+
+% ............the end of section............
+
+\section{The Spectral Theorem}

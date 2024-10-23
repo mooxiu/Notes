@@ -1,0 +1,73 @@
+\documentclass{article}
+
+\usepackage{hyperref} % For email
+\usepackage{amsmath,amsthm,amsfonts}                % AMS Math
+\usepackage{thmtools}                               % Theorem Tools
+\usepackage{bm}                                     % Bold M
+\usepackage{pdfpages} % Include pdf files
+\usepackage{listings} %code
+
+%---------Link Style------------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    % pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+
+% for math begin...
+% \theoremstyle{definition}
+% \newtheorem{definition}{Definition}[section]
+% \theoremstyle{remark}
+% \newtheorem*{remark}{Remark}
+% \newtheorem{theorem}{Theorem}[section]
+% \newtheorem{lemma}[theorem]{Lemma}
+% \newtheorem{example}{Example}
+
+
+%--------Theorem Environments--------
+%theoremstyle{plain} --- default
+\newtheorem{theorem}{Theorem}
+\newtheorem{cor}[theorem]{Corollary}
+\newtheorem{prop}[theorem]{Proposition}
+\newtheorem{facts}[theorem]{Facts}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{clm}[theorem]{Claim}
+\newtheorem{lem}[theorem]{Lemma}
+\newtheorem{conj}[theorem]{Conjecture}
+\newtheorem{question}[theorem]{Question}
+% for math end...
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{defns}[theorem]{Definitions}
+\newtheorem{con}[theorem]{Construction}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exmps}[theorem]{Examples}
+\newtheorem{notn}[theorem]{Notation}
+\newtheorem{notns}[theorem]{Notations}
+\newtheorem{addm}[theorem]{Addendum}
+\newtheorem{exer}[theorem]{Exercise}
+
+\theoremstyle{remark}
+\newtheorem{rem}[theorem]{Remark}
+\newtheorem{rems}[theorem]{Remarks}
+\newtheorem{warn}[theorem]{Warning}
+\newtheorem{sch}[theorem]{Scholium}
+
+
+\title{Operating Systems Review}
+\author{Muyao Xiao \\ email \href{mailto:xiaomuyao@outlook.com}{xiaomuyao@outlook.com}}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+% thread and process
+\include{process}
+
+\end{document}
