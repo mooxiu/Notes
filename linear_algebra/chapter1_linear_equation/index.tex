@@ -1,0 +1,34 @@
+\chapter{Linear Equations}
+
+\section{Solution Sets of Linear Systems}
+
+\subsection{Homogeneous Linear Systems}
+
+A system of linear equations is said to be \textbf{homogeneous} if it can be written in the form \(Ax = 0\).  
+
+\begin{theorem}
+    The homogeneous equation \(Ax == 0\) has a nontrivial solution if and only if the equation has at least one \textbf{free variable}   
+\end{theorem}
+
+I am not going to prove this, but we can understand this through an example:
+
+\[
+    \begin{bmatrix}
+        3 & 5 & -4 &  0 \\
+        0 & 3 & 0 &  0 \\
+        0 & 0 & 0 &  0 \\
+    \end{bmatrix}
+\]
+in this case, the 3rd line we have a free \(x_3\), thus it can be any value, so we can make sure we have nontrivial solution. 
+
+But we should notice the theorem is talking about the solution to \(Ax = 0\) not the solution to \(Ax = b\). For a nonzero \textbf{b}, it's obviously possible to have a nontrivial solution even we do not have a free variable:
+
+\[
+\begin{bmatrix}
+    1 & 0 & 1   \\
+    0 & 1 & 2  \\
+\end{bmatrix}
+\]
+obviously, in the above example, we can have a solution \(\{1, 1\}\) to it. 
+
+

@@ -1,8 +1,15 @@
-\contentsline {chapter}{\numberline {1}Eigenvalue and Eigenvector}{2}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Basics}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Diagonalization}{4}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Orthogonal}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Basics}{5}{section.2.1}%
-\contentsline {chapter}{\numberline {3}Symmetric Matrices}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Diagonalization of symmetric matrix}{8}{section.3.1}%
-\contentsline {section}{\numberline {3.2}The Spectral Theorem}{9}{section.3.2}%
+\contentsline {chapter}{\numberline {1}Linear Equations}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Solution Sets of Linear Systems}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Homogeneous Linear Systems}{2}{subsection.1.1.1}%
+\contentsline {chapter}{\numberline {2}Matrix Algebra}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Subspaces}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Basis for a subspace}{4}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}Dimension and Rank}{4}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Eigenvalue and Eigenvector}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Basics}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Diagonalization}{7}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Orthogonal}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Basics}{9}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Symmetric Matrices}{12}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Diagonalization of symmetric matrix}{12}{section.5.1}%
+\contentsline {section}{\numberline {5.2}The Spectral Theorem}{13}{section.5.2}%

@@ -1,0 +1,127 @@
+\chapter{Matrix Algebra}
+
+\section{Subspaces}
+
+\begin{definition}
+    A subspace of \(R^n\) is any set H in \(R^n\) that has 3 properties:
+
+    a. The zero vector is in H \\ 
+    b. For each u and v in H, the sum u + v is in H
+    \\
+    c. For each u in H and each scalar c, the vector cu is in H
+\end{definition}
+
+If we define \(H = span{v_1, v_2}\), then the subspace is basically all the linear combinations of \(v_1, v_2\) and the zero vector.
+
+\begin{eg}
+Can a Line be a subspace? Suppose we're in \(R^2\) space.
+\\
+Yes, if the line is across the origin, and we have a set of vectors who are not linear independent.
+\end{eg}
+
+\begin{eg}
+Can a Line be a subspace if it does not through the origin?
+\\
+No.
+\end{eg}
+
+\begin{remark}
+    \(R^n\)  is a subspace of itself.
+\end{remark}
+
+\begin{remark}
+    The special subspace only consisting of a zero vector is called \bf{zero subspace}.
+\end{remark}
+
+\begin{definition}
+    The \textbf{column space} of a matrix A is the set Col A of all linear combinations of the columns of A 
+\end{definition}
+
+For an \(m \times n\) matrix A, it has column span \(H = \{a_1, a_2, \cdots, a_n\}\) which is a subspace of \(R^m\) (because the row number is m, not n).  
+
+For another vector \textbf{b}, how do we decide whether it is in the column subspace of A? 
+
+If we can write b as a linear combination of A's column vectors, then we can say that b is in the column subspace of A.
+
+That is if we have a solution for the combination x in \(A x = b\).
+
+\begin{definition}
+    The \textbf{null space} of a matrix A is the set Nul A of all solutions of the homogeneous equation \(Ax = 0\) 
+\end{definition}
+
+\begin{remark}
+    Apparently zero vector is the solution to the homogeneous equation.
+\end{remark}
+
+\begin{remark}
+    But not all homogeneous equation can have nontrivial solution, only those with free variables have. 
+\end{remark}
+
+Without really solve this equation, let's suppose we have 2 solutions to this homogeneous equation: \(A \vec{u}  = 0\) and \(A \vec{v}  = 0\).  
+
+We can explore the null space based on \(\vec{u} \) and \(\vec{v} \):
+\begin{itemize}
+    \item for any scalar c, we can have \(c \vec{u} \) in the null space 
+    \item for any combination we know that \(A(a\vec{u}  + b\vec{v} ) = aA \vec{u}  + bA \vec{v} = 0\) so the combined vector  \(a \vec{u}  + b \vec{v} \) is also in the null space 
+\end{itemize}
+        
+\begin{remark}
+    If \(A \vec{x}  = 0\) wants to have a nontrivial solution, then it must have at least one free variable, which means it must have a determinant of 0?  
+\end{remark}
+
+
+\subsection{Basis for a subspace}
+
+\begin{definition}
+    A \textbf{basis} for a subspace H of \(R^n\) is a linearly independent set in H that spans H.  
+\end{definition}
+
+\begin{remark}
+    What I learn from the definition:
+    \begin{itemize}
+        \item a basis is defined for a subspace
+        \item a basis is a linearly independent set that spans the subspace
+    \end{itemize}
+    which means that the basis is small enough to be linearly independent, but also large enough to span the whole subspace H.
+\end{remark}
+
+\begin{eg}[standard basis]
+    The column of an invertible \(n \times n\) matrix form a basis for all of \(R^n\) because they are linearly independent and span \(R^n\), by the Invertible Matrix Theorem.  
+
+    One such matrix is the \(n \times n\) identity matrix. Its columns are denoted by \(e_1, \cdots, e_n\):
+    \[
+        e_1 = \begin{bmatrix}
+             1 \\
+             0 \\
+             \cdots \\
+             0 \\
+        \end{bmatrix},
+        e_2 = \begin{bmatrix}
+             0 \\
+             1 \\
+             \cdots \\
+             0 \\
+        \end{bmatrix},
+        \cdots,
+        e_n = \begin{bmatrix}
+             0 \\
+             \cdots \\
+             1 \\
+             0 \\
+        \end{bmatrix}
+    \]  
+
+    The set \(\{e_1, \cdots, e_n\}\)  is called \textbf{standard basis} for \(R^n\)  
+\end{eg}
+
+\begin{proof}
+    I will prove invertible matrix's columns are linearly independent here.
+
+    Suppose we have an A which has columns are \textbf{not} linearly independent and has an inverse matrix.
+
+    \(A = (\vec{a_1} , \cdots, \vec{a_n} )\), and we have a nonzero \(\vec{c} = (c_1, \cdots, c_n)\) that \(A \vec{c} = 0 \implies A^{-1}A \vec{c}  = A^{-1} 0 \implies \vec{c}  = 0\).  
+
+    Conflict, proved
+\end{proof}
+
+\section{Dimension and Rank}
