@@ -8,8 +8,8 @@
 \contentsline {chapter}{\numberline {3}Eigenvalue and Eigenvector}{5}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Basics}{5}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Diagonalization}{7}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Orthogonal}{9}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Basics}{9}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Symmetric Matrices}{12}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Diagonalization of symmetric matrix}{12}{section.5.1}%
-\contentsline {section}{\numberline {5.2}The Spectral Theorem}{13}{section.5.2}%
+\contentsline {chapter}{\numberline {4}Orthogonal}{8}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Basics}{8}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Symmetric Matrices}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Diagonalization of symmetric matrix}{11}{section.5.1}%
+\contentsline {section}{\numberline {5.2}The Spectral Theorem}{12}{section.5.2}%
