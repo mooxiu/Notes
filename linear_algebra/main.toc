@@ -5,11 +5,13 @@
 \contentsline {section}{\numberline {2.1}Subspaces}{3}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Basis for a subspace}{4}{subsection.2.1.1}%
 \contentsline {section}{\numberline {2.2}Dimension and Rank}{4}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Eigenvalue and Eigenvector}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Basics}{5}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Diagonalization}{7}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Orthogonal}{8}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Basics}{8}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Symmetric Matrices}{11}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Diagonalization of symmetric matrix}{11}{section.5.1}%
-\contentsline {section}{\numberline {5.2}The Spectral Theorem}{12}{section.5.2}%
+\contentsline {subsection}{\numberline {2.2.1}Coordinate Systems}{4}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}The Dimension of a Subspace}{5}{subsection.2.2.2}%
+\contentsline {chapter}{\numberline {3}Eigenvalue and Eigenvector}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Basics}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Diagonalization}{9}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Orthogonal}{10}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Basics}{10}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Symmetric Matrices}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Diagonalization of symmetric matrix}{13}{section.5.1}%
+\contentsline {section}{\numberline {5.2}The Spectral Theorem}{14}{section.5.2}%

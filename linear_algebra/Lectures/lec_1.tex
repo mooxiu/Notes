@@ -4,6 +4,39 @@
 
 \subsection{Homogeneous Linear Systems}
 
+\begin{definition}
+    A variable is a \textbf{basic variable} if it corresponds to a pivot column.  Otherwise, the variable is known as a \textbf{free variable}
+\end{definition}
+
+Contents about basic variable and free variable comes from \href{https://www.math.wsu.edu/faculty/hudelson/free.html}{here}.
+
+
+\begin{eg}
+    \begin{align*}
+        x_1 + 2x_2 -x_3 &= 4\\
+        2x_1 - 4x_2 &= 5
+    \end{align*}
+    
+    We can make an augmented matrix:
+    \[
+        \begin{bmatrix}
+            1 & 2 & -1 &  4 \\
+            2 & -4 & 0 &  5 \\
+        \end{bmatrix} 
+    \]
+
+    and it can be reduced to 
+   \[
+        \begin{bmatrix}
+            1 & 2 & -1 &  4 \\
+            0 & -8 & 2 &  -3 \\
+        \end{bmatrix} 
+    \]
+    here the pivot positions, that is the first and second columns are pivot columns, so \(x_1\) and \(x_2\) are basic variables. The third column is not a pivot column, so \(x_3\) is a free variable. 
+
+\end{eg}
+
+
 A system of linear equations is said to be \textbf{homogeneous} if it can be written in the form \(Ax = 0\).  
 
 \begin{theorem}
