@@ -43,7 +43,7 @@ The answer is yes, will prove this in following theorems. Also, intuitively, a s
 
 The answer is yes, and we can depend this on the previous question: because it is diagonalizable, then it must have eigenvalues and eigenvectors.
 
-\begin{theorem}
+\begin{theorem}\label{theorem: 7.1.1}
     If A is symmetric, then any 2 eigenvectors from different \\ eigenspaces are orthogonal.
 \end{theorem}
 
@@ -62,7 +62,7 @@ The answer is yes, and we can depend this on the previous question: because it i
     $$\lambda_1 \neq \lambda_2 \Rightarrow v_1 \cdot v_2 = 0$$
 \end{proof}
 
-\begin{theorem}
+\begin{theorem}\label{theorem: 7.1.2}
     An $n \times n$ matrix A is orthogonally diagonalizable if and only if A is a symmetric matrix.
 \end{theorem}
 
@@ -90,7 +90,7 @@ Another part of the theorem: if symmetric then orthogonally diagonalizable is ha
 The set of eigenvalues of matrix A is sometimes called the \textit{spectrum} of A.
 
 \begin{theorem}[The Spectral Theorem for Symmetric Matrices]
-An \(n \times n\) matrix A has the following properties:
+An \(n \times n\) symmetric matrix A has the following properties:
 
 a. A has n real eigenvalues, counting the multiplicities
 
@@ -102,7 +102,15 @@ d. A is orthogonal diagonalizable
 \end{theorem}
 
 \begin{proof}
-a. 
+    a. To find eigenvalues for A, we have \(Ax = \lambda x\), to find x, we have \(det(A - \lambda I)= 0\). Because it is an n degree polynomial equation, according to the foundational theorem of algebra, it has n roots.
+    
+    According to \hyperref[ex: 5.5.24]{this exercise}, \(\lambda\) will be real number, thus we can say it has n real eigenvalues. 
+
+    c. The same with \hyperref[theorem: 7.1.1]{this theorem}.
+
+    d. See \hyperref[ex: 7.1.31]{this exercise}
+
+    b. Follows d.
 \end{proof}
 
 \begin{remark}
@@ -117,4 +125,50 @@ a.
 
     How many vectors we need to span the eigenspace.
 \end{remark}
+
+\begin{problem}[chapter 7.1 exercise 31]\label{ex: 7.1.31}
+    Let \(A = PDP^{-1}\), where P is orthogonal and D is diagonal, and let \(\lambda\) be an eigenvalue of A of multiplicity k. Then \(\lambda\) appears k times on the diagonal of D. Explain why the dimension of the eigenspace for \(\lambda\) is k.   
+\end{problem}
+\begin{proof}
+    According to \hyperref[theorem: diagonal theorem]{diagonal theorem}, because A is diagonalizable, implies that P are linear independent eigenvectors of A corresponding to eigenvalues.
+
+    So, P has k eigenvectors corresponding to \(\lambda\). 
+\end{proof}
+
+
+% Quadratic forms, corresponding to chapter 7.2 of the book
+\section{Quadratic Forms}
+
+In general, \textbf{quadratic form} is a polynomial with terms all of degree two (\textbf{form}  is another name for a homogeneous polynomial). A homogeneous polynomial is a polynomial whose nonzero terms all have the same degree.
+
+Here is the definition on linear algebra:
+\begin{definition}[quadratic form]
+    A \textbf{quadratic form} on \(\R^n\) is a function Q defined in \(\R^n\) whose value at a vector x in \(\R^n\) can be computed by an expression of the form \(Q(x) = x^T A x\), where A is an \(n \times n\)  symmetric matrix.      
+    The matrix A is called the \textbf{matrix of the quadratic form}. 
+\end{definition}
+
+\begin{eg}
+    The simplest example of a nonzero quadratic form is \(Q(x) = x^T I x = {\lVert x \lVert}^2\). 
+\end{eg}
+
+\subsection{Change of Variable in a Quadratic Form}
+\begin{definition}[change of variable]
+    If x represents a variable vector in \(R^n\), then a \textbf{change of variable} is an equation of the form
+
+    \(x = Py\) or equivalently, \(y = P^{-1}x\)  \\
+    where P is an invertible matrix and y is a new variable vector in \(R^n\). Here y is the coordinate vector of x relative to the basis of \(R^n\) determined by the columns of P. 
+\end{definition}
+\begin{remark}
+    If the change of variable is made in a quadratic form \(x^T Ax\), then
+    \[
+        x^TAx = (Py)^T A (Py) = y^T P^T APy = y^T(P^TAP)y  \tag{1}
+    \]
+    and the new matrix of the quadratic form is \(P^T AP\). 
+    Since A is symmetric, and \hyperref[theorem: 7.1.2]{this theorem} shows that A can be decomposed of \(P DP^T\), thus we have a diagonal matrix \(D = P^T AP\). 
+
+    The quadratic form (1) becomes \(y^TDy\). 
+\end{remark}
+
+
+
 

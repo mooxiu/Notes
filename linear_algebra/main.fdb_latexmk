@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1731139023.48014 "main.bcf" "main.bbl" "main" 1731145755.37403 0
-  "main.bcf" 1731145755.19108 107801 d313208837d4b9e304860b82a39ccea5 "pdflatex"
+["biber main"] 1731139023.48014 "main.bcf" "main.bbl" "main" 1731167738.76516 0
+  "main.bcf" 1731167738.56157 107801 d313208837d4b9e304860b82a39ccea5 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1731145752.80956 "/Users/muyaohsiao/Documents/workspace/latex_notes/linear_algebra/main.tex" "main.pdf" "main" 1731145755.3743 0
+["pdflatex"] 1731167735.81666 "/Users/muyaohsiao/Documents/workspace/latex_notes/linear_algebra/main.tex" "main.pdf" "main" 1731167738.76544 0
   "/Users/muyaohsiao/Documents/workspace/LaTeX-Template/Math.tex" 1729680451.93759 2477 6dcfa87aaef735a8f1f61bb98ea52144 ""
   "/Users/muyaohsiao/Documents/workspace/Latex-Template/Note/header.tex" 1729681092.00501 10666 ddec29b8690695266c9c8df8e131c9fe ""
   "/Users/muyaohsiao/Documents/workspace/latex_notes/linear_algebra/main.tex" 1730635873.15647 1125 24941eae6f85ff312253aa422985d7a4 ""
@@ -366,15 +366,15 @@
   "Draft/orthorgonal.pdf" 1729674757.69983 8255429 aab3ef1bc849954ab1ca0116277ebe04 ""
   "Lectures/lec_1.tex" 1730043600.25675 2044 c62e81197f4d86b18da2f22f2953db04 ""
   "Lectures/lec_2.tex" 1730624927.54749 8125 58b2fd1130df2bf7101af1d6be0ca9b6 ""
-  "Lectures/lec_5.tex" 1731145679.97446 12377 697e6faaee65569b98a4e699387c263b ""
-  "Lectures/lec_6.tex" 1729916869.25637 85 18bca81dede69f40ecaa995f63549176 ""
-  "Lectures/lec_7.tex" 1731145752.56592 4152 2d1f404faef81f20f64a5cf0020c2411 ""
-  "main.aux" 1731145755.18675 14948 6f89b37aff0c8fda440ae8bf3f666150 "pdflatex"
+  "Lectures/lec_5.tex" 1731164241.61812 12417 f2f44c51469db23884dff029b66f5f98 ""
+  "Lectures/lec_6.tex" 1731164128.3369 86 d7742f98cf602d643c0d52b4a19e009f ""
+  "Lectures/lec_7.tex" 1731167735.57927 7049 b6310de4f56170f7251b117ac8b97f06 ""
+  "main.aux" 1731167738.55732 16730 eea8e15ab4eaedea24f8cfb64095ddd4 "pdflatex"
   "main.bbl" 1731139040.49644 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.out" 1731145755.18835 1967 a5b9a67702285cfc0f49cdd02c9ff922 "pdflatex"
-  "main.run.xml" 1731145755.19182 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
+  "main.out" 1731167738.55871 2100 dd6665d5c915dda754939d53f51d44a6 "pdflatex"
+  "main.run.xml" 1731167738.56244 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
   "main.tex" 1730635873.15647 1125 24941eae6f85ff312253aa422985d7a4 ""
-  "main.toc" 1731145755.19189 1625 33338f7351523e15d06e045d3c4cc1fb "pdflatex"
+  "main.toc" 1731167738.56254 1810 af1fcac115c3e574b82b4410337cb292 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
