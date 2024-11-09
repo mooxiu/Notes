@@ -243,21 +243,87 @@ Since the characteristic equation of an \(n \times n\) matrix involves a polynom
     \end{bmatrix}\) in which entries are the complex conjugates of the entries in x. 
 \end{eg}
 
+\begin{note}
+    Properties of conjugates for complex number carry over to complex matrix algebra:
+    \(\overline{BC} = \overline{B} \overline{C}\) 
+\end{note}
+\begin{proof}
+    left side:
+    \begin{align*}
+        \overline{z_1z_2} &= \overline{(a_1 + b_1 i)(a_2 + b_2 i)} \\
+                          &= \overline{(a_1a_2 - b_1b_2) + (a_1b_2 + a_2b_1)i}  \\                  
+                          &= (a_1a_2 - b_1b_2) - (a_1b_2 + a_2b_1)i
+    \end{align*}
 
-\subsection{Eigenvalues and Eigenvectors of a Real Matrix That Acts on $C^n$}
-%TODO. on page 300 of the book
+    right side:
+    \begin{align*}
+        \overline{z_1}\overline{z_2} &= (a_1 - b_1 i)(a_2 -b_2i) \\
+                                     &= (a_1a_2 - b_1b_2) - (a_1b_2 + a_2b_1)i
+    \end{align*}
 
+    They are the same, proved.
+\end{proof}
 
-\subsection{Problems}
+\subsection{Exercises}
 
-\begin{problem}[Book Chapter 5.5 excercise 22]
+Exercises 23 and 24 show that every eigenvalue of symmetric matrix is necessarily real.
 
+\begin{problem}[book chapter 5.5 excercise 23]
+    Let A be an \(n \times n\) real matrix with the property that \(A^T = A\), let x be any vector in \(C^n\), and let \(q = \overline{x}^T A x\). 
+    The equalities below show that q is a real number by verifying that \(\overline{q} = q\). 
+    Give a reason for each step.   
+
+    
+    \[
+        \overline{q} = \overline{\overline{x}^T A x} 
+                \underset{\text{(a)}}{=} 
+                        x^T \overline{A x}
+                \underset{\text{(b)}}{=} 
+                        x^T A \bar{x} 
+                \underset{\text{(c)}}{=} 
+                        (x^T A \bar{x})^T 
+                \underset{\text{(d)}}{=} 
+                \bar{x}^T A^T x = q
+    \]
 \end{problem}
+\begin{proof}[book chapter 5.5 excercise 23]
+    \begin{theorem}[theorem a]
+        \(\overline{\overline{x}^T} = x^T\)     
+    \end{theorem}
+    \begin{proof}[theorem a]
+        For any entry of matrix x of row i and column j, it can be represented as \(a_{ij} + b_{ij}i\). \\
+        Then for matrix \(\overline{x}\), it is \(a_{ij} - b_{ij}i\). \\
+        Then for matrix \(\overline{x}^T\), it is \(a_{ji} + b_{ji} i\). \\  
+        Lastly, for matrix \(\overline{\overline{x}^T}\), it is \(a_{ji} - b_{ji}i\), notice this is the same with \(x^T\).   
+    \end{proof}
+    (a). We have \(\overline{\overline{x}^T A x}  = \overline{\overline{x}^T} \overline{Ax}\) according to the properties of complex conjugates of matrix.
+    And because of the "theorem a" we just proved, this is equal to \(x^T \overline{Ax}\) \\
+    (b). Easy to find that \(\overline{Ax} = \overline{A} \bar{x}\) and because A is a real matrix, then \(\bar{A} = A\), so \(\overline{Ax} = A\bar{x}\).\\
+    So \(x^T \overline{Ax} = x^T A \bar{x}\). \\  
+    (c). Notice x is a vector, means \(x^T A \overline{x}\) is a \(1 \times 1\) matrix (or a scalar). For a scalar, it is the same with its transpose, thus (c) proved. \\
+    (d). 
+    \begin{align*}
+        (x^T A \overline{x})^T &= ((x^T A) \overline{x})^T \\  
+            &= \overline{x}^T (x^T A)^T \\
+            &= \overline{x}^T A^T x
+    \end{align*}
+\end{proof}
 
-\begin{problem}[Book Chapter 5.5 excercise 23]
-
+\begin{problem}[Book Chapter 5.5 excercise 24]\label{e24}
+    Let A be an \(n \times n\) real matrix with the property that \(A^T = A\). Show that if \(Ax = \lambda x\) for some nonzero vector x in \(C^n\), then, in fact, \(\lambda\) is real and the real part of x is an eigenvector of A.    
 \end{problem}
+\begin{proof}[Book Chapter 5.5 excercise 24]
+    \begin{align*}
+        \overline{x}^T \lambda x &=  \overline{x}^T Ax \\
+            &= \overline{x}^T A^T x \tag{A is symmetric}\\
+            &= \overline{\overline{x}^T Ax} \tag{excercise 23}\\
+            &= \overline{\overline{x}^T \lambda x}\\
+    \end{align*}
+    observing that \(\overline{x}^T \lambda x\) is equal to its complexity conjugate, thus it is a real number.
 
-\begin{problem}[Book Chapter 5.5 excercise 24]
-
-\end{problem}
+    Now we're trying to prove \(\overline{x}^T x\) is a real number, so \(\lambda\) is also a real number. \\ 
+    Suppose \(x = a + b i\), so \(\overline{x}^T x = a^2 + b^2\) it is a real number, therefore \(\lambda\) is a real number. 
+    
+    Now \(Ax = A(a + bi) = Aa + Ab i\), also we have \(\lambda x = \lambda (a + b) i = \lambda a + \lambda b i\).\\  
+    Therefore, \(Aa = \lambda a\), both sides only contains real numbers, thus the real part of x is an eigenvector of A.
+\end{proof}
