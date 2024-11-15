@@ -169,6 +169,71 @@ Here is the definition on linear algebra:
     The quadratic form (1) becomes \(y^TDy\). 
 \end{remark}
 
+\begin{eg}
+    Do the change of variable on \(A = \begin{bmatrix}
+        1 &  -4 \\
+        -4 &  5 \\
+    \end{bmatrix}\) 
+
+    1. First let's see the quadratic form. \(\vec{x} = \begin{bmatrix}
+        x_1 &  x_2 \\
+    \end{bmatrix}\): 
+    \[
+        x^TAx = x_1^2 - 8x_1x_2 - 5x_2^2
+    \]
+
+    2. Try to find P, so we can do the change of variable.
+
+    The eigenvalues and corresponding eigenvectors are:
+    \[
+        \lambda = 3: \begin{bmatrix}
+             2/\sqrt{5} \\
+             1/\sqrt{5} \\
+        \end{bmatrix};
+        \quad
+        \lambda = -7: \begin{bmatrix}
+             1/\sqrt{5} \\
+             2/\sqrt{5} \\
+        \end{bmatrix}
+    \]
+
+    \begin{remark}
+    Notice that we need to normalize the eigenvector, so we have \(P^T = P^\{ -1 \} \).
+    \end{remark}
+
+    So we have \(P = \begin{bmatrix}
+        2/\sqrt{5} &  1/\sqrt{5} \\
+        -1/\sqrt{5} &  2/\sqrt{5} \\
+    \end{bmatrix}\)
+    and  \(D = \begin{bmatrix}
+        3 &  0 \\
+        0 &  -7 \\
+    \end{bmatrix}\) 
+
+    3. Replace \(x = Py\) and calculate \(x^TAx = (Py)^TA(Py) = y^TP^TAPy = y^TDy = 3y_1^2 - 7 y_2^2\)   
+
+    That's the end of the change of variable.
+\end{eg}
+
+\begin{note}
+    Quadratic form is very natural in real day problems. 
+
+    We should know that \(Q(x) = x^TAx\)  is simply \(Q(x) = \sum_{i=1}^n \sum_{j=1}^n a_{ij}x_ix_j\). 
+
+    And change of variable makes the calculation easier.
+
+    I would think that this subsection is a small application for symmetric matrices.
+
+    Also notice the change of variable has no cross-product term.
+\end{note}
+
+The above example has shown that:
+\begin{theorem}[The Principle Axes Theorem]
+    Let A be an \(n \times n\) symmetric matrix. Then there is an orthogonal change of variable, \(x = Py\), that transforms the quadratic form \(x^TAx\) into a quadratic form \(y^TDy\) with no cross-product term.    
+\end{theorem}
+
+\subsection{A Geometric View of Principle Axes}
+
 
 
 
