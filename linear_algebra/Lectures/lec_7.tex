@@ -228,12 +228,85 @@ Here is the definition on linear algebra:
 \end{note}
 
 The above example has shown that:
-\begin{theorem}[The Principle Axes Theorem]
+\begin{theorem}[The Principle Axes Theorem]\label{theorem: Principle Axes Theorem}
     Let A be an \(n \times n\) symmetric matrix. Then there is an orthogonal change of variable, \(x = Py\), that transforms the quadratic form \(x^TAx\) into a quadratic form \(y^TDy\) with no cross-product term.    
 \end{theorem}
 
 \subsection{A Geometric View of Principle Axes}
+For a general form of \(Q(x) = x^TAx\), suppose \(A = \begin{bmatrix}
+    a_{11} &  a_{12} \\
+    a_{21} &  a_{22} \\
+\end{bmatrix}\), we have \(Q(x) = a_{11} x_1^2 + (a_{12}+1_{21})x_1x_2 + a_{22}x_2^2\).  
 
+Let \(c\) be a constant and let's show all x in \(\R^2\) satisfy \(Q(x) = c\):  
 
+If \(A\) is a diagonal matrix, then we can always get the form of an ellipse (\(\dfrac{x_1^2}{a^2} + \dfrac{x_2^2}{b^2} = 1, a > b > 0\)) or a hyperbola (\(\dfrac{x_1^2}{a^2} - \dfrac{x_2^2}{b^2} = 1, a > b > 0\)):
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{standard-ellipse-hyperbola}
+    \caption{An ellipse and a hyperbola in standard position}
+    \label{fig:standard-ellipse-hyperbola}
+\end{figure}
 
+If \(A\)  is not a diagonal matrix, then the graphs will be rotated out of the standard position:
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{non-standard-ellipse-and-hyperbola}
+    \caption{An ellipse and a hyperbola not in standard position}
+    \label{fig:non-standard-ellipse-and-hyperbola}
+\end{figure}
+
+\subsection{Classifying Quadratic Forms}
+When A is an \(n \times n\) matrix, the quadratic form \(Q(x) = x^T Ax\) is a real-valued function with domain \(R^n\).   
+
+\begin{definition}
+    A quadratic form Q is:
+    \begin{itemize}
+        \item \textbf{positive definite} if \(Q(x) > 0\) for all \(x \ne 0\). 
+        \item \textbf{negative definite} if \(Q(x) < 0\) for all \(x \ne 0\). 
+        \item \textbf{indefinite}  if \(Q(x)\) assumes both positive and negative values.  
+    \end{itemize}
+\end{definition}
+
+Also, Q is said to be \textbf{positive semidefinite} if \(Q(x) \geq 0\) for all x, and to be \textbf{negative semidefinite} if \(Q(x) \leq 0\) for all x.    
+
+\begin{theorem}[QUadratic Forms and Eigenvalues]
+    Let A be an \(n \times n\) symmetric matrix. Then a quadratic form \(x^TAx\) is:
+    \begin{itemize}
+        \item positive definite if and only if the eigenvalues of A are all positive,
+        \item negative definite if and only if the eigenvalues of A are all negative,
+        \item indefinite if and only if A has both positive and negative eigenvalues.
+    \end{itemize} 
+\end{theorem}
+\begin{proof}
+    According to \hyperref[theorem: Principle Axes Theorem]{Principle Axes Theorem}, there exists an orthogonal change of variable \(x = Py\) such that:
+    \[
+        Q(x) = x^TAx = y^T Dy = \lambda_1 y_1^2 + \lambda_2 y_2^2 + \cdots + \lambda_n y_n^2
+    \]
+    where \(\lambda_1, \lambda_2, \cdots, \lambda_n\) are the eigenvalues of A. 
+    Since P is invertible, there's a one-to-one correspondence between all nonzero x and all nonzero y.
+\end{proof}
+
+\begin{eg}
+    Is \(Q(x) = 3x_1^2 + 2x_2^2 + x_3^2 + 4x_1x_2 + 4x_2x_3\) positive definite?
+
+    We can easily find its matrix is \(A = \begin{bmatrix}
+        3 & 2 &  0 \\
+        2 & 2 &  2 \\
+        0 & 2 &  1 \\
+    \end{bmatrix}\), and its eigenvalues are 5, 2 and -1. So Q is an indefinite quadratic form, not positive definite. 
+\end{eg}
+
+The classification of a quadratic form is often carried over to the matrix of the form. Thus:
+\begin{definition}
+    A \textbf{positive definite matrix} A is a \textit{symmetric} matrix for which the quadratic form \(x^TAx\) is positive definite. Other terms, such as \textbf{positive semidefinite matrix}, are defined analogously.  
+\end{definition}
+
+\begin{note}
+    A fast way to determine whether a symmetric matrix A is positive definite is to attempt to factor A in the form \(A = R^TR\), where R is upper triangular with positive diagonal entries. 
+    (A slightly modified algorithm for an LU factorization is one approach.)
+    Such a \textit{Cholesky factorization} is possible if and only if A is positive definite.
+\end{note}
+
+\section{The singular value decomposition}
 
