@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1731856424.39323 "main.bcf" "main.bbl" "main" 1731858417.26983 0
-  "main.bcf" 1731858417.0839 107801 d313208837d4b9e304860b82a39ccea5 "pdflatex"
+["biber main"] 1731856424.39323 "main.bcf" "main.bbl" "main" 1731858454.25776 0
+  "main.bcf" 1731858454.05673 107801 d313208837d4b9e304860b82a39ccea5 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1731858414.49985 "/Users/muyaohsiao/Documents/workspace/latex_notes/linear_algebra/main.tex" "main.pdf" "main" 1731858417.2701 0
+["pdflatex"] 1731858451.22513 "/Users/muyaohsiao/Documents/workspace/latex_notes/linear_algebra/main.tex" "main.pdf" "main" 1731858454.25804 0
   "/Users/muyaohsiao/Documents/workspace/LaTeX-Template/Math.tex" 1729680451.93759 2477 6dcfa87aaef735a8f1f61bb98ea52144 ""
   "/Users/muyaohsiao/Documents/workspace/Latex-Template/Note/header.tex" 1729681092.00501 10666 ddec29b8690695266c9c8df8e131c9fe ""
   "/Users/muyaohsiao/Documents/workspace/latex_notes/linear_algebra/main.tex" 1731740192.14508 1177 853b56e0c26a9c05d35c97a6c8a35092 ""
@@ -371,13 +371,13 @@
   "Lectures/lec_2.tex" 1730624927.54749 8125 58b2fd1130df2bf7101af1d6be0ca9b6 ""
   "Lectures/lec_5.tex" 1731164241.61812 12417 f2f44c51469db23884dff029b66f5f98 ""
   "Lectures/lec_6.tex" 1731164128.3369 86 d7742f98cf602d643c0d52b4a19e009f ""
-  "Lectures/lec_7.tex" 1731858411.18488 17617 330a1fec3f42c3a7f16f10c3ef6da2f3 ""
-  "main.aux" 1731858417.07947 20778 4b272035a359646d8ff9d7279f2923a9 "pdflatex"
+  "Lectures/lec_7.tex" 1731858450.31049 17619 5e372f1cf46a34f5ca283e7a47608d11 ""
+  "main.aux" 1731858454.05175 20780 126447613f9e93b952e8ce3b798957be "pdflatex"
   "main.bbl" 1731856427.02544 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.out" 1731858417.0813 2324 9743ccc0b80a0ffe8e19a3136b4baa99 "pdflatex"
-  "main.run.xml" 1731858417.08458 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
+  "main.out" 1731858454.05378 2324 9743ccc0b80a0ffe8e19a3136b4baa99 "pdflatex"
+  "main.run.xml" 1731858454.05755 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
   "main.tex" 1731740192.14508 1177 853b56e0c26a9c05d35c97a6c8a35092 ""
-  "main.toc" 1731858417.08464 2213 77f8c0ab1c59e97f7774f85664f77437 "pdflatex"
+  "main.toc" 1731858454.05762 2215 e8cd2fc8dfd9fe8e076c90271f392708 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
