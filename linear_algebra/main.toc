@@ -23,3 +23,4 @@
 \contentsline {subsection}{\numberline {5.3.2}A Geometric View of Principle Axes}{18}{subsection.5.3.2}%
 \contentsline {subsection}{\numberline {5.3.3}Classifying Quadratic Forms}{19}{subsection.5.3.3}%
 \contentsline {section}{\numberline {5.4}The singular value decomposition}{20}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}The Single Values of an m x n Matrix}{21}{subsection.5.4.1}%

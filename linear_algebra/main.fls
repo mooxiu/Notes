@@ -658,6 +658,10 @@ INPUT ./Figures/non-standard-ellipse-and-hyperbola.jpg
 INPUT ./Figures/non-standard-ellipse-and-hyperbola.jpg
 INPUT ./Figures/non-standard-ellipse-and-hyperbola.jpg
 INPUT ./Figures/non-standard-ellipse-and-hyperbola.jpg
+INPUT ./Figures/svd-ex1.jpg
+INPUT ./Figures/svd-ex1.jpg
+INPUT ./Figures/svd-ex1.jpg
+INPUT ./Figures/svd-ex1.jpg
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
