@@ -433,3 +433,95 @@ To make the above example work, I actually omitted an important theorem (In the 
 \end{remark}
 
 \subsection{The Singular Values of an m x n Matrix}
+
+\begin{definition}
+    The \textbf{singular values}  of A are the square roots of the eigenvalues of \(A^TA\), noted as \(\sigma_1, \cdots ,\sigma_n\), that is \(\sigma_i = \sqrt{\lambda_i}\) for \(1 \leq i \leq n\). 
+
+    \begin{remark}
+        The prerequisite for this is that all eigenvalues of \(A^TA\) is non-negative, and it is easy to prove:
+            \begin{align*}
+                ||Av_i||^2 & = (Av_i)^TAv_i \\
+                    & = v_i^T A^TA v_i \\
+                    & = v_i^T \lambda_i v_i \tag{\(\lambda_i\) is the eigenvalue of \(A^TA\) }\\ 
+                    & = \lambda_i \tag{\(v_i\) is unit vector }
+            \end{align*}
+        
+    \end{remark}
+
+    \begin{remark}
+        The lengths of singular values of \(A\) is the lengths of the vectors \(Av_1, \cdots, Av_n\). 
+    \end{remark}
+\end{definition}
+
+\begin{theorem}
+    Suppose \(\{ v_1, \cdots, v_n \} \) is an orthogonal basis of \(\R^n\) consisting of eigenvectors of \(A^TA\), arranged so that the corresponding eigenvalues of \(A^TA\) satisfy \(\lambda_1 \geq \cdots \geq \lambda_n\), and suppose A has \(r\)  nonzero singular values.   
+
+    Then \(Av_1, \cdots, Av_r\) is an orthogonal basis for Col A, and rank A = r.
+\end{theorem}
+\begin{proof}
+    (a) Proof of orthogonal (for \(i \neq j\)):
+
+    \(Av_i \cdot Av_j = v_i^T A^TA v_j = v_i^T \lambda_j v_j = \lambda_j (v_i^T v_j) = 0\) 
+
+    (b) They are basis for Col A
+
+    For any \(y\) in Col A, it can be written in combination of A columns, say \(Ax\). 
+
+    For the same reason, any \(Av_i\) is in Col A. 
+
+    Because \(Av_i\) are orthogonal with each other, they can be used to represent any \(y\), suppose (A has n columns because \(A^TA\) is \(n \times n\)):
+    \[
+        y = c_1 Av_1 + c_2 Av_2 + \cdots + c_n Av_n \tag{1}
+    \]  
+    considering there are only r nonzero values in (1), so it can be represented as
+    \[
+        y = c_1 Av_1 + c_2 Av_2 + \cdots + c_r Av_r \tag{2}
+    \]
+
+    Proved \(Av_1, \cdots, Av_r\) is a basis for Col A. 
+
+    (c) rank A = r 
+
+    rank A = dim Col A = r
+\end{proof}
+
+\subsection{The Singular Value Decomposition}
+
+The decomposition of A involves an \(m \times n \)  "diagonal" matrix \(\Sigma\) of the form:
+
+\[
+    \Sigma = \begin{bmatrix}
+        D &  0 \\
+        0 &  0 \\
+    \end{bmatrix} \tag{3}
+\]
+
+where D is an \(r \times r\) diagonal matrix for some r not exceeding the smaller of m and n.
+
+\begin{theorem}[The Singular Value Decomposition]
+    Let A be an \(m \times n\) matrix with rank r. 
+    Then there exists an \(m \times n\) matrix \(\Sigma\) as in (3) for which the diagonal entries in D are the first r singular values of A, \(\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_r > 0\), 
+    and there exists an \(m \times m\) orthogonal matrix \(U\) and an \(n \times n\) orthogonal matrix V such that
+    \[
+        A = U \Sigma V^T
+    \]      
+\end{theorem}
+\begin{proof}
+    %TODO: proof of the singular value decomposition    
+\end{proof}
+
+\begin{definition}
+    Any factorization \(A = U\Sigma V^T\), with U and V orthogonal, \(\Sigma \) as in (3), and positive diagonal entries in D is called a \textbf{singular value decomposition} (or \textbf{SVD}) of A. 
+\end{definition}
+
+The matrices U and V are not uniquely determined by A, but the diagonal entries of \(\Sigma\) are necessarily the singular values of A. 
+
+The columns of U in such a decomposition are called \textbf{left singular vectors} of A, and V is called \textbf{right singular vectors} of A. 
+
+\begin{problem}
+    Show that the columns of V are eigenvectors of \(A^TA\), the columns of U are eigenvectors of \(A^TA\), and the diagonal entries of \(\Sigma\)  are the singular values of A.  
+    [Hint: Use the SVD to compute \(A^TA\) and \(AA^T\).]
+\end{problem}
+\begin{proof}
+    %TODO: proof of the singular value decomposition    
+\end{proof}
