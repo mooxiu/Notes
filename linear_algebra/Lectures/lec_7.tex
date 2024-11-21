@@ -453,7 +453,7 @@ To make the above example work, I actually omitted an important theorem (In the 
     \end{remark}
 \end{definition}
 
-\begin{theorem}
+\begin{theorem}\label{theorem: 7.4.9}
     Suppose \(\{ v_1, \cdots, v_n \} \) is an orthogonal basis of \(\R^n\) consisting of eigenvectors of \(A^TA\), arranged so that the corresponding eigenvalues of \(A^TA\) satisfy \(\lambda_1 \geq \cdots \geq \lambda_n\), and suppose A has \(r\)  nonzero singular values.   
 
     Then \(Av_1, \cdots, Av_r\) is an orthogonal basis for Col A, and rank A = r.
@@ -507,7 +507,55 @@ where D is an \(r \times r\) diagonal matrix for some r not exceeding the smalle
     \]      
 \end{theorem}
 \begin{proof}
-    %TODO: proof of the singular value decomposition    
+    Based on \hyperref[theorem: 7.4.9]{this theorem}, we know that \({Av_1, Av_2, \cdots, Av_r}\) is an orthogonal basis for Col A.
+
+    Normalize each \(Av_i\)  to obtain an orthogonal basis \({u_1, u_2, \cdots, u_r}\), where 
+    \[
+        u_i = \dfrac{1}{||Av_i||} Av_i = \dfrac{1}{\sigma_i} Av_i
+    \]
+    and 
+    \[
+        Av_i = \sigma_i u_i \tag{4}
+    \]
+
+    Now extending \(u_1, u_2, \cdots, u_r\) to orthonormal basis \({u_1, u_2, \cdots, u_m}\) of \(\R^m\), and let
+    \[
+        U = \begin{bmatrix}
+            u_1 & u_2 & \cdots &  u_m \\
+        \end{bmatrix}
+        \quad
+        V = \begin{bmatrix}
+            v_1 & v_2 & \cdots &  v_n \\
+        \end{bmatrix}
+    \]  
+
+    By construction, U and V are orthogonal matrices, Also from (4), we have 
+    \[
+        AV = \begin{bmatrix}
+            Av_1 & \cdots & Av_r & 0 & \cdots &  0 \\
+        \end{bmatrix}
+        = \begin{bmatrix}
+            \sigma_1u_1 & \cdots & \sigma_ru_r & 0 & \cdots &  0 \\
+        \end{bmatrix}
+    \]
+
+    And
+    \[
+        U\Sigma = \begin{bmatrix}
+            u_1 & \cdots &  u_m \\
+        \end{bmatrix}
+        \begin{bmatrix}
+            \sigma_1 &  & 0 & 0  \\
+             & \cdots &  & 0  \\
+            0 &  & \sigma_r & 0  \\
+            0 & 0 & 0 &  0 \\
+        \end{bmatrix}
+        = \begin{bmatrix}
+            \sigma_1u_1 & \cdots & \sigma_ru_r & 0 & \cdots & 0 \\
+        \end{bmatrix}
+    \]
+
+    So we have \(AV = U\Sigma \implies AVV^T = U\Sigma V^T \implies A = U\Sigma V^T\) 
 \end{proof}
 
 \begin{definition}
@@ -519,9 +567,17 @@ The matrices U and V are not uniquely determined by A, but the diagonal entries 
 The columns of U in such a decomposition are called \textbf{left singular vectors} of A, and V is called \textbf{right singular vectors} of A. 
 
 \begin{problem}
-    Show that the columns of V are eigenvectors of \(A^TA\), the columns of U are eigenvectors of \(A^TA\), and the diagonal entries of \(\Sigma\)  are the singular values of A.  
+    Show that the columns of V are eigenvectors of \(A^TA\), the columns of U are eigenvectors of \(AA^T\), and the diagonal entries of \(\Sigma\)  are the singular values of A.  
     [Hint: Use the SVD to compute \(A^TA\) and \(AA^T\).]
 \end{problem}
 \begin{proof}
-    %TODO: proof of the singular value decomposition    
+    The assumption of the question is: U and V are orthogonal matrices, \(\Sigma\) has a diagonal matrix D like what has been shown in the beginning of the subsection. 
+
+    Calculate \(AA^T\):
+    \[
+        AA^T = (U\Sigma V^T)(U\Sigma V^T)^T
+            = U\Sigma V^T V \Sigma^T U^T
+            = U (\Sigma \Sigma^T) U^T
+    \] 
+    Apparently \(\Sigma \Sigma^T\) is a diagonal matrix, and \(AA^T\) is a symmetric matrix, so the columns of U are eigenvectors of \(AA^T\), and \(\sigma_i^2 = \lambda_i\).  
 \end{proof}
