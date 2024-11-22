@@ -581,3 +581,39 @@ The columns of U in such a decomposition are called \textbf{left singular vector
     \] 
     Apparently \(\Sigma \Sigma^T\) is a diagonal matrix, and \(AA^T\) is a symmetric matrix, so the columns of U are eigenvectors of \(AA^T\), and \(\sigma_i^2 = \lambda_i\).  
 \end{proof}
+
+\subsection{Applications of the Singular Value Decomposition}
+
+The SVD is often used to estimate the rank of a matrix.
+Here are some other applications:
+
+\begin{eg}[The Condition Number]
+    Most numerical calculations involving an equation \(Ax = b\) are as reliable as possible when the SVD of A is used. 
+
+    The two orthogonal matrices U and V do not affect the length of vectors (because \(||Ux|| = ||x||\)) or angles between vectors (because \((Ux)\cdot (Uy) = x \cdot y\)).
+    Any possible instabilities in numerical calculations are identified in \(\Sigma\) (\(U \textcolor{red}{\Sigma} V x = b\)).
+
+    If A is an *invertible* \(n \times n\) matrix, then the ratio \(\sigma_1/\sigma_n\) of the largest and smallest singular values gives the \textbf{condition number} of A.   
+
+    \begin{remark}
+        Why it needs to be invertible? Because invertible matrix won't have zero eigenvalues.    
+
+        Proof:
+        Suppose \(A\) is a matrix and has an eigenvalue 0:
+        \[
+            Ax = \lambda x 
+            \implies 
+            (A - \lambda I) x = 0 
+            \implies 
+            Ax = 0
+            \implies
+            A^{-1} A x = 0
+            \implies
+            x = 0
+        \]
+         
+        But eigenvector should not be 0, thus for an invertible matrix, there should be no zero eigenvalue.
+    \end{remark}
+\end{eg}
+
+
