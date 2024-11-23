@@ -15,3 +15,49 @@
     The set of all vectors z that are orthogonal to W is called \textbf{orthogonal complement} of W and is denoted by \(W^{\perp}\) (and read as "W perpendicular" or simply "W perp").   
 \end{definition}
 
+\begin{note}
+    All vectors in \(W^{T}\) are perpendicular to all vectors in \(W\).  
+\end{note}
+
+\begin{theorem}
+    Let \(A\) be an \(m \times n\) matrix.   
+    The orthogonal complement of the row space of \(A\) is the null space of \(A\),
+    and the orthogonal complement of the column space of \(A\) is the null space of \(A^T\):
+        
+    \((Row A)^{\perp} = Nul A\) and \((Col A)^{\perp} = Nul A^T\)  
+\end{theorem}
+\begin{proof}
+    Prove \((Row A)^{\perp} = Null A\)  here:
+
+    Suppose each row of \(A\) is \(a_1, a_2, \cdots, c_m\), and for any vector v that is perpendicular to each row (that is v orthogonal to the subspace of Row A, that is v belongs to \((Row A)^{\perp}\)), we have:
+    \[
+        \begin{bmatrix}
+             a_1v \\
+             a_2v \\
+             \cdots \\
+             a_mv \\
+        \end{bmatrix} = 0
+    \] 
+
+    In the same time we have:
+    \[
+         \begin{bmatrix}
+             a_1v \\
+             a_2v \\
+             \cdots \\
+             a_mv \\
+        \end{bmatrix}
+        = 
+        \begin{bmatrix}
+             a_1 \\
+             a_2 \\
+             \cdots \\
+             a_m \\
+        \end{bmatrix}v
+        = Av
+    \]
+
+    Now we know that \(Av = 0\), so all v make up the null space of A, that is \((Row A)^{\perp} = Nul A\). 
+    
+    Another one can be proved in the same flow.
+\end{proof}
