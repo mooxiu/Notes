@@ -616,4 +616,50 @@ Here are some other applications:
     \end{remark}
 \end{eg}
 
+\section{Applications to Image Processing and Statistics}
 
+\subsection{Mean and Covariance}
+
+\begin{definition}
+    For two jointly distributed real-valued random variables \(X\) and \(Y\) with finite second moments, the covariance is defined as the expected value (or mean) of the product of their deviations from their individual expected values:
+
+    \[
+        cov(X, Y) = E[(X - E[X])(Y - E[Y])]
+    \]
+    where \(E[X]\) is the expected value of \(X\), also known as the mean of X.  
+\end{definition}
+
+In the context of discrete random variables, it can be written as:
+\[
+    cov(X, Y) = \dfrac{1}{n} \sum_{i = 1}^n (x_i - E(X))(y_i - E(Y)) 
+\]
+
+Let \(\begin{bmatrix}
+    X_1 & \cdots & X_N  \\
+\end{bmatrix}\) be a \(p times N\) matrix of observations, such as described above. The \textbf{sample mean}, M, of the observation vectors \(X_1, \cdots, X_N\) is given by
+\[
+    M = \dfrac{1}{N} (X_1 + \cdots + X_N)
+\]
+
+For \(k = 1, \cdots, N\), let
+\[
+    \hat{X}_k = X_k - M
+\]
+
+The columns of the \(p \times N\) matrix 
+\[
+    B = \begin{bmatrix}
+       \hat{X}_1  & \hat{X}_2 & \cdots  & \hat{X}_N \\
+    \end{bmatrix}    
+\]
+have a zero sample mean, and \(B\) is said to be in \textbf{mean-deviation form}.  
+
+The (\textbf{sample}) \textbf{covariance matrix} is the \(p \times p\) matrix S defined by 
+\[
+    S = \dfrac{1}{N - 1} B B^T
+\]
+
+The \textbf{total variance}  of the data is the sum of the variance on the diagonal of S. In general, the sum of the diagonal entries of a square matrix S is called the \textbf{trace} of the matrix, written \(tr(S)\). Thus 
+\[
+    {total \space variance} = tr(S)
+\]
