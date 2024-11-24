@@ -86,3 +86,107 @@ Here because \(accept\) has different meaning, we use \(recognize\) for the lang
 
     Then \(L(M_1) = A\), or equivalently, \(M_1\) recognizes \(A\).   
 \end{eg}
+
+\begin{eg}
+    When describing such a machine:\\
+    \includegraphics[width=\textwidth]{f1.14.jpg}
+
+    The alphabet \(\Sigma = \{ 1, 2, 3, <RESET> \} \), we treat \(<RESET>\) as a single symbol.  
+
+    The machine keeps a running count of the sum of the numerical input symbols it reads, modulo 3.
+    Every time it receives \(<RESET>\) symbol, it resets the count to 0. 
+    It accepts if the sum is 0 modulo 3.
+\end{eg}
+
+\section{Formal Definition of Computation}
+
+Let \(M = (Q, \Sigma, \sigma, q_0, F)\) be a FA and let \(\omega = \omega_1\omega_2\cdots\omega_n\)  be a string where each \(\omega_i\) is a member of alphabet \(\Sigma\).   
+Then M \textbf{accepts} \(\omega\) if a sequence of state \(r_0, r_1, \cdots, r_n\) in \(Q\)  exists with three conditions:
+\begin{enumerate}
+    \item \(r_0 = q_0\) (machine starts at initial state) 
+    \item \(\sigma(r_i, \omega_{i+1}) = r_{i+1}\)  (machine goes form state to state following the transition function)
+    \item \(r_n \in F\) (machine accepts its input if it ends up in an accept state)
+\end{enumerate}   
+
+We say that M recognizes language A if \(A = \{ \omega| M accepts \omega \} \) 
+\begin{note}
+    A is the language, \(\omega\) is the accepted string. 
+    A is the set of all instances of \(\omega\). 
+    
+    We say a machine "accepts" a string, and a machine "recognizes" a language.
+\end{note}
+
+\begin{definition}[Regular Language]
+    A language is called a \textbf{regular language} if some finite automaton recognizes it. 
+\end{definition}
+
+\begin{eg}
+    Let B = \{ \( \omega\) | \(\omega\) has even number of 1s \}
+    
+    B is a regular language.
+\end{eg}
+
+\begin{eg}
+    Let C = \{ \(\omega\) | \(\omega\) has equal numbers of 0s and 1s \}
+
+    C is \underline{not} a regular language. 
+\end{eg}
+
+\section{Regular Expressions}
+\subsection{Regular Operations}
+
+\begin{definition}
+    Let A and B be languages, we define the regular operations \textbf{union} , \textbf{concatenation} , and \textbf{start} as follows:
+    \begin{itemize}
+        \item Union: \(A \cup B = \{ x | x \in A || x \in B \} \) 
+        \item Concatenation: \(A \circ B = \{ xy | x\in A \& y \in B \} \) 
+        \item Star: \(A^* = \{x_1 x_2 \cdots x_k | k \geq 0 \& x_i \in A\}\) 
+    \end{itemize}
+    
+    Notice that \(\epsilon\)(empty language) always belongs to \(A*\).  
+\end{definition}
+
+\begin{eg}
+    \(\Sigma^*1\) is the language end with 1
+\end{eg}
+
+\begin{remark}
+    Show finite automata equivalent to regular expressions.
+\end{remark}
+
+\subsection{Closure Properties}
+\begin{theorem}
+    The class of regular language is closed under the union operation.
+
+    In other words, if \(A_1\) and \(A_2\) are regular languages, so is \(A_1 \cup A_2\).   
+\end{theorem}
+\begin{proof}
+    Let \(M_1 = \{ Q_1, \Sigma, \sigma_1, q_1, F_1 \} \)  recognize \(A_1\). \\
+    Let \(M_2 = \{ Q_2, \Sigma, \sigma_2, q_2, F_2 \} \)  recognize \(A_2\). 
+    (assuming in the same alphabet to make the proof simple)
+
+    Construct \(M = (Q, \Sigma, \sigma, q_0, F)\) recognizing \(A_1 \cup A_2\).  
+
+    M should accept input w if either \(M_1\)  or \(M_2\)  accepts w.
+
+    Component of M:
+    \begin{itemize}
+        \item \(Q = Q_1 \times Q_2\) 
+        \item \(q_0 = (q_1, q_2)\) 
+        \item \(\sigma((q, r), a) = (\sigma_1(q, a), \sigma(r, a))\) 
+        \item \(F = (F_1 \times Q_2) \cup (Q_1 \times F2)\) 
+        \item  not \(F = \cancel{F_1 \times F2}\) (this gives intersection!) 
+    \end{itemize}
+\end{proof}
+
+\begin{eg}[What is close?]
+    Positive integers close under addition but not close under subtraction.
+\end{eg}
+
+\begin{theorem}
+    The class of regular language is closed under the concatenation operation.
+
+    In other words, if \(A_1\) and \(A_2\) are regular languages then so is \(A_1 \circ A_2\).   
+\end{theorem}
+
+
