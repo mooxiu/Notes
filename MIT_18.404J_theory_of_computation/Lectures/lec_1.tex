@@ -34,11 +34,11 @@ Finite automata and their probabilistic counterpart \textbf{Markov chains} are u
 \end{eg}
 
 \begin{definition}[Formal Definition of A Finite Automaton]
-    A \textbf{finite automaton} is a 5-tuple (\(Q, \Sigma, \sigma, q_0, F\)), where
+    A \textbf{finite automaton} is a 5-tuple (\(Q, \Sigma, \delta, q_0, F\)), where
     \begin{enumerate}
         \item \(Q\) is a finite set called \textbf{state} 
         \item \(\Sigma\) is a finite set called the \textbf{alphabet} 
-        \item \(\sigma: Q \times \Sigma \Rightarrow Q\) is the \textbf{transition function}
+        \item \(\delta: Q \times \Sigma \Rightarrow Q\) is the \textbf{transition function}
         \item \(q_0 \in Q\) is the \textbf{start state}
         \item \(F \subseteq Q\) is the \textbf{set of accept state}         
     \end{enumerate}
@@ -48,11 +48,11 @@ Finite automata and their probabilistic counterpart \textbf{Markov chains} are u
     Let's revisit the finite automata example \(M_1\) and see from the formal definition perspective: \\
     \includegraphics[width=\textwidth]{f1.4.jpg}
 
-    We can describe \(M_1\) formally by writing \(M_1 = (Q, \Sigma, \sigma, q_1, F)\), where   
+    We can describe \(M_1\) formally by writing \(M_1 = (Q, \Sigma, \delta, q_1, F)\), where   
     \begin{enumerate}
         \item \(Q = \{q_1, q_2, q_3\}\)
         \item \(\Sigma = \{ 0, 1 \} \)  
-        \item \(\sigma\) is described as 
+        \item \(\delta\) is described as 
         \begin{table}[H]
             \centering
             \begin{tabular}{c|c|c}
@@ -100,11 +100,11 @@ Here because \(accept\) has different meaning, we use \(recognize\) for the lang
 
 \section{Formal Definition of Computation}
 
-Let \(M = (Q, \Sigma, \sigma, q_0, F)\) be a FA and let \(\omega = \omega_1\omega_2\cdots\omega_n\)  be a string where each \(\omega_i\) is a member of alphabet \(\Sigma\).   
+Let \(M = (Q, \Sigma, \delta, q_0, F)\) be a FA and let \(\omega = \omega_1\omega_2\cdots\omega_n\)  be a string where each \(\omega_i\) is a member of alphabet \(\Sigma\).   
 Then M \textbf{accepts} \(\omega\) if a sequence of state \(r_0, r_1, \cdots, r_n\) in \(Q\)  exists with three conditions:
 \begin{enumerate}
     \item \(r_0 = q_0\) (machine starts at initial state) 
-    \item \(\sigma(r_i, \omega_{i+1}) = r_{i+1}\)  (machine goes form state to state following the transition function)
+    \item \(\delta(r_i, \omega_{i+1}) = r_{i+1}\)  (machine goes form state to state following the transition function)
     \item \(r_n \in F\) (machine accepts its input if it ends up in an accept state)
 \end{enumerate}   
 
@@ -154,18 +154,18 @@ We say that M recognizes language A if \(A = \{ \omega| M accepts \omega \} \)
     Show finite automata equivalent to regular expressions.
 \end{remark}
 
-\subsection{Closure Properties}
+\subsection{Closure Properties}\label{theorem: clousre properties union}
 \begin{theorem}
     The class of regular language is closed under the union operation.
 
     In other words, if \(A_1\) and \(A_2\) are regular languages, so is \(A_1 \cup A_2\).   
 \end{theorem}
 \begin{proof}
-    Let \(M_1 = \{ Q_1, \Sigma, \sigma_1, q_1, F_1 \} \)  recognize \(A_1\). \\
-    Let \(M_2 = \{ Q_2, \Sigma, \sigma_2, q_2, F_2 \} \)  recognize \(A_2\). 
+    Let \(M_1 = \{ Q_1, \Sigma, \delta_1, q_1, F_1 \} \)  recognize \(A_1\). \\
+    Let \(M_2 = \{ Q_2, \Sigma, \delta_2, q_2, F_2 \} \)  recognize \(A_2\). 
     (assuming in the same alphabet to make the proof simple)
 
-    Construct \(M = (Q, \Sigma, \sigma, q_0, F)\) recognizing \(A_1 \cup A_2\).  
+    Construct \(M = (Q, \Sigma, \delta, q_0, F)\) recognizing \(A_1 \cup A_2\).  
 
     M should accept input w if either \(M_1\)  or \(M_2\)  accepts w.
 
@@ -173,7 +173,7 @@ We say that M recognizes language A if \(A = \{ \omega| M accepts \omega \} \)
     \begin{itemize}
         \item \(Q = Q_1 \times Q_2\) 
         \item \(q_0 = (q_1, q_2)\) 
-        \item \(\sigma((q, r), a) = (\sigma_1(q, a), \sigma(r, a))\) 
+        \item \(\delta((q, r), a) = (\delta_1(q, a), \delta(r, a))\) 
         \item \(F = (F_1 \times Q_2) \cup (Q_1 \times F2)\) 
         \item  not \(F = \cancel{F_1 \times F2}\) (this gives intersection!) 
     \end{itemize}
@@ -183,7 +183,7 @@ We say that M recognizes language A if \(A = \{ \omega| M accepts \omega \} \)
     Positive integers close under addition but not close under subtraction.
 \end{eg}
 
-\begin{theorem}
+\begin{theorem}\label{theorem: clousre properties concat}
     The class of regular language is closed under the concatenation operation.
 
     In other words, if \(A_1\) and \(A_2\) are regular languages then so is \(A_1 \circ A_2\).   
