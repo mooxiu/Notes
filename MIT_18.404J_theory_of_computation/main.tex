@@ -1,0 +1,41 @@
+\documentclass[a4paper]{report}
+\usepackage{graphicx}
+\graphicspath{ {./Figures/} }
+
+\AtBeginDocument{\RenewCommandCopy\qty\SI}
+\input{~/Documents/workspace/Latex-Template/Note/header.tex}
+\usepackage[stable]{footmisc}
+\title{Theory Of Computation}
+\author{Muyao Xiao}
+\date{Nov. 2024}
+
+
+\thispagestyle{empty}
+\addbibresource{reference.bib}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    The note is taken by studying 18.404J/6.5400 \textit{Theory of Computation} course by professor Michael Sipser of MIT. The course material can be downloaded in \href{https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/}{MIT OpenCourseWare}. Meanwhile, most contents in this note will also be derived from his book \textit{Introduction to the Theory of Computation, third edition}.
+
+    The course is divided into 2 parts, computational theory and complexity theory. Computational theory is developed during 1930s - 1950s. It concerns about what is computable. This note will be focused on the first part.
+
+\begin{eg}
+    Program verification, mathematical truth
+\end{eg}
+
+\begin{eg}[Models of Computation]
+    Finite automata, Turing machines, \(\cdots\) 
+\end{eg}
+\end{abstract}
+
+\tableofcontents
+
+\lec{1}{10}
+
+\pagestyle{plain}
+\printbibliography{}
+
+\end{document}
