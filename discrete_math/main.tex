@@ -1,0 +1,37 @@
+\documentclass[a4paper]{report}
+\usepackage{graphicx}
+\graphicspath{ {./Figures/} }
+
+\AtBeginDocument{\RenewCommandCopy\qty\SI}
+\input{~/Documents/workspace/Latex-Template/Note/header.tex}
+\usepackage[stable]{footmisc}
+\title{Discrete Math Review}
+\author{Muyao Xiao}
+\date{Nov. 2024}
+
+
+\thispagestyle{empty}
+\addbibresource{reference.bib}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    Discrete Math is a topic containing too many things, I would say it contains basic logic, number theory, probability theory, linear programming, set theory, graph theory, etc.
+
+    Considering the comprehensive nature of discrete math, I will pick topics that I don't have deep understanding or those I hope to review. 
+
+    This note will basically be a speed run for now, but I expect to add more contents in the future if I have time to dive deep into certain topics.
+
+    Some contents will heavily depend on MIT 18.310 and book K. H. Rosen and K. Krithivasan, Discrete mathematics and its applications, 7. ed., Global ed. New York, NY: McGraw-Hill, 2013.
+\end{abstract}
+
+\tableofcontents
+
+\lec{1}{8}
+
+\pagestyle{plain}
+\printbibliography{}
+
+\end{document}
