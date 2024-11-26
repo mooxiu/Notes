@@ -660,6 +660,13 @@ INPUT ./Figures/f1.72.jpg
 INPUT ./Figures/f1.72.jpg
 INPUT ./Figures/f1.72.jpg
 INPUT ./Figures/f1.72.jpg
+INPUT ./Lectures/lec_4.tex
+INPUT ./Lectures/lec_4.tex
+INPUT Lectures/lec_4.tex
+INPUT ./Figures/f2.1.jpg
+INPUT ./Figures/f2.1.jpg
+INPUT ./Figures/f2.1.jpg
+INPUT ./Figures/f2.1.jpg
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
