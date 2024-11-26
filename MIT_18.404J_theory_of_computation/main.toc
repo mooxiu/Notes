@@ -9,8 +9,9 @@
 \contentsline {section}{\numberline {2.2}NFA}{6}{section.2.2}%
 \contentsline {chapter}{\numberline {3}The Regular Pumping Lemma, Finite Automata → Regular Expressions, CFGs}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}GNFA}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Non-Regular Languages}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Non-Regular Languages}{13}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Pumping Lemma}{13}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Context Free Grammars}{14}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Pushdown Automata, CFG<-->PDA}{15}{chapter.4}%
 \contentsline {section}{\numberline {4.1}CFG: Context Free Grammars}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Pushdown Automata (PDA)}{17}{section.4.2}%

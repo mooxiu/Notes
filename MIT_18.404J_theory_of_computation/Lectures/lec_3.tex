@@ -15,6 +15,15 @@ Let's go back to \hyperref[lemma: 2.2]{the Lemma in the previous lecture}:
 
 \begin{definition}[Generalized NFA]
     A \underline{Generalized nondeterministic Finite Automaton}(GNFA) is similar to an NFA, but allows regular expressions as transition labels.
+
+    The formal definition is that a \textbf{generalized nondeterministic finite automaton} is a 5-tuple, \((Q, \Sigma, \delta, q_{start}, q_{accept})\), where
+    \begin{enumerate}
+        \item \(Q\) is the finite set of states
+        \item \(\Sigma\) is the input alphabet  
+        \item \(\delta: (Q - \{ q_{accept} \}) \times (Q - \{ q_{start} \}) \rightarrow \R \) is the transition function
+        \item \(q_{start}\) is the start state
+        \item \(q_{accept}\) is the accept state   
+    \end{enumerate}  
 \end{definition}
 \begin{eg}[Example of GNFA]
     Similar with NFA but transitions allow regular expressions\\
