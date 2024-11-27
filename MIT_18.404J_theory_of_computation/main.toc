@@ -16,3 +16,6 @@
 \contentsline {section}{\numberline {4.1}CFG: Context Free Grammars}{15}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Pushdown Automata (PDA)}{17}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Recap}{20}{subsection.4.2.1}%
+\contentsline {chapter}{\numberline {5}The CF Pumping Lemma, Turing Machines}{21}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Non-context-free languages}{21}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Turing Machines(TMs)}{21}{section.5.2}%
