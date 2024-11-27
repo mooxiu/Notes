@@ -191,11 +191,29 @@ The reason for that is \textbf{we don't need to}! Because we can write special s
     \end{lemma}
 \end{proof}
 \begin{proof}[CFL to PDA]
+    The idea is to use the stack to do partial substitution, and if the top of the stack matches the input string, we pop it out.
     
+    The reason that why we can always do the correct substitution is because of the nondeterminism nature of PDA, so actually we fork a lot of branches and there'll be the correct substitution in it.
+
+    Here's the informal description of the PDA P:
+    \begin{enumerate}
+        \item Place the marker symbol \(\$\) and the start variable on the stack.
+        \item Repeat the following steps forever:
+        \begin{enumerate}
+            \item If the top of the stack is a variable A, nondeterministically select one of the rules for A and substitute A by the string on the right-hand side of the rule.
+            \item If the top of stack is a terminal symbol \(a\), read the next symbol from the input and compare it to \(a\). If match, repeat; if not, reject on this branch of the nondeterminism.
+            \item If the top of stack is the symbol \(\$\), enter the accept state. Doing so accepts the input if it has all been read. 
+        \end{enumerate}
+    \end{enumerate}
+
+    \includegraphics[width=0.8\textwidth]{f2.22.jpg}
+
 \end{proof}
 \begin{proof}[PDA to CFL]
-    
+    I will omit this proof as it's too complicated and not included in the course. But there's a proof for that in the book for LEMMA 2.27.
 \end{proof}
+
+Because every finite automaton is automatically a pushdown automaton that simply ignores its stack, we have:
 
 \begin{corollary}
     Every regular language is context free.
@@ -203,3 +221,12 @@ The reason for that is \textbf{we don't need to}! Because we can write special s
     \centering 
     \includegraphics[width=0.8\textwidth]{f2.33.jpg}
 \end{corollary}
+
+
+\subsection{Recap}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{l4.1.jpg}
+    \caption{Recap until now}
+\end{figure}
