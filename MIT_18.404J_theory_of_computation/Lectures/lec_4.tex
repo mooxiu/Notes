@@ -177,6 +177,29 @@ The reason for that is \textbf{we don't need to}! Because we can write special s
     Should do some example here to understand deeper into the PDA.   
 \end{remark}
 
-\begin{theorem}[Converting CFGs to PDAs]
-    If \(A\)  is a CFL then some PDA recognizes \(A\). 
+\begin{theorem}[Equal of CFL and PDA]
+    A language is context free if and only if some pushdown automaton recognize it.
 \end{theorem}
+\begin{proof}
+    We need to prove it in 2 directions:
+    \begin{lemma}[CFL to PDA]\label{lemma: 4-1}
+        If a language is context free, then some pushdown automaton recognize it.
+    \end{lemma}
+    and:
+    \begin{lemma}[PDA to CFL]\label{lemma: 4-2}
+        If a pushdown automaton recognize some language, then it is context free.
+    \end{lemma}
+\end{proof}
+\begin{proof}[CFL to PDA]
+    
+\end{proof}
+\begin{proof}[PDA to CFL]
+    
+\end{proof}
+
+\begin{corollary}
+    Every regular language is context free.
+
+    \centering 
+    \includegraphics[width=0.8\textwidth]{f2.33.jpg}
+\end{corollary}
