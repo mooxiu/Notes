@@ -118,12 +118,90 @@ Another example:
 
 \section{Turing Machines(TMs)}
 
+Finite automata are good models for devices that have a small amount of memory. Pushdown automata are good models for devices that have an unlimited memory that is usable only in the last in, first out manner of stack.
+
+We also have shown that some very simple tasks are beyond the capabilities of the models.
+
+Alan Turing propose Turing Machine in 1936, it's similar to a finite machine but with an \textbf{unlimited and unstricted memory}. It is a much more accurate model of a general purpose computer. \textit{A Turing machine can do anything that a real computer can do, but even a Turing machine cannot solve certain problems.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{f3.1.jpg}
+    \caption{Schematic of a Turing machine}
+\end{figure}
+
+Important characteristics of it:
+\begin{enumerate}
+    \item Head can read and write
+    \item Head is two way (can move left or right)
+    \item Tape is infinite (to the right)
+    \item Infinitely many blank follow input
+    \item Can accept or reject any time (not only at end of input)
+\end{enumerate}
+
+
 \begin{example}
-    
+    TM recognizing \(B = {a^k b^k c^k | k \geq 0}\):
+
+    Example: \verb|aaabbbccc␣␣| 
+
+    \begin{enumerate}
+        \item Scan right until ␣ while checking if input is in \(a^*b^*c^*\), \(reject\) if not
+        \item Return head to left  
+        \item Scan right, crossing off single a, b and c: \(\cancel{a}aa\cancel{b}bb\cancel{c}cc\) 
+        \item If the last one of each symbol, \(accept\)
+        \item If the last one of some symbol but not others, \(reject\)
+        \item If all symbols remain, return to left and repeat from step 3.  
+    \end{enumerate}
+
+    After step 6, it will go back to step 3, and the string will become \(\cancel{a}\cancel{a}a\cancel{b}\cancel{b}b\cancel{c}\cancel{c}c\).
+    Then go to step 4, they are all last one of each symbol, so we \(accept\). 
+
+    The effect of "crossing off" is brought by use a tape alphabet like \(\Gamma = \{ a, b, c, \cancel{a}, \cancel{b}, \cancel{c}, \sqcup \} \). 
 \end{example}
 
 \begin{definition}[Turing Machine]
-    
+   A Turing Machine (TM) is a 7-tuple \((Q, \Sigma, \Gamma, \sigma, q_0, q_{acc}, q_{rej})\). 
+
+   \begin{itemize}
+    \item \(\Sigma\) input alphabet
+    \item \(\Gamma\) tape alphabet (\(\Sigma \subseteq \Gamma\))
+    \item \(Q \times \Gamma \rightarrow Q \times \Gamma \times \{ L, R \} \) \quad (L = left, R = right)  
+   \end{itemize}
+
+   The transition function means that the head in a certain state \(q\) and the head is over a tape square containing a symbol \(a\). 
+   And if \(\delta(q, a) = (r, b, L)\), the machine writes the symbol \(b\) replacing \(a\), and goes to state \(r\). The third L means the head moves to left after writing.    
 \end{definition}
 
-TM recognizers and deciders:
+On input \(w\) a TM \(M\) may halt (enter \(q_{acc}\) or \(q_{rej}\)) or \(M\) may run forever ("loop"). 
+
+So \(M\) has 3 possible outcomes for each input \(w\):
+\begin{enumerate}
+    \item \underline{Accept} \(w\) (enter \(q_{acc}\)) 
+    \item \underline{Reject} \(w\) by halting(enter \(q_{rej}\)) 
+    \item \underline{Reject} \(w\) by looping (running forever) 
+\end{enumerate}  
+
+The above definition of TM is \textbf{deterministic}, but we can change it to be \textbf{nondeterministic} by change \(\delta\) to \(\delta: Q \times \Gamma \rightarrow \P(Q \times \Gamma \times \{ L, R \}) \)  
+
+\subsection{TM recognizers and deciders}
+
+\begin{definition}
+    A is \underline{Turing-recognizable} if \(A = L(M)\) for some TM \(M\).  
+\end{definition}
+
+\begin{definition}
+    TM \(M\) is a \underline{decider} if \(M\) halts on all inputs. (no looping, meaning eventually the machine will halt to \(q_{acc}\) or \(q_{rej}\))  
+\end{definition}
+
+\begin{definition}
+    \(A\) is \underline{Turing-decidable} if \(A = L(M)\) for some TM decider \(M\).    
+\end{definition}
+
+A Turing recognizable language can cause the machine reject by looping, but a Turing decidable language can always call the TM halt, thus we have the relationship:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{l5.1.jpg}
+    \caption{Summary of languages}
+\end{figure}
