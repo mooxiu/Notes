@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber main"] 1732633894.40208 "main.bcf" "main.bbl" "main" 1733039779.89969 0
-  "main.bcf" 1733039779.69123 107801 d313208837d4b9e304860b82a39ccea5 "pdflatex"
+["biber main"] 1733065127.87828 "main.bcf" "main.bbl" "main" 1733067007.37944 0
+  "main.bcf" 1733067007.15893 107449 d98b6049625377f799e4ab3763c13c24 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1733039776.17914 "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" "main.pdf" "main" 1733039779.89995 0
+["pdflatex"] 1733067003.30139 "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" "main.pdf" "main" 1733067007.37973 0
   "/Users/muyaohsiao/Documents/workspace/LaTeX-Template/Math.tex" 1729680451.93759 2477 6dcfa87aaef735a8f1f61bb98ea52144 ""
   "/Users/muyaohsiao/Documents/workspace/Latex-Template/Note/header.tex" 1732582217.18883 10736 74d199a8f7ac475c32327e9ecb9fe244 ""
-  "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" 1733039747.99995 1293 e036eeef8fadcae8c3599d620b206da0 ""
+  "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" 1733053303.12019 1295 b3231b82e0323002282a93130d1395b5 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -84,6 +84,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb" 1248133631 11493 4f5ed183a47d3197cf8cd322325db6de ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb" 1215737283 193571 dce9a978093738902238b3e227edef6c ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb" 1215737283 145408 43d44302ca7d82d487f511f83e309505 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb" 1215737283 140176 d4962f948b4cc0adf4d3dde77a128c95 ""
@@ -390,6 +391,10 @@
   "Figures/l4.1.jpg" 1732675051.34441 112681 20a324e8780f39ff1d507fa3ca4dad45 ""
   "Figures/l5.1.jpg" 1732807496.44945 100039 3075969321847c16bf236786d128939c ""
   "Figures/l6.1.jpg" 1732886070.36758 43912 6763b6d7faf4b2c7c58f2f402e9d405a ""
+  "Figures/l8.1.jpg" 1733054935.58217 23040 62d57541a722e58f8c2be4390d7ed6e4 ""
+  "Figures/l8.2.jpg" 1733064074.7469 22059 3a720493d645dbac5a9ace2c76353adc ""
+  "Figures/l8.3.jpg" 1733065493.27949 54026 1583cb723c2b56c10d1e8d06e60af547 ""
+  "Figures/l8.4.jpg" 1733066337.1966 43829 4c9cfb902d5144814420fc6794d1abac ""
   "Lectures/lec_1.tex" 1732530757.4996 8105 0d21d5e0fc31fa4bf51e026667f6f37f ""
   "Lectures/lec_10.tex" 1732811645.9958 40 3afff3ddf3b40ff5834c862a359b151a ""
   "Lectures/lec_11.tex" 1732811663.78928 41 907bcfa98064d637bb6fb9774b97230a ""
@@ -398,15 +403,15 @@
   "Lectures/lec_4.tex" 1732675595.51714 9558 18af828cdf9989840f40383faf9b6b4d ""
   "Lectures/lec_5.tex" 1732807568.11844 8509 3a055c8210167faf89c33addba2979e5 ""
   "Lectures/lec_6.tex" 1732898249.46718 6883 1dc7662fb99a9cfe8f81f3295bc48011 ""
-  "Lectures/lec_7.tex" 1733039775.9842 9474 85f5d83183736d49484c85a28049a767 ""
-  "Lectures/lec_8.tex" 1732811572.9048 24 096f0468c7cf24e18a405d6e22da1c7c ""
+  "Lectures/lec_7.tex" 1733052681.37843 9474 85f5d83183736d49484c85a28049a767 ""
+  "Lectures/lec_8.tex" 1733066999.18605 6508 b82d3abd45aed2099d456b1afec45db9 ""
   "Lectures/lec_9.tex" 1732811623.88923 22 32cbc272417acaa7b18a11141235024e ""
-  "main.aux" 1733039779.68612 33240 8786d58082661f63524d312c4e1465f7 "pdflatex"
-  "main.bbl" 1732633896.99296 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.out" 1733039779.68859 6917 e28a200112fbbf95f5bb81536aabc720 "pdflatex"
-  "main.run.xml" 1733039779.69197 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
-  "main.tex" 1733039747.99995 1293 e036eeef8fadcae8c3599d620b206da0 ""
-  "main.toc" 1733039779.69204 3751 232527d084804597ea03a77f56825bda "pdflatex"
+  "main.aux" 1733067007.15291 37993 8fee10bf9020615224cebd6f57ad1b0b "pdflatex"
+  "main.bbl" 1733065130.49551 466 ee04f40f768daeed26442158e95aba61 "biber main"
+  "main.out" 1733067007.15606 7442 7a6919e12de07e41faad2b7819aaec21 "pdflatex"
+  "main.run.xml" 1733067007.15978 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
+  "main.tex" 1733053303.12019 1295 b3231b82e0323002282a93130d1395b5 ""
+  "main.toc" 1733067007.15985 4003 a1762cae26409a1c9643032b49976028 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

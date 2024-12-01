@@ -38,6 +38,9 @@
 \contentsline {section}{\numberline {7.7}Equivalence Problem for CFGs}{34}{section.7.7}%
 \contentsline {section}{\numberline {7.8}Acceptance Problem for TMs}{34}{section.7.8}%
 \contentsline {chapter}{\numberline {8}Undecidability}{36}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Reducibility}{37}{chapter.9}%
-\contentsline {chapter}{\numberline {10}The Computation History Method}{38}{chapter.10}%
-\contentsline {chapter}{\numberline {11}The Recursion Theorem and Logic}{39}{chapter.11}%
+\contentsline {section}{\numberline {8.1}The Diagonalization Method}{36}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Undecidable Language}{37}{section.8.2}%
+\contentsline {section}{\numberline {8.3}The Reducibility Method}{39}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Reducibility}{40}{chapter.9}%
+\contentsline {chapter}{\numberline {10}The Computation History Method}{41}{chapter.10}%
+\contentsline {chapter}{\numberline {11}The Recursion Theorem and Logic}{42}{chapter.11}%
