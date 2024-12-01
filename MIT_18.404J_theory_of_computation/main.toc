@@ -30,14 +30,14 @@
 \contentsline {section}{\numberline {6.3}Notation for encodings and TMs}{30}{section.6.3}%
 \contentsline {chapter}{\numberline {7}Decision Problems for Automata and Grammars}{31}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Acceptance Problem for DFAs}{31}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Acceptance Problem for NFAs}{31}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Emptiness Problem for DFAs}{31}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Equivalence Problem for DFAs}{31}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Acceptance Problem for CFGs}{31}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Emptiness Problem for CFGs}{31}{section.7.6}%
-\contentsline {section}{\numberline {7.7}Equivalence Problem for CFGs}{31}{section.7.7}%
-\contentsline {section}{\numberline {7.8}Acceptance Problem for TMs}{31}{section.7.8}%
-\contentsline {chapter}{\numberline {8}Undecidability}{32}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Reducibility}{33}{chapter.9}%
-\contentsline {chapter}{\numberline {10}The Computation History Method}{34}{chapter.10}%
-\contentsline {chapter}{\numberline {11}The Recursion Theorem and Logic}{35}{chapter.11}%
+\contentsline {section}{\numberline {7.2}Acceptance Problem for NFAs}{32}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Emptiness Problem for DFAs}{32}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Equivalence Problem for DFAs}{32}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Acceptance Problem for CFGs}{33}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Emptiness Problem for CFGs}{33}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Equivalence Problem for CFGs}{34}{section.7.7}%
+\contentsline {section}{\numberline {7.8}Acceptance Problem for TMs}{34}{section.7.8}%
+\contentsline {chapter}{\numberline {8}Undecidability}{36}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Reducibility}{37}{chapter.9}%
+\contentsline {chapter}{\numberline {10}The Computation History Method}{38}{chapter.10}%
+\contentsline {chapter}{\numberline {11}The Recursion Theorem and Logic}{39}{chapter.11}%

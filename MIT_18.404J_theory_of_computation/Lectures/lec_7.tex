@@ -1,10 +1,250 @@
 \chapter{Decision Problems for Automata and Grammars}
 
+We demonstrate certain problems can be solved algorithmically and others that cannot. Our objective is to explore the limits of algorithm solvability.
+
+The importance of studying unsolvability:
+\begin{enumerate}
+    \item Knowing a problem is algorithmically unsolvable \textit{is} useful because you realize that the problem must be simplified or altered before you can find an algorithm solution.
+    \item Even you know the problem is solvable, a glimpse of the unsolvable can stimulate your imagination and help you gain an important perspective on computation.
+\end{enumerate}
+
+\begin{remark}[Computational Problem]
+    In theoretical computer science, a computational problem is one that asks for a solution in terms of an algorithm.(\href{https://en.wikipedia.org/wiki/Computational_problem}{Wikipedia})
+\end{remark}
+
+\begin{example}
+    Some types of computational problem: decision problems, search problems, counting problems, optimization problems.
+
+    Questions like "what is the meaning of life?" and "do I look good in this outfit" are not computational problems.
+
+    (\href{https://nus-cs1010.github.io/1819-s1/02-algo.html}{Unit 2: Computational Problems and Algorithms})
+\end{example}
+
+
 \section{Acceptance Problem for DFAs}
+\begin{remark}
+    Sometimes distinguish a machine that is looping from one that is merely taking a long time is difficult. For this reason, we prefer Turing machines that halt on all inputs, such machines never loop.
+
+    Those machines are called \textbf{deciders}. 
+\end{remark}
+
+The \textbf{acceptance problem} for DFAs of testing whether a particular DFA accepts a given string can be expressed as a language, \(A_{DFA}\). The language contains the encodings of all DFAs together with strings that the DFAs accept. 
+
+Why we are representing a pair like \(\langle B, w \rangle\) as a language? Because this is convenient as we have already set up terminology for dealing with languages. 
+
+\begin{theorem}
+    Let \(A_{DFA}\) = \{\(\langle B, w \rangle\) | \(B\)  is a DFA and \(B\)  accepts w\}
+
+    \(A_{DFA}\) is decidable 
+\end{theorem}
+
+This problem of "testing whether a DFA B accepts an input w" is the same with "whether a combination <B, w> is a member of language \(A_{DFA}\)".
+
+In this way, we formulate the computational problem into "testing the membership in the language".
+
+If the language is decidable, meaning we can use a TM to decide this problem in finite time (by the definition).
+
+This theorem tells that the computational problem "testing whether a given finite automaton accepts a given string" is decidable.
+
+\begin{proof}
+    \(M = \)"On input \(\langle B, w \rangle\), where \(B\) is a DFA and \(w\) is a string:
+
+    \begin{enumerate}
+        \item Simulate B on input \(w\)
+        \item If the simulation ends in an accept state, \(accept\), If it ends in a nonaccepting state, \(reject\).   
+    \end{enumerate}
+    " 
+\end{proof}
+
 \section{Acceptance Problem for NFAs}
+\begin{theorem}
+    Let \(A_{NFA}\) = \{\(\langle B, w \rangle\) | \(B\)  is a NFA and \(B\)  accepts w\}
+
+\end{theorem}
+\begin{proof}
+    Given TM \(D_{A-NFA}\) that decides \(A_{NFA}\).  
+
+    \(D_{A-NFA}\) = "On input \(\langle B, w \rangle\)
+        \begin{enumerate}
+            \item Convert NFA B to equivalent DFA B'
+            \item Run TM \(D_{A-DFA}\) on input \(\langle B', w \rangle\)
+            \item \(Accept\) if \(D_{A-DFA}\) accepts, \(Reject\) if not.
+        \end{enumerate} 
+        " 
+\end{proof}
+
 \section{Emptiness Problem for DFAs}
+\begin{theorem}\label{theorem: empty}
+    Let \(E_{DFA}\) = \{ \(\langle B \rangle \)| \(B\) is a DFA and \(L(B) = \emptyset\)\}.
+
+    \(E_{DFA}\) is decidable. 
+\end{theorem}
+
+The problem is like asking us is it possible to write an algorithm to decide if B is a super dumb DFA and does not accept any string.
+
+\begin{proof}
+    Given TM \(D_{E-DFA}\) that decides \(E_{DFA}\).  
+
+    \(D_{E-DFA}\) = "On input \(\langle B \rangle\)  
+        \begin{enumerate}
+            \item Mark start state
+            \item Repeat until no new state is marked:
+            
+            Mark every state that has an incoming arrow from a previously marked state.
+            \item \(Accept\) if no accept state is marked. \(Reject\) if some accept state is marked.  
+        \end{enumerate}
+        "
+\end{proof}
+
 \section{Equivalence Problem for DFAs}
+\begin{theorem}
+    Let \(EQ_{DFA}\) = \{ \(\langle A, B \rangle\) | A and B are DFAs and \(L(A) = L(B)\)\} 
+
+    \(EQ_{DFA}\) is decidable.
+\end{theorem}
+
+This problem mean whether we have an algorithm can decide 2 DFAs can accept same set of strings. 
+
+\begin{proof}
+    Given TM \(D_{EQ-DFA}\) that decides \(EQ_{DFA}\).  
+
+    \(D_{EQ-DFA}\) = "On input \(\langle A, B \rangle\) [IDEA: Make DFA C that accepts w where A and B disagree]
+    \begin{enumerate}
+        \item Construct DFA C where \(L(C)= (L(A) \cap \overline{L(B)}) \cup (\overline{L(A)} \cap L(B))\) (\(L(C)\) is symmetric difference, we try to prove it is an empty set)
+        \item Run \(D_{E-DFA}\) on \(\langle C \rangle\) (we can do that because of \hyperref[theorem: empty]{the empty decider})
+        \item  \(Accept\) if \(D_{E-DFA}\) accepts, \(Reject\) if not.   
+    \end{enumerate}
+    "
+\end{proof}
+
 \section{Acceptance Problem for CFGs}
+\begin{theorem}
+    Let \(A_{CFG}\) = \{\(\langle G, w \rangle \)| \(G\) is a CFG and \(w \in L(G)\)\} 
+
+    \(A_{CFG} is decidable \) 
+\end{theorem}
+This is the same to ask does G generate w.
+\begin{proof}
+    The intuition is that we can check all the strings this CFG has generated and check if w is one of them. But the problem is that we need to know that this process has a bound.   
+
+    To prove this we need another theorem that has been proved:
+    \begin{theorem}[Chomsky Normal Form(CNF)]
+        CNF only allows rules:
+        \begin{align*}
+            A &\rightarrow BC\\
+            B &\rightarrow b
+        \end{align*}
+    \end{theorem}
+    \begin{lemma}
+        Can convert every CFG into CNF.
+    \end{lemma}
+    \begin{lemma}
+        If \(H\) is in CNF and \(w \in L(H)\) then every derivation of \(w\) has \(2 |w| - 1\) steps.  
+    \end{lemma}
+
+    The second lemma is important as it assures us that for any \(w\) we can using finite steps to generate it if it can be generated using the CFG.
+
+   Give TM \(D_{A-CFG}\) that decides \(A_{CFG}\).  
+
+   \(D_{A-CFG}\) = "On input \(\langle G, w \rangle\) 
+   \begin{enumerate}
+    \item Convert G into CNF
+    \item Try all derivations of length \(2|w| - 1\) 
+    \item Accept if any generate w, Reject if not
+   \end{enumerate}
+\end{proof}
+
+\begin{corollary}
+    Every CFL is decidable.
+\end{corollary}
+
 \section{Emptiness Problem for CFGs}
+
+\begin{theorem}
+    Let \(E_{CFG}\) = \{ \(\langle G \rangle \) | G is a CFG and \(L(G) = \emptyset\)\} 
+
+    \(E_{CFG}\) is decidable. 
+\end{theorem}
+\begin{proof}
+    \(D_{E-CFG}\) = "On input \(\langle G \rangle \) [IDEA: work backwards from terminals]:
+    \begin{enumerate}
+        \item \textcolor{blue}{Mark} all occurrences of terminals in G
+        \item Repeat until no new variables are marked
+
+        Mark all occurrences of variable A if\\
+        \(A \rightarrow B_1B_2\cdots B_k\) is a rule and all \(B_i\) were already marked. 
+        \item Reject if the start variable is marked. Accept if not
+    \end{enumerate} 
+\end{proof}
+
+\begin{example}[How the mark process work]
+    Suppose we have: 
+    \begin{align*}
+        S &\rightarrow RTa\\
+        R &\rightarrow Tb\\
+        T &\rightarrow a\\
+    \end{align*}
+
+    Step1: we can only mark T as we know that T generates only terminals
+    \begin{align*}
+        S &\rightarrow RT\textcolor{blue}{a}\\
+        R &\rightarrow T\textcolor{blue}{b}\\
+        \textcolor{blue}{T} &\rightarrow \textcolor{blue}{a}\\
+    \end{align*}
+
+    Step2: because of step 1, we can also mark R, because we know T is marked.
+     \begin{align*}
+        S &\rightarrow R\textcolor{blue}{Ta}\\
+        \textcolor{blue}{R} &\rightarrow \textcolor{blue}{Tb}\\
+        \textcolor{blue}{T} &\rightarrow \textcolor{blue}{a}\\
+    \end{align*}
+
+    And so on...
+\end{example}
+
 \section{Equivalence Problem for CFGs}
+\begin{theorem}
+    Let \(EQ_{CFG}\) = \{ \(\langle G, H \rangle \) | G, H are CFGs and \(L(G) = L(H)\)\}  
+
+    \(EQ_{CFG}\) is \textbf{NOT} decidable. 
+\end{theorem}
+We'll do the proof in next lecture.
+
+\begin{theorem}
+    Let \(AMBIG_{CFG}\) = \{ \(\langle G \rangle\)| G is an ambiguous CFG\}  
+
+    \(AMBIG_{CFG}\) is \textbf{NOT} decidable.
+\end{theorem}
+
+Homework.
+
+\begin{remark}
+    Why we can not follow the same technique we used to show \(EQ_{DFA}\) is decidable?
+    
+    Because CFLs are not closed under complementation and intersection. We can't make those symmetric difference.
+\end{remark}
+
 \section{Acceptance Problem for TMs}
+\begin{theorem}
+    Let \(A_{TM}\) = \{ \(\langle M, w \rangle\) M is a TM and M accepts w\}  
+
+    \(A_{TM}\) is \textbf{NOT} decidable. 
+\end{theorem}
+
+Will be proved in next lecture
+
+\begin{theorem}
+    \(A_{TM}\) is T-recognizable. 
+\end{theorem}
+\begin{proof}
+    TM \(U\) recognizes \(A_TM\)  
+
+    \(U\) = "On input \(\langle M, w \rangle\)  
+    \begin{enumerate}
+        \item Simulate M on input w
+        \item Accept if M halts and accepts
+        \item Reject if M halts and rejects
+        \item \st{Reject if M never halts} (not a legal TM action, because we cannot tell). 
+    \end{enumerate}
+    "
+\end{proof}

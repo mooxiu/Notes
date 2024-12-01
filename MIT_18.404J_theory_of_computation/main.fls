@@ -467,6 +467,11 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/appendix/appendix.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/appendix/appendix.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/footmisc/footmisc.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/footmisc/footmisc.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/soul/soul.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/soul/soul.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/soul/soul-ori.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/soul/soul-ori.sty
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
 INPUT ./main.aux
 INPUT ./main.aux
 INPUT main.aux
@@ -476,8 +481,6 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/grfext/grfext.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/grfext/grfext.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
@@ -609,7 +612,6 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
 INPUT ./Figures/f1-4.jpg
 INPUT ./Figures/f1-4.jpg
 INPUT ./Figures/f1-4.jpg
