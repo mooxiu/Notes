@@ -91,8 +91,8 @@ Let L = all languages, we have some corollaries:
 \end{remark}
 
 \section{Undecidable Language}
-\begin{theorem}
-    \(A_{TM}\) = \{ \(\langle M, w \rangle\) \(M\) is a TM and \(M\) accepts \(w\)  \} 
+\begin{theorem}\label{theorem: undecidable language}
+    \(A_{TM}\) = \{ \(\langle M, w \rangle\) | \(M\) is a TM and \(M\) accepts \(w\)  \} 
 
     \(A_{TM}\) is not decidable. 
 \end{theorem}
@@ -126,6 +126,8 @@ Let L = all languages, we have some corollaries:
     \caption{}
     \end{figure}
 \end{proof}
+
+This implies that there is no TM that can always decide whether an arbitrary TM M  will accept an input w. 
 
 \begin{theorem}
     If \(A\)  and \(\overline{A}\) are T-recognizable then \(A\) is decidable. 
@@ -173,6 +175,8 @@ Use our knowledge that \(A_{TM}\) is undecidable to show other problems are unde
 \end{theorem}
 \begin{proof}
     Assume that \(HALT_{TM}\) is decidable and show that \(A_{TM}\) is decidable (false!)  
+
+    \(A_{TM} \) is undecidable has been proved in \hyperref[theorem: undecidable language]{Here}.
 
     Let TM \(R\) decide \(HALT_{TM}\).
     
