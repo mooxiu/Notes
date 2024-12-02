@@ -1,46 +1,56 @@
-\contentsline {chapter}{\numberline {1}Introduction, Finite Automata, Regular Expressions}{2}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Finite Automata}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Formal Definition of Computation}{4}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Regular Expressions}{5}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Regular Operations}{5}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Closure Properties}{5}{subsection.1.3.2}%
-\contentsline {chapter}{\numberline {2}Nondeterminism, Closure Properties, Regular Expressions --> Finite Automata}{6}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Nondeterminism}{6}{section.2.1}%
-\contentsline {section}{\numberline {2.2}NFA}{6}{section.2.2}%
-\contentsline {chapter}{\numberline {3}The Regular Pumping Lemma, Finite Automata → Regular Expressions, CFGs}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}GNFA}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Non-Regular Languages}{13}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Pumping Lemma}{13}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Context Free Grammars}{14}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Pushdown Automata, CFG<-->PDA}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}CFG: Context Free Grammars}{15}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Pushdown Automata (PDA)}{17}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Recap}{20}{subsection.4.2.1}%
-\contentsline {chapter}{\numberline {5}The CF Pumping Lemma, Turing Machines}{21}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Non-context-free languages}{21}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}CF Pumping Lemma}{21}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5.2}Turing Machines(TMs)}{24}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}TM recognizers and deciders}{25}{subsection.5.2.1}%
-\contentsline {chapter}{\numberline {6}TM Variants, the Church-Turing Thesis}{27}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Variants of the Turing Machine Model}{27}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Multi-tape TMs}{27}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Nondeterministic TMs}{28}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Enumerators}{28}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Church-Turing Thesis}{29}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Notation for encodings and TMs}{30}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Decision Problems for Automata and Grammars}{31}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Acceptance Problem for DFAs}{31}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Acceptance Problem for NFAs}{32}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Emptiness Problem for DFAs}{32}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Equivalence Problem for DFAs}{32}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Acceptance Problem for CFGs}{33}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Emptiness Problem for CFGs}{33}{section.7.6}%
-\contentsline {section}{\numberline {7.7}Equivalence Problem for CFGs}{34}{section.7.7}%
-\contentsline {section}{\numberline {7.8}Acceptance Problem for TMs}{34}{section.7.8}%
-\contentsline {chapter}{\numberline {8}Undecidability}{36}{chapter.8}%
-\contentsline {section}{\numberline {8.1}The Diagonalization Method}{36}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Undecidable Language}{37}{section.8.2}%
-\contentsline {section}{\numberline {8.3}The Reducibility Method}{39}{section.8.3}%
-\contentsline {chapter}{\numberline {9}Reducibility}{40}{chapter.9}%
-\contentsline {chapter}{\numberline {10}The Computation History Method}{41}{chapter.10}%
-\contentsline {chapter}{\numberline {11}The Recursion Theorem and Logic}{42}{chapter.11}%
+\contentsline {chapter}{\numberline {1}Introduction, Finite Automata, Regular Expressions}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Finite Automata}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Formal Definition of Computation}{5}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Regular Expressions}{6}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Regular Operations}{6}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Closure Properties}{6}{subsection.1.3.2}%
+\contentsline {chapter}{\numberline {2}Nondeterminism, Closure Properties, Regular Expressions --> Finite Automata}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Nondeterminism}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}NFA}{7}{section.2.2}%
+\contentsline {chapter}{\numberline {3}The Regular Pumping Lemma, Finite Automata → Regular Expressions, CFGs}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}GNFA}{12}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Non-Regular Languages}{14}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Pumping Lemma}{14}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Context Free Grammars}{15}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Pushdown Automata, CFG<-->PDA}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}CFG: Context Free Grammars}{16}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Pushdown Automata (PDA)}{18}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Recap}{21}{subsection.4.2.1}%
+\contentsline {chapter}{\numberline {5}The CF Pumping Lemma, Turing Machines}{22}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Non-context-free languages}{22}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}CF Pumping Lemma}{22}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Turing Machines(TMs)}{25}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}TM recognizers and deciders}{26}{subsection.5.2.1}%
+\contentsline {chapter}{\numberline {6}TM Variants, the Church-Turing Thesis}{28}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Variants of the Turing Machine Model}{28}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Multi-tape TMs}{28}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Nondeterministic TMs}{29}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Enumerators}{29}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Church-Turing Thesis}{30}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Notation for encodings and TMs}{31}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Decision Problems for Automata and Grammars}{32}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Acceptance Problem for DFAs}{32}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Acceptance Problem for NFAs}{33}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Emptiness Problem for DFAs}{33}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Equivalence Problem for DFAs}{33}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Acceptance Problem for CFGs}{34}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Emptiness Problem for CFGs}{34}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Equivalence Problem for CFGs}{35}{section.7.7}%
+\contentsline {section}{\numberline {7.8}Acceptance Problem for TMs}{35}{section.7.8}%
+\contentsline {chapter}{\numberline {8}Undecidability}{37}{chapter.8}%
+\contentsline {section}{\numberline {8.1}The Diagonalization Method}{37}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Undecidable Language}{38}{section.8.2}%
+\contentsline {section}{\numberline {8.3}The Reducibility Method}{40}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Reducibility}{41}{chapter.9}%
+\contentsline {section}{\numberline {9.1}The Reducibility Method}{41}{section.9.1}%
+\contentsline {section}{\numberline {9.2}General Reducibility}{41}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Mapping Reducibility}{41}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Mapping vs General Reducibility}{42}{subsection.9.3.1}%
+\contentsline {subsubsection}{Mapping Reducibility of \(A\) to \(B\): Translate A-questions to B-questions}{42}{section*.17}%
+\contentsline {subsubsection}{(General) Reducibility of \(A\) to \(B\): Use \(B\) solver to solve \(A\)}{42}{section*.18}%
+\contentsline {subsubsection}{Noteworthy difference:}{42}{section*.19}%
+\contentsline {subsection}{\numberline {9.3.2}Reducibility - Templates}{42}{subsection.9.3.2}%
+\contentsline {subsubsection}{To prove \(B\) is undecidable:}{42}{section*.20}%
+\contentsline {subsubsection}{To prove \(B\) is T-unrecognizable:}{42}{section*.21}%
+\contentsline {chapter}{\numberline {10}The Computation History Method}{43}{chapter.10}%
+\contentsline {chapter}{\numberline {11}The Recursion Theorem and Logic}{44}{chapter.11}%

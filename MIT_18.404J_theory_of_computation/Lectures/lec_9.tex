@@ -1,1 +1,114 @@
 \chapter{Reducibility}
+
+\section{The Reducibility Method}
+If we know that some problem (say \(A_{TM}\)) is undecidable, we can use that to show other problems are undecidable.
+
+\begin{remark}
+    Review the proof of HALT problem.
+\end{remark}
+
+\begin{definition}[Reducibility]
+    If we have 2 languages (or problems) \(A\) and \(B\), then \(A\) is reducible to \(B\) means that we can use \(B\) to solve \(A\).  
+\end{definition}
+
+\begin{example}
+    Measuring the area of a rectangle is reducible to measuring the lengths of its sides.
+\end{example}
+
+\begin{example}
+    We showed that \(A_{NFA}\) is reducible to \(A_{DFA}\). 
+\end{example}
+
+
+If \(A\) is reducible to \(B\) then solving \(B\) gives a solution to \(A\):
+\begin{itemize}
+    \item then \(B\) is easy \(\rightarrow\) \(A\) is easy.   
+    \item then \(A\) is hard \(\rightarrow\) \(B\) is hard.   
+\end{itemize}  
+
+
+\section{General Reducibility}
+
+\begin{theorem}
+    Let \(E_{TM}\) = \{ \(\langle M \rangle\) | \(M\) is a TM and \(L(M) = \emptyset\) \}
+
+    \(E_{TM}\) is undecidable. 
+\end{theorem}
+
+
+\section{Mapping Reducibility}
+
+\begin{definition}
+    Function \(f: \Sigma^* \rightarrow \Sigma^*\) is \underline{computable} if there is a TM \(F\) where \(F\) on input \(w\) halts with \(f(w)\) on its tapem for all strings \(w\).     
+\end{definition}
+
+\begin{definition}
+    \underline{\(A\) is mapping-reducible to \(B\)}(\(A \leq_m B\)) if there is a computable function \(f\) where \(w \in A\) iff \(f(w) \in B\).   
+\end{definition}
+
+\begin{example}
+    
+\end{example}
+
+\begin{theorem}
+    If \(A \leq_m B\) and \(B\) is decidable then so is \(A\)   
+\end{theorem}
+\begin{proof}
+    
+\end{proof}
+
+\begin{corollary}
+    If \(A \leq_m B\) and \(A\) is undecidable then so is \(B\)   
+\end{corollary}
+
+\begin{theorem}
+    If \(A \leq_m B\) and \(B\) is T-recognizable then so is \(A\).   
+\end{theorem}
+\begin{proof}
+    
+\end{proof}
+
+\begin{corollary}
+    If \(A \leq_m B\) and \(A\) is T-unrecognizable then so is B. 
+\end{corollary}
+
+\subsection{Mapping vs General Reducibility}
+
+\subsubsection{Mapping Reducibility of \(A\) to \(B\): Translate A-questions to B-questions}
+
+\subsubsection{(General) Reducibility of \(A\) to \(B\): Use \(B\) solver to solve \(A\)}
+
+\subsubsection{Noteworthy difference:} 
+
+\subsection{Reducibility - Templates}
+
+\subsubsection{To prove \(B\) is undecidable:} 
+\begin{itemize}
+    \item Show undecidable A is 
+\end{itemize}
+
+\subsubsection{To prove \(B\) is T-unrecognizable:} 
+\begin{itemize}
+    \item Show T-unrecognizable
+\end{itemize}
+
+
+\begin{theorem}
+    Recall \(E_{TM} = \)\{ \(\langle M \rangle\)| \(M\) is a TM and \(L(M) = \emptyset\)\} 
+
+    \(E_{TM}\) is T-unrecognizable 
+\end{theorem}
+\begin{proof}
+    
+\end{proof}
+
+
+\begin{theorem}
+    \(EQ_{TM}\) = \{ \(\langle M_1, M_2 \rangle\)| \(M_1\) and \(M_2\) are TMs and \(L(M_1) = L(M_2)\)  \} 
+
+    Both \(EQ_{TM}\) and \(\overline{EQ_{TM}}\) are T-unrecognizable  
+\end{theorem}
+
+\begin{remark}[Reducibility Terminology]
+    
+\end{remark}
