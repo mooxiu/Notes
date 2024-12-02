@@ -44,24 +44,26 @@
 \contentsline {chapter}{\numberline {9}Reducibility}{41}{chapter.9}%
 \contentsline {section}{\numberline {9.1}The Reducibility Method}{41}{section.9.1}%
 \contentsline {section}{\numberline {9.2}General Reducibility}{41}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Mapping Reducibility}{41}{section.9.3}%
-\contentsline {subsection}{\numberline {9.3.1}Mapping vs General Reducibility}{42}{subsection.9.3.1}%
-\contentsline {subsubsection}{Mapping Reducibility of \(A\) to \(B\): Translate A-questions to B-questions}{42}{section*.17}%
-\contentsline {subsubsection}{(General) Reducibility of \(A\) to \(B\): Use \(B\) solver to solve \(A\)}{42}{section*.18}%
-\contentsline {subsubsection}{Noteworthy difference:}{42}{section*.19}%
-\contentsline {subsection}{\numberline {9.3.2}Reducibility - Templates}{42}{subsection.9.3.2}%
-\contentsline {subsubsection}{To prove \(B\) is undecidable:}{42}{section*.20}%
-\contentsline {subsubsection}{To prove \(B\) is T-unrecognizable:}{42}{section*.21}%
-\contentsline {chapter}{\numberline {10}The Computation History Method}{43}{chapter.10}%
-\contentsline {section}{\numberline {10.1}History Method for proving undecidability}{43}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Post Correspondence Problem (PCP)}{43}{section.10.2}%
-\contentsline {section}{\numberline {10.3}Linearly bounded automata}{43}{section.10.3}%
-\contentsline {section}{\numberline {10.4}Undecidable problems about LBAs and CFGs}{43}{section.10.4}%
-\contentsline {chapter}{\numberline {11}The Recursion Theorem and Logic}{44}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Self-reproduction Paradox}{44}{section.11.1}%
-\contentsline {subsection}{\numberline {11.1.1}A self-reproducing TM}{44}{subsection.11.1.1}%
-\contentsline {section}{\numberline {11.2}The Recursion Theorem}{44}{section.11.2}%
-\contentsline {subsection}{\numberline {11.2.1}\(A_{TM}\) is undecidable - new proof}{44}{subsection.11.2.1}%
-\contentsline {subsection}{\numberline {11.2.2}Fixed-point Theorem}{44}{subsection.11.2.2}%
-\contentsline {subsection}{\numberline {11.2.3}\(MIN_{TM}\) is T-unrecognizable}{44}{subsection.11.2.3}%
-\contentsline {section}{\numberline {11.3}Intro to Mathematical Logic}{44}{section.11.3}%
+\contentsline {section}{\numberline {9.3}Mapping Reducibility}{42}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Mapping Reductions - properties}{42}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Mapping vs General Reducibility}{43}{subsection.9.3.2}%
+\contentsline {subsubsection}{Mapping Reducibility of \(A\) to \(B\): Translate A-questions to B-questions}{43}{section*.18}%
+\contentsline {subsubsection}{(General) Reducibility of \(A\) to \(B\): Use \(B\) solver to solve \(A\)}{44}{section*.20}%
+\contentsline {subsubsection}{Noteworthy difference:}{44}{section*.22}%
+\contentsline {subsection}{\numberline {9.3.3}Reducibility - Templates}{44}{subsection.9.3.3}%
+\contentsline {subsubsection}{To prove \(B\) is undecidable:}{44}{section*.23}%
+\contentsline {subsubsection}{To prove \(B\) is T-unrecognizable:}{44}{section*.24}%
+\contentsline {chapter}{\numberline {10}The Computation History Method}{46}{chapter.10}%
+\contentsline {section}{\numberline {10.1}History Method for proving undecidability}{46}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Post Correspondence Problem (PCP)}{46}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Linearly bounded automata}{46}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Undecidable problems about LBAs and CFGs}{46}{section.10.4}%
+\contentsline {chapter}{\numberline {11}The Recursion Theorem and Logic}{47}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Self-reproduction Paradox}{47}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}A self-reproducing TM}{47}{subsection.11.1.1}%
+\contentsline {section}{\numberline {11.2}The Recursion Theorem}{47}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}\(A_{TM}\) is undecidable - new proof}{47}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Fixed-point Theorem}{47}{subsection.11.2.2}%
+\contentsline {subsection}{\numberline {11.2.3}\(MIN_{TM}\) is T-unrecognizable}{47}{subsection.11.2.3}%
+\contentsline {section}{\numberline {11.3}Intro to Mathematical Logic}{47}{section.11.3}%
+\contentsline {chapter}{\numberline {12}Time Complexity}{48}{chapter.12}%
