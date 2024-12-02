@@ -53,4 +53,8 @@
 \contentsline {subsubsection}{To prove \(B\) is undecidable:}{42}{section*.20}%
 \contentsline {subsubsection}{To prove \(B\) is T-unrecognizable:}{42}{section*.21}%
 \contentsline {chapter}{\numberline {10}The Computation History Method}{43}{chapter.10}%
+\contentsline {section}{\numberline {10.1}History Method for proving undecidability}{43}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Post Correspondence Problem (PCP)}{43}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Linearly bounded automata}{43}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Undecidable problems about LBAs and CFGs}{43}{section.10.4}%
 \contentsline {chapter}{\numberline {11}The Recursion Theorem and Logic}{44}{chapter.11}%
