@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1733065127.87828 "main.bcf" "main.bbl" "main" 1733152716.28107 0
-  "main.bcf" 1733152716.0632 107449 d98b6049625377f799e4ab3763c13c24 "pdflatex"
+["biber main"] 1733065127.87828 "main.bcf" "main.bbl" "main" 1733153831.29521 0
+  "main.bcf" 1733153831.06102 107449 d98b6049625377f799e4ab3763c13c24 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1733152711.91197 "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" "main.pdf" "main" 1733152716.28134 0
+["pdflatex"] 1733153826.88383 "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" "main.pdf" "main" 1733153831.29552 0
   "/Users/muyaohsiao/Documents/workspace/LaTeX-Template/Math.tex" 1729680451.93759 2477 6dcfa87aaef735a8f1f61bb98ea52144 ""
   "/Users/muyaohsiao/Documents/workspace/Latex-Template/Note/header.tex" 1732582217.18883 10736 74d199a8f7ac475c32327e9ecb9fe244 ""
   "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" 1733135823.91697 1295 e473e35c1431b0bb5eed3d5fd4464e06 ""
@@ -410,14 +410,14 @@
   "Lectures/lec_5.tex" 1732807568.11844 8509 3a055c8210167faf89c33addba2979e5 ""
   "Lectures/lec_6.tex" 1732898249.46718 6883 1dc7662fb99a9cfe8f81f3295bc48011 ""
   "Lectures/lec_7.tex" 1733052681.37843 9474 85f5d83183736d49484c85a28049a767 ""
-  "Lectures/lec_8.tex" 1733103752.23154 6755 64083c3c7228ac22c173a4fb27598728 ""
+  "Lectures/lec_8.tex" 1733153826.63521 6775 5dfecc1e82ea406da37b86dbb0b828ca ""
   "Lectures/lec_9.tex" 1733152709.12235 8891 ca60aafe4ea3fbfb58f986d086b2f324 ""
-  "main.aux" 1733152716.05745 50223 19312650bb08a0a1f155f03a233ba144 "pdflatex"
+  "main.aux" 1733153831.05487 50223 22cf97900ed23feb07304641e956de2b "pdflatex"
   "main.bbl" 1733065130.49551 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.out" 1733152716.0606 9582 2f683ac0b5a0e72f96521e3a0d3a54e2 "pdflatex"
-  "main.run.xml" 1733152716.06383 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
+  "main.out" 1733153831.05835 9582 2f683ac0b5a0e72f96521e3a0d3a54e2 "pdflatex"
+  "main.run.xml" 1733153831.06173 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
   "main.tex" 1733135823.91697 1295 e473e35c1431b0bb5eed3d5fd4464e06 ""
-  "main.toc" 1733152716.06389 6162 91bb92ec945524ab623e5da7a4009f10 "pdflatex"
+  "main.toc" 1733153831.06179 6162 91bb92ec945524ab623e5da7a4009f10 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
