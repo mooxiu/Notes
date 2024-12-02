@@ -58,3 +58,10 @@
 \contentsline {section}{\numberline {10.3}Linearly bounded automata}{43}{section.10.3}%
 \contentsline {section}{\numberline {10.4}Undecidable problems about LBAs and CFGs}{43}{section.10.4}%
 \contentsline {chapter}{\numberline {11}The Recursion Theorem and Logic}{44}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Self-reproduction Paradox}{44}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}A self-reproducing TM}{44}{subsection.11.1.1}%
+\contentsline {section}{\numberline {11.2}The Recursion Theorem}{44}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}\(A_{TM}\) is undecidable - new proof}{44}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Fixed-point Theorem}{44}{subsection.11.2.2}%
+\contentsline {subsection}{\numberline {11.2.3}\(MIN_{TM}\) is T-unrecognizable}{44}{subsection.11.2.3}%
+\contentsline {section}{\numberline {11.3}Intro to Mathematical Logic}{44}{section.11.3}%
