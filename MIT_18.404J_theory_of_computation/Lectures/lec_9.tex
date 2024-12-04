@@ -257,3 +257,15 @@ They are not the same!
         \item \(f(\langle M, w\rangle) = \langle T_w, T_{accept} \rangle\) (\( T_{accept}\) is a TM that always accepts) 
     \end{enumerate}
 \end{proof}
+
+\section{Problems}
+
+\begin{problem}[Rice's theorem]
+    Let \(P\) be any nontrivial property of the language of a Turing machine.
+    Prove that the problem of determining whether a given Turing machine's language has property \(P\) is undecidable.
+
+    In more formal terms, let \(P\) be a language consisting of Turing machine descriptions where \(P\) fulfills two conditions.  
+    First, \(P\) is nontrivial -- it contains some, but not all, TM descriptions.  
+    Second, \(P\) is a property of the TM's language -- whenever \(L(M_1) = L(M_2)\), we have \(\langle M_1 \rangle \in P \iff \langle M_2 \rangle \in P\).  
+    Here, \(M_1\) and \(M_2\) are any TMs. Prove that \(P\) is an undecidable language.  
+\end{problem}
