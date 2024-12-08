@@ -105,7 +105,14 @@ The upper phrase of the English example is called \underline{Action} part, the \
     \end{figure}
 \end{proof}
 
+\begin{note}
+    The recursion theorem provides the ability to implement the self-referential \(this\) into any programming language. 
+    With it, any program has the ability to refer to its own description, which has certain applications.
+\end{note}
+
 \subsection{\(A_{TM}\) is undecidable - new proof}
+\hyperref[theorem: A(TM) not decidable]{\(A_{TM}\) is not decidable} is a very important conclusion, we used it to prove halting theorem.
+
 \begin{theorem}
     \(A_{TM}\) is not decidable. 
 \end{theorem}
@@ -115,15 +122,18 @@ The upper phrase of the English example is called \underline{Action} part, the \
     Consider the following TM \(R\):
     \(R\) = "On input \(w\)
     \begin{enumerate}
-        \item Get own description \(\langle R \rangle\)
+        \item Get own description \(\langle R \rangle\) (This is the content of the recursion theorem!)
         \item Use \(H\) on input \(\langle R, w \rangle\)  to determine whether \(R\) accepts \(w\)
         \item Do the opposite of what \(H\) says"
     \end{enumerate}   
+
+    Suppose \(H\) reject \(\langle R, w \rangle\), \(R\) will accept the input \(w\). 
+    We can rephrase this into: if \(R\) reject \(w\), \(R\) will accept \(w\): contradiction!     
 \end{proof}
     
 
 \subsection{Fixed-point Theorem}
-
+    A \textbf{fixed point} of a function is a value that isn't changed by the application of the function.  
 \subsection{\(MIN_{TM}\) is T-unrecognizable}
 
 Other applications:
