@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1733279912.52006 "main.bcf" "main.bbl" "main" 1733281290.92711 0
-  "main.bcf" 1733281290.68125 107449 d98b6049625377f799e4ab3763c13c24 "pdflatex"
+["biber main"] 1733279912.52006 "main.bcf" "main.bbl" "main" 1733671360.39653 0
+  "main.bcf" 1733671360.14727 107449 d98b6049625377f799e4ab3763c13c24 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1733281286.11395 "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" "main.pdf" "main" 1733281290.92744 0
+["pdflatex"] 1733671355.59988 "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" "main.pdf" "main" 1733671360.39679 0
   "/Users/muyaohsiao/Documents/workspace/LaTeX-Template/Math.tex" 1729680451.93759 2477 6dcfa87aaef735a8f1f61bb98ea52144 ""
   "/Users/muyaohsiao/Documents/workspace/Latex-Template/Note/header.tex" 1732582217.18883 10736 74d199a8f7ac475c32327e9ecb9fe244 ""
   "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" 1733135823.91697 1295 e473e35c1431b0bb5eed3d5fd4464e06 ""
@@ -397,6 +397,10 @@
   "Figures/l10.2-2.jpg" 1733279997.32506 26253 7da9a4cb646cb31ffe5089b44992b954 ""
   "Figures/l10.2-3.jpg" 1733280084.89743 36835 13c090884d80cf111cca373717085e1b ""
   "Figures/l10.2-4.jpg" 1733280110.31486 9764 1f5fa2762e6bd0e1fdd07658aa5f8497 ""
+  "Figures/l11.1.jpg" 1733668358.0503 14149 63453262f13ef9382d943718db9bb099 ""
+  "Figures/l11.2.jpg" 1733668714.02498 21049 a5b726c95454a117d40ebd5b57c6fbbe ""
+  "Figures/l11.3.jpg" 1733670662.67021 20371 f7f51f3c68270a64c06f53e2ba42f49c ""
+  "Figures/l11.4.jpg" 1733670676.03245 21954 3e654ee923ffbd5988d5429b8be206ed ""
   "Figures/l2.1.jpg" 1732424983.84909 28315 fe47f84a557e65f76d156ece99f801a9 ""
   "Figures/l3.1.jpg" 1732545360.55646 128599 56b7e3c65fe68bb1fc5a346816d796f2 ""
   "Figures/l3.2.jpg" 1732545377.91338 189473 1832eb960e34a18eca4be15d99fb9877 ""
@@ -411,7 +415,7 @@
   "Figures/l9.2.jpg" 1733149968.321 12492 e463d83d3c0d3459b512845f07eb7a09 ""
   "Lectures/lec_1.tex" 1732530757.4996 8105 0d21d5e0fc31fa4bf51e026667f6f37f ""
   "Lectures/lec_10.tex" 1733281282.90643 10847 83f38994177f6108ef52ede2c8f1c474 ""
-  "Lectures/lec_11.tex" 1733106523.37593 656 df30d14226726ce7e7c114f61efa9a17 ""
+  "Lectures/lec_11.tex" 1733671350.39742 4824 bea5a7d10f05db75f6c381e647174a3a ""
   "Lectures/lec_12.tex" 1733135812.92214 27 d5289780e6688c31c0331aef784c3933 ""
   "Lectures/lec_2.tex" 1732529907.32808 6585 cf94fe46d7eb84d47bdfc066e37c452f ""
   "Lectures/lec_3.tex" 1732634711.34919 6050 c96ba261cd125d72d60235eba803be8b ""
@@ -421,12 +425,12 @@
   "Lectures/lec_7.tex" 1733052681.37843 9474 85f5d83183736d49484c85a28049a767 ""
   "Lectures/lec_8.tex" 1733153826.63521 6775 5dfecc1e82ea406da37b86dbb0b828ca ""
   "Lectures/lec_9.tex" 1733235553.89025 9619 d3d7c5418bfe302a838b34f0553be720 ""
-  "main.aux" 1733281290.67491 54934 9dfa50ba939fe328c833ccce7050dbe1 "pdflatex"
+  "main.aux" 1733671360.14095 56941 3da149b534d7c9f9510eb4df94bfcf69 "pdflatex"
   "main.bbl" 1733279915.04229 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.out" 1733281290.67859 9560 0c93b9e3acc13d034bdf658c4cf9f470 "pdflatex"
-  "main.run.xml" 1733281290.68193 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
+  "main.out" 1733671360.14466 9560 0c93b9e3acc13d034bdf658c4cf9f470 "pdflatex"
+  "main.run.xml" 1733671360.14794 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
   "main.tex" 1733135823.91697 1295 e473e35c1431b0bb5eed3d5fd4464e06 ""
-  "main.toc" 1733281290.68198 6210 f1b83e08b8ae95a0c519bfe5f0662eb5 "pdflatex"
+  "main.toc" 1733671360.14801 6210 584dc49db60ff0a56469a9088020804e "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

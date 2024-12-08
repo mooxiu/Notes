@@ -62,9 +62,9 @@
 \contentsline {chapter}{\numberline {11}The Recursion Theorem and Logic}{51}{chapter.11}%
 \contentsline {section}{\numberline {11.1}Self-reproduction Paradox}{51}{section.11.1}%
 \contentsline {subsection}{\numberline {11.1.1}A self-reproducing TM}{51}{subsection.11.1.1}%
-\contentsline {section}{\numberline {11.2}The Recursion Theorem}{51}{section.11.2}%
-\contentsline {subsection}{\numberline {11.2.1}\(A_{TM}\) is undecidable - new proof}{51}{subsection.11.2.1}%
-\contentsline {subsection}{\numberline {11.2.2}Fixed-point Theorem}{51}{subsection.11.2.2}%
-\contentsline {subsection}{\numberline {11.2.3}\(MIN_{TM}\) is T-unrecognizable}{51}{subsection.11.2.3}%
-\contentsline {section}{\numberline {11.3}Intro to Mathematical Logic}{51}{section.11.3}%
-\contentsline {chapter}{\numberline {12}Time Complexity}{52}{chapter.12}%
+\contentsline {section}{\numberline {11.2}The Recursion Theorem}{52}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}\(A_{TM}\) is undecidable - new proof}{53}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Fixed-point Theorem}{53}{subsection.11.2.2}%
+\contentsline {subsection}{\numberline {11.2.3}\(MIN_{TM}\) is T-unrecognizable}{53}{subsection.11.2.3}%
+\contentsline {section}{\numberline {11.3}Intro to Mathematical Logic}{53}{section.11.3}%
+\contentsline {chapter}{\numberline {12}Time Complexity}{54}{chapter.12}%
