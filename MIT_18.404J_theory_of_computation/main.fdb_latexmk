@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1733279912.52006 "main.bcf" "main.bbl" "main" 1733704576.9473 0
-  "main.bcf" 1733704576.69979 107449 d98b6049625377f799e4ab3763c13c24 "pdflatex"
+["biber main"] 1733279912.52006 "main.bcf" "main.bbl" "main" 1733711713.07905 0
+  "main.bcf" 1733711712.81569 107449 d98b6049625377f799e4ab3763c13c24 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1733704572.14735 "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" "main.pdf" "main" 1733704576.94757 0
+["pdflatex"] 1733711708.03481 "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" "main.pdf" "main" 1733711713.07932 0
   "/Users/muyaohsiao/Documents/workspace/LaTeX-Template/Math.tex" 1729680451.93759 2477 6dcfa87aaef735a8f1f61bb98ea52144 ""
   "/Users/muyaohsiao/Documents/workspace/Latex-Template/Note/header.tex" 1732582217.18883 10736 74d199a8f7ac475c32327e9ecb9fe244 ""
   "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" 1733135823.91697 1295 e473e35c1431b0bb5eed3d5fd4464e06 ""
@@ -415,7 +415,7 @@
   "Figures/l9.2.jpg" 1733149968.321 12492 e463d83d3c0d3459b512845f07eb7a09 ""
   "Lectures/lec_1.tex" 1732530757.4996 8105 0d21d5e0fc31fa4bf51e026667f6f37f ""
   "Lectures/lec_10.tex" 1733281282.90643 10847 83f38994177f6108ef52ede2c8f1c474 ""
-  "Lectures/lec_11.tex" 1733704571.92564 5676 38852034116acab79b7ec2b69aa9c263 ""
+  "Lectures/lec_11.tex" 1733711702.71317 9453 cd4da051952577dccaa5d849064f54b2 ""
   "Lectures/lec_12.tex" 1733135812.92214 27 d5289780e6688c31c0331aef784c3933 ""
   "Lectures/lec_2.tex" 1732529907.32808 6585 cf94fe46d7eb84d47bdfc066e37c452f ""
   "Lectures/lec_3.tex" 1732634711.34919 6050 c96ba261cd125d72d60235eba803be8b ""
@@ -425,12 +425,12 @@
   "Lectures/lec_7.tex" 1733052681.37843 9474 85f5d83183736d49484c85a28049a767 ""
   "Lectures/lec_8.tex" 1733671536.74897 6812 6b5ebd9f2f63887ce155a2478f9df794 ""
   "Lectures/lec_9.tex" 1733235553.89025 9619 d3d7c5418bfe302a838b34f0553be720 ""
-  "main.aux" 1733704576.69331 57236 6f760ac1ecb3de40a46c65bf1f7ac055 "pdflatex"
+  "main.aux" 1733711712.80921 58897 bd1a5949338bfc617249ed807039326c "pdflatex"
   "main.bbl" 1733279915.04229 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.out" 1733704576.69706 9560 0c93b9e3acc13d034bdf658c4cf9f470 "pdflatex"
-  "main.run.xml" 1733704576.7005 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
+  "main.out" 1733711712.81305 9560 0c93b9e3acc13d034bdf658c4cf9f470 "pdflatex"
+  "main.run.xml" 1733711712.81634 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
   "main.tex" 1733135823.91697 1295 e473e35c1431b0bb5eed3d5fd4464e06 ""
-  "main.toc" 1733704576.70057 6210 584dc49db60ff0a56469a9088020804e "pdflatex"
+  "main.toc" 1733711712.81641 6210 ddf66c6e8203ace909b8c39d7c6412f3 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

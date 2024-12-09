@@ -135,20 +135,104 @@ The upper phrase of the English example is called \underline{Action} part, the \
 
 \subsection{Fixed-point Theorem}
     A \textbf{fixed point} of a function is a value that isn't changed by the application of the function.  
+    In this case, we consider functions as computable transformations of TM descriptions.
+    We show that for any such transformation, some TM exists whose behavior is unchanged.
+
+    \begin{theorem}
+        For any computable function \(f: \Sigma^* \rightarrow \Sigma^*\), there is a TM \(R\) such that \(L(R) = L(S)\) where \(f(\langle R \rangle) = \langle S \rangle\).
+        
+        In other words, consider \(f\) to be a program transformation function. 
+        Then for some program \(R\), its behavior is unchanged by \(f\). 
+
+        In this theorem, \(f\) plays the role of transformation, \(R\) is the fixed point.  
+    \end{theorem}
+    \begin{proof}
+        Let \(R\) be the following TM. 
+
+        \(R = \) "On input \(w\)  
+        \begin{enumerate}
+            \item Get own description \(\langle R \rangle\) (recursion theorem)
+            \item Compute \(f(\langle R \rangle)\) and call the result \(\langle S \rangle\) 
+            \item Simulate \(S\) on \(w\)."    
+        \end{enumerate}
+
+        Here we can see \(\langle F \rangle\) and \(f(\langle F \rangle) = \langle G \rangle\) describe equivalent TM. 
+
+        \begin{note}
+            The step 2, why we can assume \(f(\langle R \rangle)\) is a valid description of another?
+
+            By the definition of total computable function.
+        \end{note}
+
+        \begin{note}
+            I am not very satisfied with this proof, I still feel a gap why we can say the simulated is equivalent with the original.
+        \end{note}
+    \end{proof}
+
 \subsection{\(MIN_{TM}\) is T-unrecognizable}
+
+\begin{definition}
+    \(M\) is a minimal TM if \(|\langle M' \rangle| < |\langle M \rangle| \rightarrow L(M') \neq L(M)\). 
+    \begin{remark}
+        There is a shortest encoding form of TM, there's no shorter TM can do the same thing.
+    \end{remark}
+\end{definition}
+
+\begin{theorem}
+    Let \(MIN_{TM} = \)  \{
+        \(\langle M \rangle | M\) is a minimal TM\}, 
+    \(MIN_{TM}\) is T-unrecognizable.
+\end{theorem}
+\begin{proof}
+    Assume some TM \(E\) enumerates \(MIN_{TM}\).  
+
+    Consider the following TM \(R\):
+    \(R\) = "On input \(w\)
+    \begin{enumerate}
+        \item Get own description \(\langle R \rangle\)
+        \item Run \(E\) until some TM \(B\) appears, where \(|\langle R \rangle| < |\langle B \rangle|\)
+        \item Simulate \(B\) on \(w\)."  
+    \end{enumerate}  
+
+    Thus \(L(R) = L(B)\) and \(|\langle R \rangle| < |\langle B \rangle|\) so \(B\) is not minimal.   
+
+    But we assume \(E\) enumerates \(MIN_{TM}\), so contradiction.  
+
+    \begin{note}
+        Why there must be TM \(B\) has encoding form larger than \(E\)?  
+    \end{note}
+\end{proof}
+
 
 Other applications:
 \begin{enumerate}
     \item Computer viruses
+    \item A true but unprovable Mathematical statement due to Kurt Godel:
+
+    "This statement is unprovable."
 \end{enumerate}
 
 \section{Intro to Mathematical Logic}
 \begin{definition}[Goal]
-    
+    A mathematical study of mathematical reasoning itself. (Formally defines the language of mathematics, mathematical truth, and provability.)
 \end{definition}
 
+\begin{theorem}[Godel's First Incompleteness Theorem]
+    In any reasonable form system, some true statements are not provable.
+\end{theorem}
+\begin{proof}
+    We use 2 properties of formal proofs:
+    \begin{enumerate}
+        \item Soundness: If \(\phi\) has a proof \(\pi\) then \(\phi\) is true.  
+        \item Checkability: The language \(\{ \langle \pi, \phi \rangle | \pi \) is a proof of statement \(\phi\)\} is decidable.  
+    \end{enumerate}
 
-\begin{example}[A True but unprovable statement]
-    
-\end{example}
+    Checkability implies the set of provable statements \{ \(\langle \phi \rangle | \phi\) has a proof\} is T-recognizable. 
+
+    Similarly, if we can always prove \(\langle M, w \rangle \in \overline{A_{TM}}\) when it is true, then \(\overline{A_{TM}}\) is T-recognizable. (false!) 
+
+    Therefore, some true statements of the form \(\langle M, w \rangle \in \overline{A_{TM}}\) are unprovable. 
+
+    Next, we use the recursion theorem to give a specific example of a true but unprovable statement.
+\end{proof}
 
