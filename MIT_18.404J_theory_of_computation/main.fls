@@ -820,6 +820,10 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT ./Lectures/lec_12.tex
 INPUT ./Lectures/lec_12.tex
 INPUT Lectures/lec_12.tex
+INPUT ./Figures/l12.1.jpg
+INPUT ./Figures/l12.1.jpg
+INPUT ./Figures/l12.1.jpg
+INPUT ./Figures/l12.1.jpg
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out

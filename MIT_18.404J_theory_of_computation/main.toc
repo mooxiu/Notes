@@ -68,3 +68,9 @@
 \contentsline {subsection}{\numberline {11.2.3}\(MIN_{TM}\) is T-unrecognizable}{54}{subsection.11.2.3}%
 \contentsline {section}{\numberline {11.3}Intro to Mathematical Logic}{54}{section.11.3}%
 \contentsline {chapter}{\numberline {12}Time Complexity}{56}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Intro to Complexity Theory}{56}{section.12.1}%
+\contentsline {subsection}{\numberline {12.1.1}Model Dependence}{57}{subsection.12.1.1}%
+\contentsline {section}{\numberline {12.2}TIME Complexity Class}{57}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Multi-tape vs 1-tape}{58}{section.12.3}%
+\contentsline {section}{\numberline {12.4}The Class P}{59}{section.12.4}%
+\contentsline {section}{\numberline {12.5}Other examples}{59}{section.12.5}%
