@@ -40,7 +40,7 @@ Similarly, can a program print itself?(YES!)
     \end{intuition}
 
     \(B =\) \begin{enumerate}
-        \item "Compute \(q(tape :;contents)\)  to get \(A\) (The tape content happens to be \(\langle B \rangle\), but it does not care) 
+        \item "Compute \(q(tape \:contents)\)  to get \(A\) (The tape content happens to be \(\langle B \rangle\), but it does not care) 
         \item Combine with \(B\) to get \(AB = SELF\)
         \item Halt with \(\langle SELF \rangle\) on tape."   
     \end{enumerate} 
@@ -93,7 +93,7 @@ The upper phrase of the English example is called \underline{Action} part, the \
     \end{figure}
 
     \(B = \) \begin{enumerate}
-        \item "Compute \(q(tape :; contents :; after:; w)\) to get \(A\)
+        \item "Compute \(q(tape \: contents \: after\: w)\) to get \(A\)
         \item Combine with \(BT\) to get \(ABT = R\)
         \item Pass control to \(T\) on input \(\langle w, R \rangle\)."      
     \end{enumerate} 
