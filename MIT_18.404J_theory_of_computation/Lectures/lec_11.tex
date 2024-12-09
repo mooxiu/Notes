@@ -123,11 +123,12 @@ The upper phrase of the English example is called \underline{Action} part, the \
     \(R\) = "On input \(w\)
     \begin{enumerate}
         \item Get own description \(\langle R \rangle\) (This is the content of the recursion theorem!)
-        \item Use \(H\) on input \(\langle R, w \rangle\)  to determine whether \(R\) accepts \(w\)
+        \item Use \(H\) on input \(\langle R, w \rangle\)  to determine whether \(R\) accepts \(w\) (This is the definition of \(A_{TM}\), our assumption is that \(R\) can decide whether any TM can accept any input)
         \item Do the opposite of what \(H\) says"
     \end{enumerate}   
 
     Suppose \(H\) reject \(\langle R, w \rangle\), \(R\) will accept the input \(w\). 
+
     We can rephrase this into: if \(R\) reject \(w\), \(R\) will accept \(w\): contradiction!     
 \end{proof}
     
