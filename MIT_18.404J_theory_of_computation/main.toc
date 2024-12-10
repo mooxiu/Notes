@@ -74,3 +74,10 @@
 \contentsline {section}{\numberline {12.3}Multi-tape vs 1-tape}{58}{section.12.3}%
 \contentsline {section}{\numberline {12.4}The Class P}{59}{section.12.4}%
 \contentsline {section}{\numberline {12.5}Other examples}{59}{section.12.5}%
+\contentsline {chapter}{\numberline {13}P and NP, SAT, Poly-time Reducibility}{60}{chapter.13}%
+\contentsline {section}{\numberline {13.1}The Class of NP}{60}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Example of NP}{60}{section.13.2}%
+\contentsline {section}{\numberline {13.3}P vs NP}{61}{section.13.3}%
+\contentsline {subsection}{\numberline {13.3.1}Dynamic Programming}{61}{subsection.13.3.1}%
+\contentsline {section}{\numberline {13.4}Satisfiability Problem}{62}{section.13.4}%
+\contentsline {subsection}{\numberline {13.4.1}Polynomial Time Reducibility}{62}{subsection.13.4.1}%
