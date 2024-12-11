@@ -81,3 +81,7 @@
 \contentsline {subsection}{\numberline {13.3.1}Dynamic Programming}{61}{subsection.13.3.1}%
 \contentsline {section}{\numberline {13.4}Satisfiability Problem}{62}{section.13.4}%
 \contentsline {subsection}{\numberline {13.4.1}Polynomial Time Reducibility}{62}{subsection.13.4.1}%
+\contentsline {chapter}{\numberline {14}NP-Completeness}{63}{chapter.14}%
+\contentsline {section}{\numberline {14.1}SAT Cont.}{63}{section.14.1}%
+\contentsline {section}{\numberline {14.2}NP-Completeness}{64}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Summary}{64}{section.14.3}%

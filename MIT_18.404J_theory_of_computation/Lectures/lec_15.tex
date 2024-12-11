@@ -1,0 +1,130 @@
+\chapter{NP-Completeness}
+
+\section{SAT Cont.}
+\begin{example}[\(\leq_P\) Example]
+\end{example}
+
+\begin{definition}
+    A Boolean formula \(\phi\) is in \underline{Conjunctive Normal Form} (CNF) if it has the form
+    \[
+        \phi = (x \lor \bar{y} \lor z) \land (\bar{x} \lor \bar{s} \lor z \lor u) \land \cdots \land (\bar{z} \lor \bar{u})
+    \]
+
+    \textbf{Literal} : a variable or a negated variable
+
+    \textbf{Clause}: an OR of literals (the thing in a brace)
+    
+    \textbf{CNF}: an AND of clauses(all of them).
+    
+    \textbf{3CNF}: a CNF with exactly 3 literals in each clause 
+
+    \(3SAT\) = \{ \(\langle \phi \rangle | \phi\) is a staisfiable 3CNF formula\} 
+\end{definition}
+
+\begin{definition}
+    A \(k-clique\) in a graph is a subset of \(k\) nodes all directly connected by edges.   
+
+    \begin{example}
+       % TODO: show graphs 
+    \end{example}
+
+    \(CLIQUE\) = \{\(\langle G, k \rangle\) | graph G contains k-clique\} 
+\end{definition}
+
+We will show \(3SAT \leq_P CLIQUE\) 
+
+\begin{theorem}
+    \(3SAT \leq_P CLIQUE\) 
+\end{theorem}
+\begin{proof}
+    IDEA: \(\phi\) is satisfiable \(\iff\) \(G\) has a \(k-clique\)        
+
+    Construction to make the transformation from \(3SAT\) to \(k-CLIQUE\):
+    \begin{remark}[Transformation]
+        % todo: show the construction and graphs
+    \end{remark}
+
+    \begin{lemma}[Forward]
+        \(\phi\) is satisfiable \(\implies\) \(G\) has a \(k-clique\).   
+    \end{lemma}
+    \begin{proof}
+        Take any satisfying assignment to \(\phi\). Pick 1 true literal in each clause. 
+
+        The corresponding nodes in \(G\) are a \(k-clique\) because they don't have forbidden edges.  
+    \end{proof}
+
+    \begin{lemma}[Backward]
+        \(G\) has a \(k-clique\) \(\implies\) \(phi\) is satisfiable.
+    \end{lemma}
+    \begin{proof}
+        Take any \(k-clique\) in \(G\), it must have 1 node in each clause.  
+
+        Set each corresponding literal TRUE. That gives a satisfying assignment to \(\phi\). 
+    \end{proof}
+
+    Notice that the reduction (transformation) \(f\) is computable in polynomial time. 
+\end{proof}
+
+\begin{corollary}
+    \(CLIQUE \in P \implies 3SAT \in P\) 
+\end{corollary}
+
+\begin{remark}
+    Does the theorem require 3 literals per clause?
+
+    The answer is no, it works for any size clause.
+\end{remark}
+
+
+\section{NP-Completeness}
+
+\begin{definition}
+    Language \(B\) is  \underline{NP-Complete}  if
+    \begin{enumerate}
+        \item \(B \in NP\) 
+        \item For all \(A \in NP\), \(A \leq_P B\)  
+    \end{enumerate}
+\end{definition}
+
+If \(B\) is NP-complete and \(B \in P\) then P = NP. 
+
+\begin{theorem}[Cook-Levin Theorem]
+    \(SAT\) is NP-complete 
+\end{theorem}
+\begin{proof}
+    Next lecture. Assume it is true for now.
+\end{proof}
+
+% TODO: show the link list of reduction
+
+\begin{note}
+    To show some language \(C\) is NP-complete, show \(3SAT \leq_P C\). 
+\end{note}
+
+
+\textbf{Importance of NP-complete}:
+\begin{enumerate}
+    \item Showing \(B\) is NP-complete is evidence of computational intractability.
+    (Show a problem is NP-complete is a powerful evidence that it is not P)
+    \item Gives a good candidate for proving \(P \neq NP\).  
+\end{enumerate} 
+
+\begin{theorem}
+    \(HAMPATH\) is NP-complete. 
+\end{theorem}
+\begin{proof}
+    Show \(3SAT \leq_P HAMPATH\) (assume 3SAT is NP-Complete) 
+
+    IDEA: simulate variables and clauses with "gadgets".
+
+
+\end{proof}
+
+\begin{remark}
+    Would this construction show the undirected Hamilton path problem is NP-complete?
+
+    No, the construction depends on \(G\) being directed. 
+\end{remark}
+
+\section{Summary}
+How to do polynomial reduction.
