@@ -6,16 +6,18 @@ In a nondeterministic TM (NTM) decider, all branches halt on all inputs.
 \begin{definition}
     An NTM \underline{runs in time} \(t(n)\) if all branches halt within \(t(n)\) steps on all inputs of length \(n\).  
     \begin{intuition}
-        This is very strong constraint
+        This is very strong constraint, this is because it should be able to \textit{verify} each branch in polynomial time. 
     \end{intuition}
 \end{definition}
 
 \begin{definition}
-    \(NTIME(t(n)) = \{ B | \)some 1-tape NTM decides \(B\) and runs in time \(O(t(n))\)  \}  
+    \(NTIME(t(n)) = \{ B | \)some 1-tape NTM decides \(B\) and runs in time \(O(t(n))\)\}  
 
-    % TODO: add figure here
-    % \begin{figure}[H]
-    % \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{f7.10.jpg}
+        \caption{Comparing deterministic and nondeterministic time}
+    \end{figure}
 \end{definition}
 
 
@@ -26,7 +28,6 @@ In a nondeterministic TM (NTM) decider, all branches halt on all inputs.
 \begin{itemize}
     \item Invariant for all reasonable nondeterministic models.
     \item Corresponds roughly to easily verifiable problems.
-    % TODO: what does this mean?
 \end{itemize}
 
 \section{Example of NP}
@@ -78,7 +79,7 @@ In a nondeterministic TM (NTM) decider, all branches halt on all inputs.
     \end{enumerate}
 
     \begin{note}[2002]
-    \(COMPOSITES \in P\) 
+    \(COMPOSITES \in P\) has been proved in 2002:
 
     \href{https://en.wikipedia.org/wiki/AKS_primality_test}{AKS primality test}
     \end{note}
@@ -113,9 +114,7 @@ We know that \(P \subseteq NP\), but \(P = NP\) (Cook 1971)?
     \(A_{CFG}\) is decidable. 
 \end{theorem}
 \begin{proof}
-    % TODO: link the 
-
-    (Using Chomsky Normal Form(CNF)). This gave an NP type algorithm.
+    (Using \hyperref[theorem: Chomsky]{Chomsky Normal Form(CNF)}). This gave an NP type algorithm.
 \end{proof}
 
 \begin{theorem}
@@ -143,7 +142,7 @@ We know that \(P \subseteq NP\), but \(P = NP\) (Cook 1971)?
 
     \(D\) = "On input \(\langle G, w, R \rangle\)
     \begin{enumerate}
-        \item If previously solved \(\langle G, w, R \rangle\) then answer same, else continue. 
+        \item \textcolor{red}{If previously solved \(\langle G, w, R \rangle\) then answer same, else continue}. 
         \item For each way to divide \(w = xy\) and for each rule \(R \rightarrow ST\)
         \item Use \(D\) to test \(\langle G, x, S \rangle\) and \(\langle G, y, T \rangle\) 
         \item Accept if both accept
@@ -175,20 +174,30 @@ We know that \(P \subseteq NP\), but \(P = NP\) (Cook 1971)?
     \(SAT \in P \implies P = NP\)  
 \end{definition}
 \begin{proof}
-    polynomial time (mapping) reducibility
+    polynomial time (mapping) reducibility (will be proved in later lecture). 
 \end{proof}
 
 \begin{remark}
-    \(SAT \in NP\) 
+        \(SAT \in NP\) (Obviously)
 \end{remark}
 
 \subsection{Polynomial Time Reducibility}
 \begin{definition}
-    \(A\) is \underline{polynomial time reducible} to \(B\) (\(A \leq_P B\))  if \(A \leq_m B\) by a reduction function that is computable in polynomial time.
+    \(A\) is \underline{polynomial time reducible} to \(B\) (\(A \leq_P B\))  if \(A \leq_m B\) by a reduction function \(f: \Sigma^* \mapsto \Sigma^*\) that is computable in polynomial time.
+
+    For every \(w\):
+    \[
+        w \in A \iff f(w) \in B
+    \]
+
+    The function \(f\) is called \textbf{polynomial time reduction} of A to B.
 \end{definition}
 \begin{theorem}
     If \( A \leq_P B\) and \(B \in P\) then \(A \in P\). 
 \end{theorem}
+\begin{proof}
+    
+\end{proof}
 
 \begin{note}[Analog with \(A_{TM}\) ]
     % TODO: is this mapping reducible?

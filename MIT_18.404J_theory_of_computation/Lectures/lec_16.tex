@@ -1,0 +1,36 @@
+\chapter{Cook-Levin Theorem}
+
+\section{Cook-Levin Theorem}
+
+\begin{theorem}
+    \(SAT\) is NP-complete 
+\end{theorem}
+\begin{proof}
+    \begin{enumerate}
+        \item \(SAT \in NP\)(done)
+        \item Show that for each \(A \in NP\) we have \(A \leq_P SAT\).   
+    \end{enumerate}
+
+    Let \(A \in NP\) be decided by NTM \(M\) in time \(n^k\).   
+
+    We want to prove there's a polynomial reduction function \(f: \Sigma^* \mapsto formula\) mapping \(A\) to \(SAT\):
+
+    \(f(w) = \langle \phi_{M, w} \rangle\)  
+
+
+    \begin{definition}[tableau]
+        
+        %TODO: why the length and height
+    \end{definition}
+
+
+
+\end{proof}
+
+\section{SAT3 is NP-complete}
+\begin{theorem}
+    \(3SAT\) is NP-complete 
+\end{theorem}
+\begin{proof}
+    
+\end{proof}

@@ -827,9 +827,16 @@ INPUT ./Figures/l12.1.jpg
 INPUT ./Lectures/lec_14.tex
 INPUT ./Lectures/lec_14.tex
 INPUT Lectures/lec_14.tex
+INPUT ./Figures/f7.10.jpg
+INPUT ./Figures/f7.10.jpg
+INPUT ./Figures/f7.10.jpg
+INPUT ./Figures/f7.10.jpg
 INPUT ./Lectures/lec_15.tex
 INPUT ./Lectures/lec_15.tex
 INPUT Lectures/lec_15.tex
+INPUT ./Lectures/lec_16.tex
+INPUT ./Lectures/lec_16.tex
+INPUT Lectures/lec_16.tex
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
