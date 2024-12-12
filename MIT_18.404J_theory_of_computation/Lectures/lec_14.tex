@@ -196,10 +196,23 @@ We know that \(P \subseteq NP\), but \(P = NP\) (Cook 1971)?
     If \( A \leq_P B\) and \(B \in P\) then \(A \in P\). 
 \end{theorem}
 \begin{proof}
-    
+    \(A \leq_P B\): \(\forall w \in A\), we can find a function \(f\) making \(f(w) \in B\).    
+
+    \(B \in P\): \(\forall w \in B\), there exists a TM \(M\) which can compute \(w\) in polynomial time.  
+
+    To prove \(A \in P \implies\) there's a TM which can compute all strings in \(A\) at polynomial time.    
+
+    \(N\) = "On input \(w\),
+    \begin{enumerate}
+        \item compute \(f(w)\).
+        \item using TM \(M\) to decide \(f(w)\), return the result."     
+    \end{enumerate}  
+
+    If \(w \in A\), then \(f(w)\) in \(B\). 
+    The above 2 steps are both polynomial, so \(N\) can decide \(w\) in polynomial time, 
+    meaning \(A \in P\). 
 \end{proof}
 
 \begin{note}[Analog with \(A_{TM}\) ]
-    % TODO: is this mapping reducible?
     All T-recognizable languages are polynomial reducible to \(A_{TM}\).   
 \end{note}
