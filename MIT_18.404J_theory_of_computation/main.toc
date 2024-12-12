@@ -84,7 +84,7 @@
 \contentsline {chapter}{\numberline {14}NP-Completeness}{64}{chapter.14}%
 \contentsline {section}{\numberline {14.1}SAT Cont.}{64}{section.14.1}%
 \contentsline {section}{\numberline {14.2}NP-Completeness}{65}{section.14.2}%
-\contentsline {section}{\numberline {14.3}Summary}{65}{section.14.3}%
-\contentsline {chapter}{\numberline {15}Cook-Levin Theorem}{66}{chapter.15}%
-\contentsline {section}{\numberline {15.1}Cook-Levin Theorem}{66}{section.15.1}%
-\contentsline {section}{\numberline {15.2}SAT3 is NP-complete}{66}{section.15.2}%
+\contentsline {section}{\numberline {14.3}Summary}{67}{section.14.3}%
+\contentsline {chapter}{\numberline {15}Cook-Levin Theorem}{68}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Cook-Levin Theorem}{68}{section.15.1}%
+\contentsline {section}{\numberline {15.2}SAT3 is NP-complete}{68}{section.15.2}%

@@ -1,8 +1,6 @@
 \chapter{NP-Completeness}
 
 \section{SAT Cont.}
-\begin{example}[\(\leq_P\) Example]
-\end{example}
 
 \begin{definition}
     A Boolean formula \(\phi\) is in \underline{Conjunctive Normal Form} (CNF) if it has the form
@@ -25,7 +23,11 @@
     A \(k-clique\) in a graph is a subset of \(k\) nodes all directly connected by edges.   
 
     \begin{example}
-       % TODO: show graphs 
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.6\textwidth]{f7.23.jpg}
+            \caption{A graph with a 5-CLIQUE}
+        \end{figure}
     \end{example}
 
     \(CLIQUE\) = \{\(\langle G, k \rangle\) | graph G contains k-clique\} 
@@ -41,7 +43,25 @@ We will show \(3SAT \leq_P CLIQUE\)
 
     Construction to make the transformation from \(3SAT\) to \(k-CLIQUE\):
     \begin{remark}[Transformation]
-        % todo: show the construction and graphs
+        Here is the mapping from CNF to the graph:
+        \begin{itemize}
+            \item \(3SAT \; literal \mapsto \) vertex (node) in \(k-CLIQUE\)   
+            \item \(3SAT \; \#clause \mapsto\) \(k\) in \(k-CLIQUE\)   
+            \item \(3SAT\) be TRUE at same time \(\mapsto\) edges in the graph
+        \end{itemize}
+
+        Principle in making edges:
+        \begin{enumerate}
+            \item can't make edges within a clause
+            \item can't make inconsistent edges (for example we can't connect \(a\) with \(\bar{a}\))
+        \end{enumerate}
+
+        This is what the transformation looks like, forbidden edges are connected in red line:
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{l15.1.jpg}
+            \caption{transformation from CNF to graph}
+        \end{figure}
     \end{remark}
 
     \begin{lemma}[Forward]
@@ -84,7 +104,18 @@ We will show \(3SAT \leq_P CLIQUE\)
         \item \(B \in NP\) 
         \item For all \(A \in NP\), \(A \leq_P B\)  
     \end{enumerate}
+
+    \begin{remark}
+        \begin{definition}[NP-hard]
+            A problem is \textbf{NP-hard} if all problems in NP are polynomial time reducible to it, even though it may not be in NP itself.  
+        \end{definition}
+
+        Notice that the 2nd constraint for defining \(B\) is NP-complete is actually saying \(B\) is NP-hard.  
+
+        So we can say a language is NP-complete if it is in NP, and it is NP-hard.
+    \end{remark}
 \end{definition}
+
 
 If \(B\) is NP-complete and \(B \in P\) then P = NP. 
 
@@ -95,7 +126,12 @@ If \(B\) is NP-complete and \(B \in P\) then P = NP.
     Next lecture. Assume it is true for now.
 \end{proof}
 
-% TODO: show the link list of reduction
+\begin{note}
+    \(\forall A \in NP\):
+    \[
+        A \leq_P SAT \leq_P 3SAT \leq_P CLIQUE/HAMPATH
+    \]
+\end{note}
 
 \begin{note}
     To show some language \(C\) is NP-complete, show \(3SAT \leq_P C\). 
@@ -115,9 +151,37 @@ If \(B\) is NP-complete and \(B \in P\) then P = NP.
 \begin{proof}
     Show \(3SAT \leq_P HAMPATH\) (assume 3SAT is NP-Complete) 
 
-    IDEA: simulate variables and clauses with "gadgets".
+    The simulation is so hard to describe, but this is a famous question, so I will just describe the setup here:
 
+    \textbf{Transformation of each variable/literal \(x_i\)}: it is represented with a diamond-shaped structure that contains a horizontal row of nodes:
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{f7.47.jpg}
+    \end{figure}
 
+    \textbf{Transformation of each clause \(c_j\)}: as a node. 
+
+    \textbf{Global structure}:
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{f7.49.jpg}
+    \end{figure}
+
+    The core is the representation of a clause \(c_j\) contains an \(x_i\) or \(\bar{x_i}\):
+    \begin{figure}[H]
+        \begin{minipage}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{f7.51.jpg}
+            \caption{the additional edges when \(c_j\) contains \(x_i\) }
+        \end{minipage}\hfill
+        \begin{minipage}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{f7.52.jpg}
+            \caption{the additional edges when \(c_j\) contains \(\bar{x_i}\) }
+        \end{minipage}
+    \end{figure}
+
+    (The complete proof can be easily got from internet.)
 \end{proof}
 
 \begin{remark}

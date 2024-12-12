@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1733279912.52006 "main.bcf" "main.bbl" "main" 1734014389.70564 0
-  "main.bcf" 1734014389.44034 107449 d98b6049625377f799e4ab3763c13c24 "pdflatex"
+["biber main"] 1733279912.52006 "main.bcf" "main.bbl" "main" 1734017112.00141 0
+  "main.bcf" 1734017111.56784 107449 d98b6049625377f799e4ab3763c13c24 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1734014383.46183 "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" "main.pdf" "main" 1734014389.70591 0
+["pdflatex"] 1734017102.02251 "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" "main.pdf" "main" 1734017112.00169 0
   "/Users/muyaohsiao/Documents/workspace/LaTeX-Template/Math.tex" 1729680451.93759 2477 6dcfa87aaef735a8f1f61bb98ea52144 ""
   "/Users/muyaohsiao/Documents/workspace/Latex-Template/Note/header.tex" 1732582217.18883 10736 74d199a8f7ac475c32327e9ecb9fe244 ""
   "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" 1733896314.26326 1308 bcb3586b36de180aa24826ce100117cd ""
@@ -393,6 +393,11 @@
   "Figures/f4.2.jpg" 1732631247.95575 24559 4a6020a1be612251d7f9f9713f483c8c ""
   "Figures/f5.7.jpg" 1733236015.58628 7263 be07535f305c03dc8706b91e147180ce ""
   "Figures/f7.10.jpg" 1733928557.864 33645 4002aec72efc070ef570d71ca05ec2f5 ""
+  "Figures/f7.23.jpg" 1734014571.88344 36634 b55bed181ce6be8b357c6c5c8046740b ""
+  "Figures/f7.47.jpg" 1734016435.86783 33714 b49fe509ccf3ffa1181f647182a10b2c ""
+  "Figures/f7.49.jpg" 1734016545.44274 79886 aae2484cb8ccc2311c6ee172a9ae588b ""
+  "Figures/f7.51.jpg" 1734016778.45414 32321 a3492afb7e79a9689a2412906c48537d ""
+  "Figures/f7.52.jpg" 1734016789.74363 33452 4f669c202f966e5a873d372e804f1b2a ""
   "Figures/l10.1.jpg" 1733234157.66635 31813 4a31a0dffd3791381cf43598f8af37ea ""
   "Figures/l10.2-1.jpg" 1733279939.54745 9348 8bd520a03883d858094103a45ae95e74 ""
   "Figures/l10.2-2.jpg" 1733279997.32506 26253 7da9a4cb646cb31ffe5089b44992b954 ""
@@ -403,6 +408,7 @@
   "Figures/l11.3.jpg" 1733670662.67021 20371 f7f51f3c68270a64c06f53e2ba42f49c ""
   "Figures/l11.4.jpg" 1733670676.03245 21954 3e654ee923ffbd5988d5429b8be206ed ""
   "Figures/l12.1.jpg" 1733759636.4955 75584 9d0583198d72d3030c5fd86b2a84018c ""
+  "Figures/l15.1.jpg" 1734015424.15861 80579 d5162d797cbd9dd0353a87d5db3f785c ""
   "Figures/l2.1.jpg" 1732424983.84909 28315 fe47f84a557e65f76d156ece99f801a9 ""
   "Figures/l3.1.jpg" 1732545360.55646 128599 56b7e3c65fe68bb1fc5a346816d796f2 ""
   "Figures/l3.2.jpg" 1732545377.91338 189473 1832eb960e34a18eca4be15d99fb9877 ""
@@ -420,7 +426,7 @@
   "Lectures/lec_11.tex" 1733711702.71317 9453 cd4da051952577dccaa5d849064f54b2 ""
   "Lectures/lec_12.tex" 1733927557.82735 7855 cd7b9ef5e3f2c54ac334bca4fed98a40 ""
   "Lectures/lec_14.tex" 1734014383.2551 7498 ef83734ed9cac57ff1e8691d3c2420e1 ""
-  "Lectures/lec_15.tex" 1733895793.14977 3631 28082775fccee1dd87b8cd45b604de9c ""
+  "Lectures/lec_15.tex" 1734017091.9395 6223 73647877e63a48cd95971d8d706e580a ""
   "Lectures/lec_16.tex" 1733927277.20884 756 38b33b150bdabfb09bf4b02f65e32f0e ""
   "Lectures/lec_2.tex" 1732529907.32808 6585 cf94fe46d7eb84d47bdfc066e37c452f ""
   "Lectures/lec_3.tex" 1732634711.34919 6050 c96ba261cd125d72d60235eba803be8b ""
@@ -430,12 +436,12 @@
   "Lectures/lec_7.tex" 1733929599.49384 9499 3e1700500fca2e25c18f8a404cc34c35 ""
   "Lectures/lec_8.tex" 1733671536.74897 6812 6b5ebd9f2f63887ce155a2478f9df794 ""
   "Lectures/lec_9.tex" 1733235553.89025 9619 d3d7c5418bfe302a838b34f0553be720 ""
-  "main.aux" 1734014389.43302 78113 c7096a836887713e264f3c2339dc903b "pdflatex"
+  "main.aux" 1734017111.55932 79314 1524ab2d70d50237a14ba80616d53d97 "pdflatex"
   "main.bbl" 1733279915.04229 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.out" 1734014389.43773 12012 96a657ac92c9e82dfc24d917f2c0f71c "pdflatex"
-  "main.run.xml" 1734014389.44098 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
+  "main.out" 1734017111.56486 12012 96a657ac92c9e82dfc24d917f2c0f71c "pdflatex"
+  "main.run.xml" 1734017111.56875 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
   "main.tex" 1733896314.26326 1308 bcb3586b36de180aa24826ce100117cd ""
-  "main.toc" 1734014389.44104 7838 65399ac472c05cd521e97dce5e4c0d6c "pdflatex"
+  "main.toc" 1734017111.56883 7838 229c1bc8a90781684aa85e2ade826c76 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
