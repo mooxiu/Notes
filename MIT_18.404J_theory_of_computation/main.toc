@@ -87,4 +87,4 @@
 \contentsline {section}{\numberline {14.3}Summary}{67}{section.14.3}%
 \contentsline {chapter}{\numberline {15}Cook-Levin Theorem}{68}{chapter.15}%
 \contentsline {section}{\numberline {15.1}Cook-Levin Theorem}{68}{section.15.1}%
-\contentsline {section}{\numberline {15.2}SAT3 is NP-complete}{68}{section.15.2}%
+\contentsline {section}{\numberline {15.2}SAT3 is NP-complete}{70}{section.15.2}%

@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber main"] 1733279912.52006 "main.bcf" "main.bbl" "main" 1734017112.00141 0
-  "main.bcf" 1734017111.56784 107449 d98b6049625377f799e4ab3763c13c24 "pdflatex"
+["biber main"] 1734165487.09136 "main.bcf" "main.bbl" "main" 1734190601.30415 0
+  "main.bcf" 1734190601.01901 107449 d98b6049625377f799e4ab3763c13c24 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1734017102.02251 "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" "main.pdf" "main" 1734017112.00169 0
+["pdflatex"] 1734190594.74178 "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" "main.pdf" "main" 1734190601.30447 0
   "/Users/muyaohsiao/Documents/workspace/LaTeX-Template/Math.tex" 1729680451.93759 2477 6dcfa87aaef735a8f1f61bb98ea52144 ""
   "/Users/muyaohsiao/Documents/workspace/Latex-Template/Note/header.tex" 1732582217.18883 10736 74d199a8f7ac475c32327e9ecb9fe244 ""
-  "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" 1733896314.26326 1308 bcb3586b36de180aa24826ce100117cd ""
+  "/Users/muyaohsiao/Documents/workspace/latex_notes/MIT_18.404J_theory_of_computation/main.tex" 1734167746.18696 1309 2cb14eb254eb10671bcfbbfe6ba85e89 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -409,6 +409,9 @@
   "Figures/l11.4.jpg" 1733670676.03245 21954 3e654ee923ffbd5988d5429b8be206ed ""
   "Figures/l12.1.jpg" 1733759636.4955 75584 9d0583198d72d3030c5fd86b2a84018c ""
   "Figures/l15.1.jpg" 1734015424.15861 80579 d5162d797cbd9dd0353a87d5db3f785c ""
+  "Figures/l16.1.jpg" 1734166055.87729 36295 87d3b2cc0eb6af05958e6661a120fca2 ""
+  "Figures/l16.2.jpg" 1734187940.88168 17869 2c0f36ddec39bdedab51bd3404425516 ""
+  "Figures/l16.3.jpg" 1734188102.53404 16895 39f01122605de80194d3595de1c49fbf ""
   "Figures/l2.1.jpg" 1732424983.84909 28315 fe47f84a557e65f76d156ece99f801a9 ""
   "Figures/l3.1.jpg" 1732545360.55646 128599 56b7e3c65fe68bb1fc5a346816d796f2 ""
   "Figures/l3.2.jpg" 1732545377.91338 189473 1832eb960e34a18eca4be15d99fb9877 ""
@@ -422,12 +425,12 @@
   "Figures/l9.1.jpg" 1733148197.66544 22209 687f6a91928c0c1ed0bf46c9c5921f52 ""
   "Figures/l9.2.jpg" 1733149968.321 12492 e463d83d3c0d3459b512845f07eb7a09 ""
   "Lectures/lec_1.tex" 1732530757.4996 8105 0d21d5e0fc31fa4bf51e026667f6f37f ""
-  "Lectures/lec_10.tex" 1733281282.90643 10847 83f38994177f6108ef52ede2c8f1c474 ""
+  "Lectures/lec_10.tex" 1734165596.91697 10847 c03fb37e15df222264e47b6394841ef9 ""
   "Lectures/lec_11.tex" 1733711702.71317 9453 cd4da051952577dccaa5d849064f54b2 ""
   "Lectures/lec_12.tex" 1733927557.82735 7855 cd7b9ef5e3f2c54ac334bca4fed98a40 ""
   "Lectures/lec_14.tex" 1734014383.2551 7498 ef83734ed9cac57ff1e8691d3c2420e1 ""
   "Lectures/lec_15.tex" 1734017091.9395 6223 73647877e63a48cd95971d8d706e580a ""
-  "Lectures/lec_16.tex" 1733927277.20884 756 38b33b150bdabfb09bf4b02f65e32f0e ""
+  "Lectures/lec_16.tex" 1734190594.53975 6088 48346dfd4f0312070008c83cb5867b4c ""
   "Lectures/lec_2.tex" 1732529907.32808 6585 cf94fe46d7eb84d47bdfc066e37c452f ""
   "Lectures/lec_3.tex" 1732634711.34919 6050 c96ba261cd125d72d60235eba803be8b ""
   "Lectures/lec_4.tex" 1732675595.51714 9558 18af828cdf9989840f40383faf9b6b4d ""
@@ -436,12 +439,12 @@
   "Lectures/lec_7.tex" 1733929599.49384 9499 3e1700500fca2e25c18f8a404cc34c35 ""
   "Lectures/lec_8.tex" 1733671536.74897 6812 6b5ebd9f2f63887ce155a2478f9df794 ""
   "Lectures/lec_9.tex" 1733235553.89025 9619 d3d7c5418bfe302a838b34f0553be720 ""
-  "main.aux" 1734017111.55932 79314 1524ab2d70d50237a14ba80616d53d97 "pdflatex"
-  "main.bbl" 1733279915.04229 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.out" 1734017111.56486 12012 96a657ac92c9e82dfc24d917f2c0f71c "pdflatex"
-  "main.run.xml" 1734017111.56875 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
-  "main.tex" 1733896314.26326 1308 bcb3586b36de180aa24826ce100117cd ""
-  "main.toc" 1734017111.56883 7838 229c1bc8a90781684aa85e2ade826c76 "pdflatex"
+  "main.aux" 1734190601.01122 80453 7dc0e2382153dd73f888184b0d71203c "pdflatex"
+  "main.bbl" 1734165504.13716 466 ee04f40f768daeed26442158e95aba61 "biber main"
+  "main.out" 1734190601.01628 12012 96a657ac92c9e82dfc24d917f2c0f71c "pdflatex"
+  "main.run.xml" 1734190601.01971 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
+  "main.tex" 1734167746.18696 1309 2cb14eb254eb10671bcfbbfe6ba85e89 ""
+  "main.toc" 1734190601.01977 7838 d1904e27d28ef1023552ca6b8c4f398d "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
