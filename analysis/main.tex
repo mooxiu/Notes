@@ -1,0 +1,51 @@
+\documentclass[a4paper]{report}
+\usepackage{graphicx}
+\graphicspath{ {./Figures/} }
+
+\AtBeginDocument{\RenewCommandCopy\qty\SI}
+\input{~/Documents/workspace/Latex-Template/Note/header.tex}
+\usepackage[stable]{footmisc}
+\title{Calculus, Differential Equations, and Analysis}
+\author{Muyao Xiao}
+\date{Dec. 2024}
+
+
+\thispagestyle{empty}
+\addbibresource{reference.bib}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    Almost every analysis related notes will be added here.
+
+    Reference books:
+    \begin{itemize}
+        \item Calculus:
+        
+        [1] J. Stewart, Calculus: early transcendentals, 7th ed. Belmont, CA: Brooks/Cole, Cengage Learning, 2012.
+
+        [1] M. D. Weir, J. Hass, and G. B. Thomas, Thomas’ calculus: early transcendentals, Thirteenth edition. Boston: Pearson, 2014.
+
+
+        \item Differential Equations:
+
+        [1] C. H. Edwards, D. E. Penney, and D. Calvis, Elementary differential equations with boundary value problems, 6. ed. Upper Saddle River, NJ: Pearson Prentice Hall, 2009.
+
+        \item Analysis:
+        
+        [1] S. Abbott, Understanding analysis, 2nd edition. in Undergraduate texts in mathematics. New York: Springer, 2015.
+
+        \item TBD
+    \end{itemize}
+\end{abstract}
+
+\tableofcontents
+
+\lec{1}{2}
+
+\pagestyle{plain}
+\printbibliography{}
+
+\end{document}
