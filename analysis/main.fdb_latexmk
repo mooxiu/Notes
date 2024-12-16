@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1734355603.3061 0
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1734359490.55037 0
   "main.bcf" 0 -1 0 "pdflatex"
   "reference.bib" 0 -1 0 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1734355601.35041 "/Users/muyaohsiao/Documents/workspace/latex_notes/analysis/main.tex" "main.pdf" "main" 1734355603.3064 2
+["pdflatex"] 1734359488.04773 "/Users/muyaohsiao/Documents/workspace/latex_notes/analysis/main.tex" "main.pdf" "main" 1734359490.55069 0
   "/Users/muyaohsiao/Documents/workspace/LaTeX-Template/Math.tex" 1729680451.93759 2477 6dcfa87aaef735a8f1f61bb98ea52144 ""
   "/Users/muyaohsiao/Documents/workspace/Latex-Template/Note/header.tex" 1732582217.18883 10736 74d199a8f7ac475c32327e9ecb9fe244 ""
   "/Users/muyaohsiao/Documents/workspace/latex_notes/analysis/main.tex" 1734353434.32548 1319 3b8f31b7541a19d5968883337561d6cf ""
@@ -358,12 +358,13 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727509145 8221429 b85a5c6a82b9e9c1719624fc2b6df7cf ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "Figures/l1.1.png" 1734353484.46727 165119 65cab238c8d299cea1031a0802ddc86c ""
-  "Lectures/lec_1.tex" 1734355598.80875 5650 66a1d8d3dec7761b7f172561e542f394 ""
-  "main.aux" 1734355603.04584 4072 28d03a58009cd32f5389cd659b760ae5 "pdflatex"
+  "Lectures/lec_1.tex" 1734359487.85221 7904 fa056c53ae133eb368a59cb734d69140 ""
+  "main.aux" 1734359490.25523 5267 0185682daa632861d437a25b984448f8 "pdflatex"
   "main.bbl" 0 -1 0 "biber main"
-  "main.out" 1734355603.04658 748 12d9527adba454540d4fd0e7a1ba67ab "pdflatex"
+  "main.out" 1734359490.25612 1171 deeb854da9caac37bc58c7864d7bd0b3 "pdflatex"
+  "main.run.xml" 1734359490.25937 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
   "main.tex" 1734353434.32548 1319 3b8f31b7541a19d5968883337561d6cf ""
-  "main.toc" 1734355603.05011 449 e0139faba793c879d4e772286b47b05f "pdflatex"
+  "main.toc" 1734359490.25942 630 f6281c0ca7498bf407245be974028796 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
