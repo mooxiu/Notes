@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1734359490.55037 0
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1734445812.78488 0
   "main.bcf" 0 -1 0 "pdflatex"
   "reference.bib" 0 -1 0 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1734359488.04773 "/Users/muyaohsiao/Documents/workspace/latex_notes/analysis/main.tex" "main.pdf" "main" 1734359490.55069 0
+["pdflatex"] 1734445810.67977 "/Users/muyaohsiao/Documents/workspace/latex_notes/analysis/main.tex" "main.pdf" "main" 1734445812.78519 0
   "/Users/muyaohsiao/Documents/workspace/LaTeX-Template/Math.tex" 1729680451.93759 2477 6dcfa87aaef735a8f1f61bb98ea52144 ""
   "/Users/muyaohsiao/Documents/workspace/Latex-Template/Note/header.tex" 1732582217.18883 10736 74d199a8f7ac475c32327e9ecb9fe244 ""
   "/Users/muyaohsiao/Documents/workspace/latex_notes/analysis/main.tex" 1734353434.32548 1319 3b8f31b7541a19d5968883337561d6cf ""
@@ -80,6 +80,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb" 1248133631 30457 bc0868ebece724ed7c3d37e3d9bff7bd ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb" 1215737283 145408 43d44302ca7d82d487f511f83e309505 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb" 1215737283 140176 d4962f948b4cc0adf4d3dde77a128c95 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb" 1215737283 135942 859a90cad7494a1e79c94baf546d7de5 ""
@@ -358,13 +359,13 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727509145 8221429 b85a5c6a82b9e9c1719624fc2b6df7cf ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "Figures/l1.1.png" 1734353484.46727 165119 65cab238c8d299cea1031a0802ddc86c ""
-  "Lectures/lec_1.tex" 1734359487.85221 7904 fa056c53ae133eb368a59cb734d69140 ""
-  "main.aux" 1734359490.25523 5267 0185682daa632861d437a25b984448f8 "pdflatex"
+  "Lectures/lec_1.tex" 1734445808.15179 10892 be90f1e07b168c711047e8a7a05f28c5 ""
+  "main.aux" 1734445812.5292 6728 b7c14a25e7b781b962899af45908ddcf "pdflatex"
   "main.bbl" 0 -1 0 "biber main"
-  "main.out" 1734359490.25612 1171 deeb854da9caac37bc58c7864d7bd0b3 "pdflatex"
-  "main.run.xml" 1734359490.25937 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
+  "main.out" 1734445812.53031 1437 2abc7d5e33a162b7cef3484e9b04f430 "pdflatex"
+  "main.run.xml" 1734445812.53365 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
   "main.tex" 1734353434.32548 1319 3b8f31b7541a19d5968883337561d6cf ""
-  "main.toc" 1734359490.25942 630 f6281c0ca7498bf407245be974028796 "pdflatex"
+  "main.toc" 1734445812.53373 730 9e5211ece93b0c3d3f63c24607e7981b "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

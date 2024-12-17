@@ -278,4 +278,98 @@ The solution will be like this:
 \end{example}
 
 \section{Linear First-Order Equations}
-% TODO
+
+\begin{example}[Integrating Fatcor]
+    To solve an equation like this:
+    \[
+        \dfrac{dy}{dx} = 2xy (y > 0)
+    \]
+    we multiply both sides by the factor \(1/y\) to get
+    \[
+        \dfrac{1}{y} \cdot \dfrac{dy}{dx} = 2x; 
+        \quad
+        that\;is,
+        \quad 
+        D_x(ln y) = D_x(x^2)
+    \]  
+
+    For this reason, the function \(\rho(y) = 1/y\) is called an \textbf{integrating factor}.
+\end{example}
+
+With the aid of appropriate integrating factor, we have a standard technique to solve the \textbf{linear first-order equation}:
+\[
+    \dfrac{dy}{dx} + P(x) y = Q(x) 
+\]
+on an interval on which the coefficient functions \(P(x)\) and \(Q(x)\) are continuous.   
+We multiply both sides with integrating factor 
+\[
+    \rho(x) =  e^{\int P(x)dx}    
+\]
+the result is
+\[
+    e^{\int P(x)dx} \dfrac{dy}{dx} + P(x) e^{\int P(x)dx} y = Q(x) e^{\int P(x)dx}
+\]
+notice that the left side is \((y e^{\int P(x)dx})'\), so we have
+\[
+    D_x[y e^{\int P(x)dx}] = Q(x) e^{\int P(x) dx} 
+\] 
+finally:
+\begin{align*}
+    y(x) e^{\int P(x)dx} &= \int (Q(x) e^{\int P(x) dx})dx + C\\
+    y(x)  &= e^{-\int P(x)dx}[\int (Q(x) e^{\int P(x) dx})dx + C]
+\end{align*}
+
+\begin{example}
+    Solve the problem:
+    \[
+        \dfrac{dy}{dx} - y = \dfrac{11}{8} e^{-x/3}, \quad y(0) = -1
+    \]
+
+    In this example, \(P(x) = -1\), \(Q(x) = \dfrac{11}{8}e^{-x/3}\), the integrating factor is \(e^{\int (-1) dx} = e^{-1}\). 
+
+    We can get the general solution:
+    \[
+        y(x) = -\dfrac{33}{32}e^{-x/3} + Ce^x
+    \]
+
+    Bring the initial condition we can get \(C = \dfrac{1}{32}\) 
+\end{example}
+
+About where the solution defined, we have the theorem:
+\begin{theorem}
+    If the function \(P(x)\) and \(P(x)\) are continuous on the open interval \(I\) containing the point \(x_0\), then the initial value problem
+    \[
+        \dfrac{dy}{dx} + P(x)y = Q(x), \quad y(x_0) = y_0
+    \]   
+    has a unique solution \(y(x)\) on \(I\).
+\end{theorem}
+\begin{remark}
+    The theorem tells us that every solution is included in the general solution. Thus a linear first-order DE has no singular solutions.
+\end{remark}
+\begin{remark}
+    The appropriate value of the constant in the general solution can be selected "automatically" by writing
+    \begin{align*}
+        \rho(x) &= exp(\int_{x_0}^x P(t) dt),\\
+        y(x) = \dfrac{1}{rho(x)} [y_0 + \int_{x_0}^x \rho(t) Q(t) dt]
+    \end{align*}
+\end{remark}
+
+
+\begin{example}[Think about the interval!]
+    Solve the initial value problem
+    \[
+        x^2 \dfrac{dy}{dx} + xy= sin x, \quad y(1) = y_0
+    \] 
+
+    The function can be transformed to
+    \[
+        \dfrac{dy}{dx} + \dfrac{1}{x}y = \dfrac{sin x}{x}
+    \]
+    with \(P(x) = \dfrac{1}{x}\) and \(Q(x) = \dfrac{sin x}{x}\), we have \(\rho(x) = exp(\int_1^x \dfrac{1}{t}dt) = x\),
+    so the particular solution can be given by:
+    \[
+        y(x) = \dfrac{1}{x} [y_0 + \int_1^x \dfrac{sin t}{t}dt]
+    \]
+\end{example}
+
+\section{Substitution Methods and Exact Equations}
