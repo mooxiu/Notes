@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1734445812.78488 0
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1734446088.25432 0
   "main.bcf" 0 -1 0 "pdflatex"
   "reference.bib" 0 -1 0 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1734445810.67977 "/Users/muyaohsiao/Documents/workspace/latex_notes/analysis/main.tex" "main.pdf" "main" 1734445812.78519 0
+["pdflatex"] 1734446086.08648 "/Users/muyaohsiao/Documents/workspace/latex_notes/analysis/main.tex" "main.pdf" "main" 1734446088.25465 0
   "/Users/muyaohsiao/Documents/workspace/LaTeX-Template/Math.tex" 1729680451.93759 2477 6dcfa87aaef735a8f1f61bb98ea52144 ""
   "/Users/muyaohsiao/Documents/workspace/Latex-Template/Note/header.tex" 1732582217.18883 10736 74d199a8f7ac475c32327e9ecb9fe244 ""
   "/Users/muyaohsiao/Documents/workspace/latex_notes/analysis/main.tex" 1734353434.32548 1319 3b8f31b7541a19d5968883337561d6cf ""
@@ -359,13 +359,13 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727509145 8221429 b85a5c6a82b9e9c1719624fc2b6df7cf ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "Figures/l1.1.png" 1734353484.46727 165119 65cab238c8d299cea1031a0802ddc86c ""
-  "Lectures/lec_1.tex" 1734445808.15179 10892 be90f1e07b168c711047e8a7a05f28c5 ""
-  "main.aux" 1734445812.5292 6728 b7c14a25e7b781b962899af45908ddcf "pdflatex"
+  "Lectures/lec_1.tex" 1734446085.85619 10893 cd58673cfb9d80b8cfe02e1f693d8ed8 ""
+  "main.aux" 1734446087.97012 6728 b7c14a25e7b781b962899af45908ddcf "pdflatex"
   "main.bbl" 0 -1 0 "biber main"
-  "main.out" 1734445812.53031 1437 2abc7d5e33a162b7cef3484e9b04f430 "pdflatex"
-  "main.run.xml" 1734445812.53365 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
+  "main.out" 1734446087.97119 1437 2abc7d5e33a162b7cef3484e9b04f430 "pdflatex"
+  "main.run.xml" 1734446087.97447 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
   "main.tex" 1734353434.32548 1319 3b8f31b7541a19d5968883337561d6cf ""
-  "main.toc" 1734445812.53373 730 9e5211ece93b0c3d3f63c24607e7981b "pdflatex"
+  "main.toc" 1734446087.97454 730 9e5211ece93b0c3d3f63c24607e7981b "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
