@@ -1,1 +1,163 @@
 \chapter{Linear Programming}
+
+\begin{note}
+    The content of this chapter is based on \href{https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/}{MIT 6.046J Design And Analysis Of Algorithms}.
+    Here is the \href{https://www.youtube.com/watch?v=WwMz2fJwUCg}{video} and 
+    \href{https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/resources/mit6_046js15_lec15/}{note}.
+\end{note}
+
+\section{Politics Problem}
+
+\begin{example}
+    The example is about how to use the minimum money to win an election (win all the demographics).
+
+    The table is about 4 issues and 3 demographics, the number means how many voters can be obtained (bought) per dollar spent advertising the support of an issue:
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{c|c|c|c}
+            \toprule
+                Policy & Demographic   \\
+            \midrule
+                 & Urban & Suburban & Rural  \\
+                Building roads & -2 & 5 & 3  \\
+                Gun Control & 8 & 2 & -5  \\
+                Farm Subsidies & 0 & 0 & 10  \\
+                Gasoline Tax & 10 & 0 & 2  \\
+                Population & 100,000 & 200,000 & 50,000  \\
+            \bottomrule
+        \end{tabular}
+        \caption{Votes per dollar spent on advertising, and population}
+        \label{tab:label}
+    \end{table}
+\end{example}
+
+\subsection{Representation of the problem}
+
+Let \(x_1, x_2, x_3, x_4\) denote the spent on each of the issues. 
+
+Rephrase our problem:
+
+Minimize:
+\[
+    x_1 + x_2 + x_3 + x_4
+\]
+
+Subject to:
+\begin{align*}
+    -2x_1 + 8x_2 + 0x_3 + 10x_4 &\geq 50,000 \tag{Urban Majority  (1)} \\
+    5x_1 + 2x_2 + 0x_3 + 0x_4 &\geq 100,000 \tag{Suburban Majority (2)}  \\
+    3x_1 - 5x_2 + 10x_3 + 2x_4 &\geq 25,000 \tag{Rural Majority (3)} \\
+    x_1, x_2, x_3, x_4 &\geq 0 \tag{Can't unadvertise}
+\end{align*}
+
+The optimal solution is:
+\begin{align}
+    x_1 &= \dfrac{2050000}{111} \\
+    x_2 &= \dfrac{425000}{111} \\
+    x_3 &= 0 \\
+    x_4 &= \dfrac{625000}{111} \\ 
+    x_1 + x_2 + x_3 + x_4 &= \dfrac{3100000}{111}
+\end{align}
+
+Certificate to this optimal solution:
+
+Multiply the constraints inequalities with some magic numbers, and we have:
+\[
+    \dfrac{25}{222} (1) + \dfrac{46}{222} (2) + \dfrac{14}{222} (3) 
+    =
+    x_1 + x_2 + \dfrac{140}{222} x_3 + x_4
+    \geq
+    \dfrac{3100000}{111}
+\]
+
+Considering that \(x_1 + x_2 + x_3 + x_4 \geq x_1 + x_2 + \dfrac{140}{222} x_3 + x_4\), we know the number is already minimum. 
+
+But how can we come to the solution and the verifying constants?
+
+\section{Standard Form of LP}
+\begin{definition}[Linear Programming]
+    Minimize or maximum linear objective function subject to linear inequalities (or equations).
+
+    Variables:
+    \[
+        \vec{x} = \begin{bmatrix}
+             x_1 \\
+             x_2 \\
+             \cdots \\
+             x_n \
+        \end{bmatrix}
+    \]
+
+    Objective functions: \(\vec{c}  \cdot \vec{x} \) 
+
+    Inequalities: \(A \vec{x} \leq \vec{b}\) 
+
+    We want to maximize \(\vec{c} \vec{x} \) and \(\vec{x} \geq 0\)  
+    \begin{remark}
+        Any LP can be transformed into the standard form.
+    \end{remark}
+\end{definition}
+
+\begin{definition}[Duality]
+    In mathematical optimization theory, duality or the duality principle is the principle that optimization problems may be viewed from either of two perspectives, the primal problem or the dual problem. If the primal is a minimization problem then the dual is a maximization problem (and vice versa). \href{https://en.wikipedia.org/wiki/Duality_(optimization)}{Wikipedia: Duality}
+\end{definition}
+
+\begin{definition}[Duality Form]
+    There are 2 equivalent problems:
+
+    \textbf{Primal Form}:
+    \begin{itemize}
+        \item Maximize \(\vec{c}  \cdot \vec{x}\) 
+        \item Subject to \(A \vec{x} \leq \vec{b} , \vec{x}  \geq 0\) 
+    \end{itemize}
+
+    \textbf{Dual Form}:
+    \begin{itemize}
+        \item Minimize \(\vec{b}  \cdot \vec{y} \)  
+        \item Subject to \(A^T \vec{y} \geq \vec{c} , \vec{y} \geq 0\) 
+    \end{itemize} 
+
+    \begin{remark}
+        Notice that the exchange of \(\vec{b}\) and \(\vec{c}\). 
+        Also notice that both forms have their variables greater or equal to 0.
+    \end{remark}
+
+\end{definition}
+
+\subsection{Transformation To Standard Form}
+
+\begin{example}
+    Minimize \(-2x_1 + 3x_2\) 
+    \begin{remark}
+        The standard form is to maximize.
+    \end{remark}
+\end{example}
+\begin{proof}[Transformation]
+   Negate to \(2x_1 - 3x_2\) and maximize  
+\end{proof}
+
+\begin{example}
+    Suppose \(x_j\)  does NOT have a non-negativity constraint.
+    \begin{remark}
+        The standard form each \(x\) should be greater or equal to 0. 
+    \end{remark}
+\end{example}
+\begin{proof}[Transformation]
+    Replace \(x_j\) with \(x_j^{'} - x_j^{''}\) and \(x_j^{'}, x_j^{''} \geq 0\)   
+\end{proof}
+
+\begin{example}
+    Equality constraint \(x_1 + x_2 = 7\) 
+    \begin{remark}
+        We need less or equal to.
+    \end{remark}
+\end{example}
+\begin{proof}[Transformation]
+    \(x_1 + x_2 \leq 7, -x_1 - x_2 \leq -7\) 
+\end{proof}
+
+By using the above techniques, we can always transform our LP problems into the standard form.
+
+Then we can use LP solvers to solve the problem.
+

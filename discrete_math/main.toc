@@ -4,6 +4,11 @@
 \contentsline {chapter}{\numberline {3}Counting}{4}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Discrete Probability}{5}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Graphs}{6}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Incremental Improvement: Max Flow, Min Cut}{6}{section.5.1}%
 \contentsline {chapter}{\numberline {6}Linear Programming}{7}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Fourier Transform}{8}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Information Theory}{9}{chapter.8}%
+\contentsline {section}{\numberline {6.1}Politics Problem}{7}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Representation of the problem}{7}{subsection.6.1.1}%
+\contentsline {section}{\numberline {6.2}Standard Form of LP}{8}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Transformation To Standard Form}{9}{subsection.6.2.1}%
+\contentsline {chapter}{\numberline {7}Fourier Transform}{10}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Information Theory}{11}{chapter.8}%
