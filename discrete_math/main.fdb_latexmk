@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1734771164.8801 0
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1734771908.66988 0
   "main.bcf" 0 -1 0 "pdflatex"
   "reference.bib" 0 -1 0 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1734771162.81438 "/Users/muyaohsiao/Documents/workspace/latex_notes/discrete_math/main.tex" "main.pdf" "main" 1734771164.88044 0
+["pdflatex"] 1734771906.66454 "/Users/muyaohsiao/Documents/workspace/latex_notes/discrete_math/main.tex" "main.pdf" "main" 1734771908.67018 0
   "/Users/muyaohsiao/Documents/workspace/LaTeX-Template/Math.tex" 1729680451.93759 2477 6dcfa87aaef735a8f1f61bb98ea52144 ""
   "/Users/muyaohsiao/Documents/workspace/Latex-Template/Note/header.tex" 1732582217.18883 10736 74d199a8f7ac475c32327e9ecb9fe244 ""
   "/Users/muyaohsiao/Documents/workspace/latex_notes/discrete_math/main.tex" 1734685452.70322 1167 6e4ac151e596a4243dc83b7cd2155e5e ""
@@ -361,15 +361,15 @@
   "Lectures/lec_3.tex" 1732457669.22207 18 e80c53f7107ba9c4c87d363c8b741702 ""
   "Lectures/lec_4.tex" 1732457696.09991 30 8c559415410c443d919a50dd2330d238 ""
   "Lectures/lec_5.tex" 1734762730.00216 17 a78ea3ad6fd60e7cb449907e230cc155 ""
-  "Lectures/lec_6.tex" 1734771162.62055 8813 545b8e4dab4188183529331b017ae897 ""
+  "Lectures/lec_6.tex" 1734771904.26796 9025 27384304f6cfb73a340482f3563223ff ""
   "Lectures/lec_7.tex" 1732457816.25183 27 b6678e936c543175c9114d954abf46f0 ""
   "Lectures/lec_8.tex" 1732457841.24711 28 ed87b3c1859db7b5a513bd93f1f9ed07 ""
-  "main.aux" 1734771164.6043 7860 955bd1e2e71406de5744f9456aaa3dda "pdflatex"
+  "main.aux" 1734771908.41961 8063 0467470287af9945a6ca2d253420a4fa "pdflatex"
   "main.bbl" 0 -1 0 "biber main"
-  "main.out" 1734771164.60562 1825 438c0687a82516271a493ec1700b3418 "pdflatex"
-  "main.run.xml" 1734771164.60922 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
+  "main.out" 1734771908.42084 1825 438c0687a82516271a493ec1700b3418 "pdflatex"
+  "main.run.xml" 1734771908.42409 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
   "main.tex" 1734685452.70322 1167 6e4ac151e596a4243dc83b7cd2155e5e ""
-  "main.toc" 1734771164.60928 1181 b83b488a5911b34cea6c4355c57894f6 "pdflatex"
+  "main.toc" 1734771908.42415 1181 b83b488a5911b34cea6c4355c57894f6 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
