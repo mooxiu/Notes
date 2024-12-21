@@ -9,5 +9,7 @@
 \contentsline {subsection}{\numberline {6.1.1}Representation of the problem}{7}{subsection.6.1.1}%
 \contentsline {section}{\numberline {6.2}Standard Form of LP}{8}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Transformation To Standard Form}{9}{subsection.6.2.1}%
-\contentsline {chapter}{\numberline {7}Fourier Transform}{10}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Information Theory}{11}{chapter.8}%
+\contentsline {section}{\numberline {6.3}Simplex Algorithm}{9}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Integer (Linear) Programming}{10}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Fourier Transform}{11}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Information Theory}{12}{chapter.8}%

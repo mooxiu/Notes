@@ -44,12 +44,12 @@ Minimize:
 \]
 
 Subject to:
-\begin{align*}
+\begin{align}
     -2x_1 + 8x_2 + 0x_3 + 10x_4 &\geq 50,000 \tag{Urban Majority  (1)} \\
     5x_1 + 2x_2 + 0x_3 + 0x_4 &\geq 100,000 \tag{Suburban Majority (2)}  \\
     3x_1 - 5x_2 + 10x_3 + 2x_4 &\geq 25,000 \tag{Rural Majority (3)} \\
     x_1, x_2, x_3, x_4 &\geq 0 \tag{Can't unadvertise}
-\end{align*}
+\end{align}
 
 The optimal solution is:
 \begin{align}
@@ -161,3 +161,95 @@ By using the above techniques, we can always transform our LP problems into the 
 
 Then we can use LP solvers to solve the problem.
 
+\section{Simplex Algorithm}
+
+The simplex algorithm works well in practice, but run in \textcolor{red}{exponential time in the worst case}.
+At high level, the algorithm works as \textbf{Gaussian elimination} on the inequalities or constraints. 
+
+\begin{definition}[Simplex Algorithm]
+    The flow of simplex algorithm:
+    \begin{itemize}
+        \item Represent LP in "slack" form
+        \item Convert one slack form into an equivalent slack form, while likely increasing the value of the objective function, and ensuring that the value does not \textbf{decrease} 
+        \item Repeat until the optimal solution becomes apparent
+    \end{itemize}
+\end{definition}
+
+\begin{example}
+    Considering following example:
+
+    Maximum: \(3x_1 + x_2 + x_3\) 
+
+    Subject to:
+    \begin{align*}
+        x_1 + x_2 + 3x_3 &\leq 30 \\
+        2x_1 + 2x_2 + 5x_3 &\leq 24 \\
+        4x_1 + x_2 + 2x_3 &\leq 36 \\
+        x_1, x_2, x_3 &\geq 0
+    \end{align*}
+\end{example}
+\begin{proof}[simplex]
+    First we will transform into slack form, to do this, we need to introduce new variables (equaling to the number of inequalities), they are "slack" we have.
+
+    The slack we have will be \(x_4, x_5, x_6\). 
+
+    \begin{align}
+        z &= 3x_1 + x_2 + 3x_3 \\
+        x_4 &= 30 - x_1 - x_2 - 3x_3 \\
+        x_5 &= 24 -2x_1 - 2x_2 - 5x_3 \\
+        x_6 &= 36 - 4x_1 - x_2 - 2x_3
+    \end{align}
+
+    In the slack form, the original variables like \(x_1, x_2, x_3\) are called \textit{nonbasic} values, while the slack values \(x_4, x_5, x_6\) are called \textit{basic} values.  
+
+    \textbf{Basic Solution} : Set all nonbasic variables to 0 
+
+    We set all nonbasic variables on the right hand side to some feasible value, and compute the values of the basic values. 
+    
+    For example, we choose \(x_1, x_2, x_3 = 0, 0, 0\), now we have a basic solution \((x_1, x_2, x_3, x_4, x_5, x_6) = (0, 0, 0, 30, 24, 36)\) satisfying our requirement.  
+
+    \textbf{Pivoting Step}: now we choose a nonbasic variable \(x_e\) whose coefficient in the objective function is positive, 
+    increasing \(x_e\) as much as possible, and set \(x_e\) as basic.    
+
+    For example, we can choose \(x_1\) at this time.
+    To avoid violating any constraints, according to (6.9):
+    \[
+        x_1 = 9 - \dfrac{x_2}{4} - \dfrac{x_3}{2} - \dfrac{x_6}{4} 
+    \] 
+
+    Using this to rewrite other functions:
+    \begin{align}
+        z &= 27 + \dfrac{x_2}{4} + \dfrac{x_3}{2} - \dfrac{3x_6}{4} \\
+        x_1 &= 9 - \dfrac{x_2}{4} - \dfrac{x_3}{2} - \dfrac{x_6}{4}  \\
+        x_4 &= 21 - \dfrac{3 x_2}{4} - \dfrac{5 x_3}{2} + \dfrac{x_6}{4}  \\
+        x_5 &= 6 - \dfrac{3 x_2}{2} - 4 x_3 + \dfrac{x_6}{2} 
+    \end{align}
+
+    The basic solution here is \((9, 0, 0, 21, 6, 0)\), and the objective value is \(27\). 
+
+    \textbf{Pivoting Step}: If we choose \(x_6\) to pivot again, this will actually decrease the objective function, so we can either choose \(x_2\) or \(x_3\) here.   
+
+    (The later pivoting is omitted)
+\end{proof}
+
+\section{Integer (Linear) Programming}
+
+Integer Programming is a bigger category. 
+In this context, I am talking about Integer Linear Programming or ILP. 
+That is, the objective function and constraints (other than the integer constraints) are linear.
+
+ILP is \textbf{NP-complete}.  
+
+\begin{definition}[ILP]
+    An ILP standard form is expressed as:
+
+    Maximize: \(c^T \vec{x} \) 
+
+    Subject to:
+    \begin{align}
+        &A \vec{x} + s = b \\
+        &s \geq 0 \\
+        &\vec{x} \geq 0 \\
+        & x \in \mathbb{Z} 
+    \end{align}
+\end{definition}
