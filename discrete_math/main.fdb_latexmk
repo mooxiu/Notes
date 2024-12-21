@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1734710682.78125 0
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1734762734.4593 0
   "main.bcf" 0 -1 0 "pdflatex"
   "reference.bib" 0 -1 0 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1734710680.74192 "/Users/muyaohsiao/Documents/workspace/latex_notes/discrete_math/main.tex" "main.pdf" "main" 1734710682.78159 0
+["pdflatex"] 1734762732.52321 "/Users/muyaohsiao/Documents/workspace/latex_notes/discrete_math/main.tex" "main.pdf" "main" 1734762734.45963 0
   "/Users/muyaohsiao/Documents/workspace/LaTeX-Template/Math.tex" 1729680451.93759 2477 6dcfa87aaef735a8f1f61bb98ea52144 ""
   "/Users/muyaohsiao/Documents/workspace/Latex-Template/Note/header.tex" 1732582217.18883 10736 74d199a8f7ac475c32327e9ecb9fe244 ""
   "/Users/muyaohsiao/Documents/workspace/latex_notes/discrete_math/main.tex" 1734685452.70322 1167 6e4ac151e596a4243dc83b7cd2155e5e ""
@@ -357,16 +357,16 @@
   "Lectures/lec_2.tex" 1732457635.87833 40 4fc5ed8d24248402dce83458214db04e ""
   "Lectures/lec_3.tex" 1732457669.22207 18 e80c53f7107ba9c4c87d363c8b741702 ""
   "Lectures/lec_4.tex" 1732457696.09991 30 8c559415410c443d919a50dd2330d238 ""
-  "Lectures/lec_5.tex" 1734710680.55222 71 c8ade1f05524df758258dbb85f5fd30c ""
+  "Lectures/lec_5.tex" 1734762730.00216 17 a78ea3ad6fd60e7cb449907e230cc155 ""
   "Lectures/lec_6.tex" 1734709879.81603 5243 c29fb77b99b62292f82d9983bdd206fb ""
   "Lectures/lec_7.tex" 1732457816.25183 27 b6678e936c543175c9114d954abf46f0 ""
   "Lectures/lec_8.tex" 1732457841.24711 28 ed87b3c1859db7b5a513bd93f1f9ed07 ""
-  "main.aux" 1734710682.50925 6984 5833ac1488e468fb51d56eb2f46dfb11 "pdflatex"
+  "main.aux" 1734762734.19848 6841 0eb491b94beb533fc6f3ba1c0bd7fbec "pdflatex"
   "main.bbl" 0 -1 0 "biber main"
-  "main.out" 1734710682.5105 1755 7b69cbcd70dc5a9b713bc9d304936812 "pdflatex"
-  "main.run.xml" 1734710682.51406 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
+  "main.out" 1734762734.19956 1475 435175fe53dc9f2db84910f67266c934 "pdflatex"
+  "main.run.xml" 1734762734.20279 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
   "main.tex" 1734685452.70322 1167 6e4ac151e596a4243dc83b7cd2155e5e ""
-  "main.toc" 1734710682.51413 1117 1dc4acb25381a2cf553606237a979f25 "pdflatex"
+  "main.toc" 1734762734.20285 1015 cf4987e28f2bf0ac5ad1e9ecddf0d53e "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
