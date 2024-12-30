@@ -4,5 +4,7 @@
 \contentsline {section}{\numberline {1.3}Solution for \(dy/dx = f(x, y)\)}{4}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Slope Fields and Graphical Solutions}{4}{subsection.1.3.1}%
 \contentsline {section}{\numberline {1.4}Solution for \(dy/dx = g(x)h(y)\)}{5}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Linear First-Order Equations}{6}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Substitution Methods and Exact Equations}{7}{section.1.6}%
+\contentsline {section}{\numberline {1.5}Solution for \({dy}/{dx} + P(x) y = Q(x)\) (Linear First-Order Equations)}{6}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Substitution Methods and Exact Equations}{8}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Homogeneous Equations}{8}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Bernoulli Equations}{9}{subsection.1.6.2}%

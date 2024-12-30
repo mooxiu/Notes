@@ -277,7 +277,7 @@ The solution will be like this:
     But the there's a singular solution \(y(x) \equiv 1\) when separating the variables. 
 \end{example}
 
-\section{Linear First-Order Equations}
+\section{Solution for \({dy}/{dx} + P(x) y = Q(x)\) (Linear First-Order Equations)}
 
 \begin{example}[Integrating Fatcor]
     To solve an equation like this:
@@ -373,3 +373,155 @@ About where the solution defined, we have the theorem:
 \end{example}
 
 \section{Substitution Methods and Exact Equations}
+
+We have done equations which are separable or linear.
+Now we introduce \textbf{substitution methods}  which \textcolor{red}{sometimes} transform a given DE to the form we know how to solve.
+
+\begin{example}
+    The problem is in the following:
+    \[
+        \dfrac{dy}{dx} = f(x, y), \quad v = \alpha(x, y)
+    \]
+
+    We can get \(y = \beta(x, v)\)  from \(v = \alpha(x, y)\) and substitute the original formula:
+
+    \[
+        \dfrac{dy}{dx} = \frac{\partial \beta}{\partial x} + \frac{\partial \beta}{\partial v}  \dfrac{dv}{dx} 
+    \]
+
+    Then we have:
+    \[
+        \dfrac{dy}{dx} 
+        = 
+        \frac{\partial \beta}{\partial x} + \frac{\partial \beta}{\partial v}  \dfrac{dv}{dx} 
+        =
+        f(x, \beta(x, v))
+    \]
+\end{example}
+
+
+\begin{example}
+    Solve the equation:
+    \[
+        \dfrac{dy}{dx} = (x + y + 3)^2
+    \]
+\end{example}
+\begin{proof}[solution]
+    We have \(v = x + y + 3\), that is 
+    \[
+        y = v - x- 3 \tag{1} 
+    \]
+    
+    According to (1), we have:
+    \[
+        \dfrac{dy}{dx} = \dfrac{dv}{dx} - 1 \tag{2}
+    \]
+
+    Using \(v\) to substitute the original formula we have:
+    \[
+        \dfrac{dy}{dx} = v ^ 2 \tag{3}
+    \]
+
+    Based on (2) and (3) we have:
+    \[
+        \dfrac{dv}{dx} = v^2 + 1
+    \]
+
+    Now this is a separable equation, we have:
+    \begin{align*}
+        dx &= \dfrac{dv}{v^2 + 1}  \\
+        x &= tan^{-1} v + C \\
+        x - C &= tan^{-1} v \\
+        v &=  tan(x - C) \\
+        y &= tan(x -C) - x- 3
+    \end{align*}
+\end{proof}
+
+\subsection{Homogeneous Equations}
+\begin{definition}
+    A \textbf{homogeneous} first-order equation is one that can be written in the form:
+    \[
+        \dfrac{dy}{dx} = F(\dfrac{y}{x})
+    \]
+\end{definition}
+
+The substitution strategy is to use \(v = \dfrac{y}{x}\). 
+
+\begin{example}
+    Solve the DE:
+    \[
+        2xy \dfrac{dy}{dx} = 4 x^2 + 3 y^2
+    \]
+\end{example}
+\begin{proof}[solution]
+    Transform the DE into:
+    \[
+        2\dfrac{dy}{dx} = 4 x/y + 3 y/x
+    \]
+
+    We use \(v = y/x\) to substitute the DE, we have:
+    \[
+        2 \dfrac{dy}{dx} = 4/v + 3v
+    \]
+
+    Also, because \(v = y/x\) we have:
+    \[
+        \dfrac{dy}{dx} = v + \dfrac{dv}{dx} x
+    \]
+
+    So we have:
+    \[
+        v + \dfrac{dv}{dx} x = 2/v + 3v/2
+    \]
+
+    (omit the rest parts)
+\end{proof}
+
+\subsection{Bernoulli Equations}
+
+\begin{definition}
+    A first-order DE of the form:
+    \[
+        \dfrac{dy}{dx} + P(x) y = Q(x) y^n
+    \]
+    is called a \textbf{Bernoulli equation}.
+
+    Notice if \(n = 0\) or \(n = 1\) then this is a linear DE.  
+    Otherwise we can do this substitution: \(v = y^{1-n}\) 
+\end{definition}
+
+\begin{example}
+    Solve this DE:
+    \[
+        x \dfrac{dy}{dx} + 6y = 3xy^{4/3}
+    \]
+\end{example}
+\begin{proof}[solution]
+    Transform the DE:
+    \[
+        \dfrac{dy}{dx} + (6/x) y = 3 y^{4/3}
+    \]
+
+    So we have \(P(x) = 6/x\), \(Q(x) = 3\), \(v = y ^{-1/3}\) that is \(y = v^{-3}\). 
+
+    Substitute and we have:
+    \[
+        -3v^{-4}\dfrac{dv}{dx} + \dfrac{6v^{-3}}{x} = 3v^{-4}
+    \]
+
+    We can transform it into a linear DE:
+    \[
+        \dfrac{dv}{dx} + (-\dfrac{2}{x}) v = -1
+    \]
+
+    This is a linear first-order equations, we can multiply a factor \(\rho(x) = e^{\int P(x) dx} = x^{-2}\):
+    \begin{align*}
+        x^{-2} \dfrac{dv}{dx} - \dfrac{2}{x^3} v &= -x^{-2} \\
+        (x^{-2}v), &= -x^{-2} \\
+        x^{-2} v & = \int -x^{-2} \\
+        x^{-2} v & = x^{-1} + C \\
+        v & = x + Cx^2 \\
+        y &=  \dfrac{1}{(x + Cx^2) ^ 3}
+    \end{align*}
+\end{proof}
+
