@@ -11,3 +11,4 @@
 \contentsline {chapter}{\numberline {2}Linear Equations of Higher Order}{11}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introduction: Second-Order Linear Equations}{11}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Linear Second-Order Equations with Constant Coefficients}{13}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}General Solutions of Linear Equations}{14}{section.2.2}%
