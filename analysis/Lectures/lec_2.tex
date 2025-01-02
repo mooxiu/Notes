@@ -1,1 +1,281 @@
 \chapter{Linear Equations of Higher Order}
+
+\section{Introduction: Second-Order Linear Equations}
+\begin{definition}[Second-Order Linear DE]
+    A second-order differential equation in the (unknown) function \(y(x)\) is one of the form:
+    \[
+        G(x, y, y', y'') = 0
+    \]     
+
+    The DE is said to be \textbf{linear} provided that \(G\) is linear in the dependent variable \(y\) and its derivatives \(y'\) and \(y''\).   
+
+    Thus a linear second-order equation takes the form:
+    \[
+        A(x) y'' + B(x) y' + C(x) y = F(x)
+    \]
+
+    We don't require that \(A(x), B(x), C(x)\) and \(F(x)\) be linear functions of \(x\).   
+\end{definition}
+
+\begin{remark}[Linear]
+     This is linear:
+     \[
+        e^xy'' + (cos x) y' + (1 + \sqrt{x}) y = tan^{-1} x
+     \]
+
+    These are not linear:
+    \[
+        y'' = y y'
+    \]
+    \[
+        y'' + 3(y')^2 + 4y^3 = 0
+    \]
+\end{remark}
+
+\begin{example}[Homogeneous and Nonhomogeneous]
+   This is nonhomogeneous:
+   \[
+    x^2 y'' + 2xy' + 3y = cos x
+   \] 
+
+    Its \textit{associated} homogeneous equation is:
+    \[
+        x^2 y'' + 2xy' + 3y = 0
+    \]
+
+    In general, the homogeneous linear equation associated with the general form is :
+    \[
+        A(x) y'' + B(x) y' + C(x) y = 0 
+    \]
+\end{example}
+
+The importance of homogeneous linear equation is that the sum of any two solutions is again a solution, as is any constant multiple of a solution. 
+
+\begin{theorem} [Superposition for Homogeneous Equations]
+    For DE:
+    \[
+        y'' + p(x) y' + q(x) y = 0
+    \]
+
+    If we have \(y_1\) and \(y_2\) being two solutions for the above DE,   
+    the linear combination:
+    \[
+        y = c_1y_1 + c_2y_2
+    \]
+    is also a solution for the DE.
+\end{theorem}
+
+\begin{theorem}[Existence and Uniqueness for Linear Equations]
+    Suppose that the functions \(p\), \(q\) and \(f\) are continuous on the open interval \(I\)  containing the point \(a\).  
+    Then given any 2 numbers \(b_0\) and \(b_1\), the equation:
+    \[
+        y'' + p(x)y' + q(x)y = f(x)
+    \]
+    
+    has a unique (that is, one and only one) solution on the entire interval \(I\) that satisfies the initial conditions:
+    \[
+        y(a) = b_0, \quad y'(a) = b_1
+    \] 
+\end{theorem}
+
+\begin{example}
+    Verify that the functions
+    \[
+        y_1(x) = e^x \quad and \quad y_2(x) = x e^x
+    \]
+    are the solutions of the differential equation
+    \[
+        y'' - 2y' + y = 0
+    \]
+    and then find a solution satisfying the initial conditions \( y(0) = 3\), \(y'(0) = 1\)  
+\end{example}
+\begin{proof}[solution]
+    Verify \(y_1\):
+    \[
+        y'' - 2y' + y = e^x - 2e^x + e^x = 0
+    \] 
+
+    Verify \(y_2\):
+    \[
+        y'' - 2y' + y = (x + 2)e^x - 2(x+1)e^x + xe^x = 0
+    \] 
+
+    The general solution will be:
+    \[
+        y = c_1e^x + c_2 xe^x
+    \]
+
+    Now we can bring in the initial conditions:
+    \begin{align*}
+        y(0) &= c_1 = 3  \\
+        y'(0) &= c_1 + c_2 = 1
+    \end{align*}
+
+    Thus we have \(y = 3e^x -2xe^x\) 
+\end{proof}
+
+\begin{definition}[Linear Independence of Two Functions]
+    Two functions defined on an open interval \(I\) are said to be \textbf{linearly independent} on \(I\) provided that neither is a constant multiple of the other.   
+\end{definition}
+
+Based on the second theorem, the homogeneous equation always has 2 linear independent solutions, therefore we have a general solution:
+\[
+    y = c_1y_1 + c_2y_2
+\]
+
+Bring 2 initial conditions, we can have:
+\begin{align*}
+    c_1y_1 + c_2y_2 &= b_0 \\
+    c_1y_1' + c_2y_2' &= b_1
+\end{align*}
+
+It can be written as:
+\[
+    \begin{bmatrix}
+       y_1 & y_2 \\
+       y_1' & y_2'  \\
+    \end{bmatrix}
+    \begin{bmatrix}
+         c_1 \\
+         c_2 \\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+         b_0 \\
+         b_1 \\
+    \end{bmatrix}
+\]
+
+To make it solvable, we need to have the determinant of the first matrix 0. 
+
+This is called the \textbf{Wronskian} of \(f\) and \(g\):
+\begin{definition}[Wronskian]
+    \(W = \begin{vmatrix}
+        f &  g \\
+        f' & g'  \\
+    \end{vmatrix}
+    = fg' - f'g
+    \) 
+\end{definition}  
+
+\begin{theorem}[Wronskian of Solutions]
+    Suppose that \(y_1\) and \(y_2\) are two solutions of the homogeneous second-order linear equation:
+    \[
+        y'' + p(x)y' + q(x)y = 0
+    \]  
+    on an open interval \(I\) on which \(p\) and \(q\) are continuous.   
+    \begin{enumerate}
+        \item If \(y_1\) and \(y_2\) are linearly dependent, then \(W(y_1, y_2) \equiv 0\) on \(I\).    
+        \item If \(y_1\) and \(y_2\) are linearly independent, then \(W(y_1, y_2) \neq 0\) at each point of \(I\).    
+    \end{enumerate}
+\end{theorem}
+
+\begin{theorem}[General Solutions of Homogeneous Equations]
+    Let \(y_1\) and \(y_2\) be 2 linearly independent solutions of the homogeneous equation
+    \[
+        y'' + p(x) y' + q(x) y = 0
+    \]  
+    with \(p\) and \(q\) continuous on the open interval \(I\).   
+    If \(Y\) is any solution on \(I\), then there exist numbers \(c_1\) and \(c_2\) such that
+    \[
+        Y(x) = c_1y_1(x) + c_2y_2(x)
+    \]    
+    for all \(x\) in \(I\).  
+\end{theorem}
+
+\subsection{Linear Second-Order Equations with Constant Coefficients}
+
+For the general homogeneous equation:
+\[
+    ay'' + by' + c = 0
+\]
+Also we observe that :
+\[
+    (e^{rx})' = re^{rx}
+\]
+and
+\[
+    (e^{rx})'' = r^2 e^{rx}
+\]
+
+Any derivative of \(e^{rx}\) is a constant multiple of \(e^{rx}\), we can substitute that in the general form equation:
+\[
+    ar^2e^{rx} + bre^{rx} + ce^{rx} = 0
+\]  
+
+We can get:
+\[
+    ar^2 + br + c = 0
+\]
+This quadratic equation is called the \textbf{characteristic equation}. 
+We care about whether the characteristic equation has 2 distinct roots.
+
+\begin{theorem}[Distict Real Roots]
+   If the roots \(r_1\) and  \(r_2\) are real and distinct, then:
+   \[
+    y(x) = c_1 e^{r_1x} + c_2 e^{r_2x}
+   \] 
+   is a general solution of the equation.
+\end{theorem}
+
+\begin{example}
+   Find the general solution of
+   \[
+    2 y'' - 7y' + 3y = 0
+   \] 
+\end{example}
+\begin{proof}[solution]
+   The characteristic equation is:
+   \[
+        2r^2 - 7r + 3 = 0
+   \] 
+   We got 2 solutions \(r_1 = 1/2\) and \(r_2 = 3\) are real and distinct, so the general solution is:
+   \[
+    y(x) = c_1 e^{x/2} + c_2 e^{3x}
+   \]  
+\end{proof}
+
+\begin{example}
+    The DE \(y'' + 2y' = 0\) has characteristic equation:
+    \[
+        r^2 + 2r = r(r+2) = 0
+    \] 
+    with 2 distinct real roots \(r_1 = 0\) and \(r_2 = -2\), 
+    then we have the general solution:
+    \[
+        y(x) = c_1 + c_2 e^{-2x}
+    \]
+\end{example}
+
+\begin{theorem}[Repeated Roots]
+   If the characteristic equation has equal (necessarily real) roots \(r_1 = r_2\), then
+   \[
+        y(x) = (c_1 + c_2x)e^{r_1x} 
+   \]  
+   is the general solution.
+\end{theorem}
+
+\begin{example}
+    To solve initial value problem:
+    \[
+        y'' + 2y' + y = 0
+    \]
+    and \(y(0) = 5\) and \(y'(0) = -3\)  
+\end{example}
+\begin{proof}[solution]
+    The characteristic equation is: 
+    \[
+        r^2 + 2r + 1 = 0
+    \]
+    We have 2 same roots \(r_1 = r_2 = 1\) 
+    According to the above theorem, we have:
+    \begin{align*}
+        &y(0) = c_1 = 5 \\
+        &y'(0) = -c_1 + c_2 = -3
+    \end{align*}
+    which implies that \(c_1 = 5\) and \(c_2 = 2\).   
+    Thus the desired particular solution of the initial value problem is:
+    \[
+        y(x) = 5e^{-x} + 2xe^{-x}
+    \]
+\end{proof}
