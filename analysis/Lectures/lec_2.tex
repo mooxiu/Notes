@@ -281,3 +281,46 @@ We care about whether the characteristic equation has 2 distinct roots.
 \end{proof}
 
 \section{General Solutions of Linear Equations}
+
+Second-order linear equations generalizes in a natural way to the general \(n\)\textbf{th-order linear} differential equation of the form:
+\[
+    P_0(x)y^{(n)} + 
+    P_1(x)y^{(n-1)} + 
+    \cdots +
+    P_{n-1}(x) y' + 
+    P_n(x) y = F(x) \tag{1}
+\]  
+
+There are some continuity and not equal to 0 assumptions regarding (1).
+By divide both sides by \(P_0(x)\), we have:
+\[
+    y^{(n)} + 
+    p_1(x)y^{(n-1)} + 
+    \cdots +
+    p_{n-1}(x) y' + 
+    p_n(x) y = f(x) \tag{2}
+\]
+and we can get its associated homogeneous form:
+\[
+    y^{(n)} + 
+    p_1(x)y^{(n-1)} + 
+    \cdots +
+    p_{n-1}(x) y' + 
+    p_n(x) y = 0 \tag{3}
+\]
+
+\begin{theorem}[Principle of Superposition for Homogeneous Equations]
+   Let \(y_1, y_2, \cdots, y_n\)  be \(n\)  solutions of (3).  
+   The linear combination is also the solution for (3):
+\[
+    y = c_1y_1 + c_2y_2 + \cdots + c_ny_n
+\]
+\end{theorem}
+
+\begin{theorem}[Existence and Uniqueness for Linear Equations]
+    Suppose the functions \(p_1, p_2 \cdots, p_n\) and \(f\) are continuous on the open interval \(I\)  containing the point \(a\).   
+    Then given \(n\) numbers \(b_0, b_1, \cdots, b_n-1\), the nth-order linear equation (2) has a unique (that is, one and only one) solution on the entire interval \(I\) that satisfies the \(n\) initial conditions:
+    \[
+        y(a) = b_0, y'(a) = b_1, \cdots, y^{(n-1)}(a) = b_{n-1}
+    \]  
+\end{theorem}

@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1735810285.33432 0
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1735962248.82992 0
   "main.bcf" 0 -1 0 "pdflatex"
   "reference.bib" 0 -1 0 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1735810282.70584 "/Users/muyaohsiao/Documents/workspace/latex_notes/analysis/main.tex" "main.pdf" "main" 1735810285.33464 0
+["pdflatex"] 1735962246.34096 "/Users/muyaohsiao/Documents/workspace/latex_notes/analysis/main.tex" "main.pdf" "main" 1735962248.83023 0
   "/Users/muyaohsiao/Documents/workspace/LaTeX-Template/Math.tex" 1729680451.93759 2477 6dcfa87aaef735a8f1f61bb98ea52144 ""
   "/Users/muyaohsiao/Documents/workspace/Latex-Template/Note/header.tex" 1732582217.18883 10736 74d199a8f7ac475c32327e9ecb9fe244 ""
   "/Users/muyaohsiao/Documents/workspace/latex_notes/analysis/main.tex" 1735784993.32531 1319 939759e9147f66d71d37a9283cd1df3d ""
@@ -361,13 +361,13 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "Figures/l1.1.png" 1734353484.46727 165119 65cab238c8d299cea1031a0802ddc86c ""
   "Lectures/lec_1.tex" 1735572135.39668 14505 ac03fc9bc4d425088014517f541f6c13 ""
-  "Lectures/lec_2.tex" 1735810279.77007 7449 48c80715f666cff899ece3e708a22b70 ""
-  "main.aux" 1735810285.04024 12982 6afe8ed373a5d61968b932955de24df8 "pdflatex"
+  "Lectures/lec_2.tex" 1735962243.56958 8841 296457d8a793c9239f52243c0f194b4b ""
+  "main.aux" 1735962248.56621 13556 04006327d10b837e697b6df9a5057b57 "pdflatex"
   "main.bbl" 0 -1 0 "biber main"
-  "main.out" 1735810285.04195 2409 f4107e2aa6eb64fee3d3e3f6ea7b3741 "pdflatex"
-  "main.run.xml" 1735810285.04601 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
+  "main.out" 1735962248.56784 2409 f4107e2aa6eb64fee3d3e3f6ea7b3741 "pdflatex"
+  "main.run.xml" 1735962248.57146 2310 cbb26e80786631ec36044c7936a50acd "pdflatex"
   "main.tex" 1735784993.32531 1319 939759e9147f66d71d37a9283cd1df3d ""
-  "main.toc" 1735810285.04609 1373 ceb6250a9fe51ea867ff046d5d2bd4e5 "pdflatex"
+  "main.toc" 1735962248.57152 1373 ceb6250a9fe51ea867ff046d5d2bd4e5 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
