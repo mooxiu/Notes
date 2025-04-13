@@ -34,7 +34,7 @@
 \contentsline {section}{\numberline {6.1}LU Factorization}{26}{section.6.1}%
 \contentsline {section}{\numberline {6.2}QR Factorization}{27}{section.6.2}%
 \contentsline {section}{\numberline {6.3}SVD Decomposition}{27}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Spectral Factorization}{27}{section.6.4}%
+\contentsline {section}{\numberline {6.4}Spectral Factorization}{28}{section.6.4}%
 \contentsline {section}{\numberline {6.5}Cholesky Factorization}{28}{section.6.5}%
 \contentsline {section}{\numberline {6.6}Eigenvalue Decomposition}{28}{section.6.6}%
 \contentsline {section}{\numberline {6.7}Schur Factorization}{28}{section.6.7}%
@@ -45,4 +45,6 @@
 \contentsline {subsection}{\numberline {8.1.1}Row Reduction}{31}{subsection.8.1.1}%
 \contentsline {subsection}{\numberline {8.1.2}Inverse Matrix}{31}{subsection.8.1.2}%
 \contentsline {section}{\numberline {8.2}Solve Linear Least Squares Problem}{32}{section.8.2}%
-\contentsline {chapter}{\numberline {9}Some Numerical Linear Algebra}{33}{chapter.9}%
+\contentsline {subsection}{\numberline {8.2.1}The Gram-Schmidt Process}{32}{subsection.8.2.1}%
+\contentsline {section}{\numberline {8.3}Similarity}{32}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Some Numerical Linear Algebra}{34}{chapter.9}%

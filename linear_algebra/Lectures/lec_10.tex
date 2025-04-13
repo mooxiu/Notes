@@ -73,7 +73,7 @@ Instead of using \(A^{-1}\) to solve \(Ax = b\) equation, we can directly use ro
 
 See \ref{sec: LU Factorization} for detailed information.
 
-\section{Solve Linear Least Squares Problem}
+\section{Solve Linear Least Squares Problem} \label{sec: LLSP}
 QR factorization is the tool to solve this kind of problem.
 But to understand it, we need to get to know some concepts about orthogonality and projection.
 
@@ -81,4 +81,49 @@ But to understand it, we need to get to know some concepts about orthogonality a
    The number \(u^T v\) is called the \textbf{inner product}  if \(u\) and \(v\).   
    Also called \textbf{dot product} and written as \(u \cdot v\).  
 \end{definition}
+
+\subsection{The Gram-Schmidt Process}\label{sec: gram-schmidt process}
+
+
+\section{Similarity} \label{sec: Similarity}
+Similarity provides the foundation for several iterative methods that approximate eigenvalues.
+
+To make things easier, there's a theorem regarding determinant we need to know:
+\begin{theorem}[Determinant Theorem]
+    \begin{enumerate}
+        \item \(A\) is invertible \(\iff det(A) \neq 0\)
+        \item \(det(AB) = det(A) det(B)\)    
+        \item  \(det(A) = det(A^T)\) 
+    \end{enumerate}
+\end{theorem}
+
+\begin{definition}[Similarity]
+    If \(A\) and \(B\) are \(n \times n\) matrices,  
+    then \(A\) is similar to \(B\)
+    if there's an invetible matrix \(P\) such that \(P^{-1} A P = B\). 
+\end{definition}
+
+\begin{theorem}[Similarity Matrices have smae eigenvalues]
+   If \(n \times n\) matrices \(A\) and \(B\) are similar, then they have same eigenvalues.    
+\end{theorem}
+\begin{proof}
+    If \(B v = \lambda v\), then we have:
+    \begin{align*}
+        B - \lambda I 
+            &= P^{-1} A P - \lambda I \\ 
+            &= P^{-1} A P - \lambda P^{-1} P \\ 
+            &= P^{-1} (A P - \lambda P) \\ 
+            &= P^{-1} (A - \lambda I) P  
+    \end{align*}
+    Therefore we have:
+    \begin{align*}
+        det(B - \lambda I) 
+            &= det(P^{-1} (A - \lambda I) P) \\
+            &= det(P^{-1}) det(A - \lambda I) det(P) \\
+            &= det(P^{-1}) det(P) det(A - \lambda I) \\
+            &= det(P^{-1} P) det(A - \lambda I) \\
+            &= det(A - \lambda I) \\
+    \end{align*}
+    This means any \(\lambda\) satisfying \(det(B - \lambda I) = 0\) will also satisfying \(det(A - \lambda I) = 0\) 
+\end{proof}
 

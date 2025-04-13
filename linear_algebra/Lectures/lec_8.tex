@@ -88,6 +88,48 @@
     \(R\) is a triangle and we already it is invertible; \(Q\) we don't even need to do the inverse, just need to transpose it.  
 \end{proof}
 
+\begin{definition}[QR factorization]
+    If \(A\) is an \(m \times n\) matrix with linearly independent columns, then \(A\) can be factored as \(A = QR\), 
+    where \(Q\) is an \(m \times n\) matrix whose columns form an orthogonal basis for \(Col \quad A\) and \(R\) is an \(n \times n\) upper triangle invertible matrix whose positive entries on its diagonal.      
+\end{definition}
+
+Next questions are:
+\begin{itemize}
+    \item How to construct such factorization?
+    \item What's the benefit of doing so?
+\end{itemize}
+
+We're doing this by first constructing \(Q\), which is the orthogonal column matrix, this is done by applying Gram-Schmidt Process (see detail in \ref{sec: gram-schmidt process}).
+
+For \(R\), we have:
+\begin{align*}
+    A &= QR \\
+    Q^T A &= Q^T Q R \\
+    Q^T A &= R  \tag{\(Q\) is orthogonal, so \(Q^T = Q^{-1}\)}
+\end{align*}
+
+\begin{remark}[Why it is useful?]
+    Based on \href{https://math.stackexchange.com/a/198484}{this answer on StackExchange:Mathematics}, it has at least 2 usages
+
+    \begin{itemize}
+        \item Solve Linear Least Square Approximation Problem. See detail in \ref{sec: LLSP}
+        \item Numerical Approximation of eignevectors and eigenvalues of a symmetric matrix \(A\). 
+        This is done by constructing a series of similar matrices to keep the eignevectors and eigenvalues but making them looks clear.  
+        Notice that \(QR\) and \(RQ\) are similar matrices!  
+        More detail is in \ref{sec: Similarity}.
+    \end{itemize}
+\end{remark}
+
+
+\begin{note}[Why the name?]
+    This is the answer given by ChatGPT:
+    \begin{itemize}
+        \item \(Q\)  means orthogonal matrix, because \(O\) is usually been confused with \(O\), use \(Q\)   
+        \item \(R\) means the \textbf{R}ight triangle matrix. 
+    \end{itemize}    
+
+    I am not sure if it is correct, but it's convenient for remembering.
+\end{note}
 
 \section{SVD Decomposition}
 \begin{problem}[Book Chapter 2.5 Exercise 25]
