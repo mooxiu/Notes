@@ -31,5 +31,18 @@
 \contentsline {section}{\numberline {5.5}Applications to Image Processing and Statistics}{25}{section.5.5}%
 \contentsline {subsection}{\numberline {5.5.1}Mean and Covariance}{25}{subsection.5.5.1}%
 \contentsline {chapter}{\numberline {6}Summary of Decompositions}{26}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Applications}{27}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Graph Laplacian Matrix}{27}{section.7.1}%
+\contentsline {section}{\numberline {6.1}LU Factorization}{26}{section.6.1}%
+\contentsline {section}{\numberline {6.2}QR Factorization}{27}{section.6.2}%
+\contentsline {section}{\numberline {6.3}SVD Decomposition}{27}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Spectral Factorization}{27}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Cholesky Factorization}{28}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Eigenvalue Decomposition}{28}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Schur Factorization}{28}{section.6.7}%
+\contentsline {chapter}{\numberline {7}Summary of Applications}{29}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Graph Laplacian Matrix}{29}{section.7.1}%
+\contentsline {chapter}{\numberline {8}Review Basic Concepts}{31}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Solve Linear System}{31}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Row Reduction}{31}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Inverse Matrix}{31}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}Solve Linear Least Squares Problem}{32}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Some Numerical Linear Algebra}{33}{chapter.9}%

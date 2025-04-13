@@ -1,0 +1,84 @@
+\chapter{Review Basic Concepts}
+
+\section{Solve Linear System}
+\subsection{Row Reduction}
+\begin{enumerate}
+    \item Write the augmented matrix of the system
+    \item Use the row reduction algorithm to obtain an equivalent augmented matrix in echelon form. 
+    Decide whether the system is consistent\ref{remark: consistent}.
+    If there's no solution, stop; otherwise, go to next step. 
+    \item Continue row reduction to get the \textbf{reduced echelon form}.
+    \item Write the system of equations corresponding to the matrix obtained in step 3.
+    \item Rewrite each nonzero equation from step 4 so that its one basic variable is expressed in terms of any free variables appearing in the equation.
+\end{enumerate}
+
+\begin{remark}[What is Consistent?]\label{remark: consistent}
+    A linear system is \textbf{consistent} \(\iff\) 
+    the rightmost column of the augmented matrix is \textit{not}  a pivot column.
+
+    That is, an echelon form of the augmented matrix does not have a row like:
+    \[
+        [0 \quad \cdots \quad b] \qquad \text{with \(b\) nonzero}
+    \]
+\end{remark}
+
+
+\subsection{Inverse Matrix}
+For \(n \times n\) matrix \(A\), if it has an inverse \(A^{-1}\), then it is \textbf{invertible} (non-singular), 
+else it is \textbf{singular} (non-invertible).
+
+\begin{note}
+    How to decide if a matrix has an inverse?
+
+    Use \textbf{determinant}. 
+    If \(det A = 0\), then it is a singular matrix.  
+
+    If \(A = \begin{bmatrix}
+        a &  b \\
+        c &  d \\
+    \end{bmatrix}\) and it has an inverse, then \(A^{-1} = \dfrac{1}{ad - bc} \begin{bmatrix}
+        d & -b  \\
+        -c & a  \\
+    \end{bmatrix} \) 
+\end{note}
+
+\begin{note}[Algorithm to find inverse]
+    If \(E_i\) is an Elementary row operation, it includes:
+        \begin{itemize}
+            \item swapping 2 rows
+            \item multiply a row by a nonzero scalar
+            \item adding a multiple of one row to another row
+        \end{itemize}
+
+    \begin{definition}[Row Equivalent]
+       Two matrices \(A\) and \(B\) are row equivalent if once can be transformed into the other by a finite sequence of elementary row operation:
+       \[
+        A \sim B  \iff B = E_k \cdots E_2 E_1 A
+       \] 
+    \end{definition}
+
+    \begin{theorem}[Algorithm]
+        Row reduce the augmented matrix \([A \quad I]\).  
+        If \(A\) is row equivalent to \(I\), then \([A \quad I]\) is row equivalent to \(I \quad A^{-1}\).    
+        Otherwise, \(A\)  does not have an inverse.
+    \end{theorem}
+
+    \begin{remark}
+        In practical work, \(A^{-1}\) is seldom computed. 
+        We don't need to use it for solving \(Ax = b\) as it takes more computation. 
+    \end{remark}
+\end{note}
+
+Instead of using \(A^{-1}\) to solve \(Ax = b\) equation, we can directly use row reduction and obtain an LU factorization of \(A\).  
+
+See \ref{sec: LU Factorization} for detailed information.
+
+\section{Solve Linear Least Squares Problem}
+QR factorization is the tool to solve this kind of problem.
+But to understand it, we need to get to know some concepts about orthogonality and projection.
+
+\begin{definition}[Inner Product]
+   The number \(u^T v\) is called the \textbf{inner product}  if \(u\) and \(v\).   
+   Also called \textbf{dot product} and written as \(u \cdot v\).  
+\end{definition}
+

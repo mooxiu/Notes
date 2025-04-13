@@ -1,1 +1,142 @@
 \chapter{Summary of Decompositions}
+
+\section{LU Factorization} \label{sec: LU Factorization}
+
+\begin{definition}
+    \[
+        A = 
+        \begin{bmatrix}
+            1 & 0 & 0 &  0 \\
+            * & 1 & 0 &  0 \\
+            * & * & 1 &  0 \\
+            * & * & * &  1 \\
+        \end{bmatrix}
+        \begin{bmatrix}
+            \blacksquare & * & * & * & *  \\
+            0 & \blacksquare  & * & * & *  \\
+            0 & 0 & 0 & \blacksquare & *  \\
+            0 & 0 & 0 & 0 & 0 \\
+        \end{bmatrix}
+    \]
+
+    where:
+    \begin{itemize}
+        \item \(A\) is an \(m \times n\)matrix that can be row reduced to echelon form, without row interchanges 
+        \item \(L\) is an \(m \times m\) lower triangular matrix with \(1\)'s on the diagonal
+        \item \(U\) is an \(m \times n\) echelon form of \(A\)     
+    \end{itemize}
+\end{definition}
+
+\begin{remark}[Why it is useful]
+   It makes solving \(Ax = b\) less computation:
+   
+   Suppose we already have the factorized \(A = LU\), the transformation from \(x\) to \(b\) can be regarded as from:    
+   \[
+    x \xrightarrow{A} b
+   \]
+   to 
+   \[
+   x \xrightarrow{U}  y \xrightarrow{L} b
+   \]
+    Notice the ordering of \(U\) and \(L\) because \(Ax = (LU)x = L(Ux)\).   
+
+    Intuitively, consider the shape of the \(L\) and \(L\), they make the reduce of the augmented matrix easier.  
+
+    Therefore, even we have to reduce twice, it can still be of less operations.
+\end{remark}
+
+\begin{note}[How to solve linear system]
+    If \(A = LU\), trying to solve \(Ax = b\). 
+    Note that \(Ux = y\) and \(Ly = b\).
+
+    \begin{enumerate}
+        \item Row reduce \([L \quad b]\) we have \([I \quad y]\)  
+        \item Row reduce \([U \quad y]\) we have \([I \quad x]\)  
+    \end{enumerate}
+\end{note}
+
+\begin{problem}[Book Chapter 2.5 Exercise 19]
+    Let \(A\) be a lower triangle \(n \times n\) matrix with nonzero entries on the diagonal. 
+    Show that \(A\) is invertible and \(A^{-1}\) is lower triangle.  
+\end{problem}
+\begin{proof}[Solution]
+    Show \(A\) is invertible:  
+    Show that \([A \quad I]\) can be reduced to \([I \quad A^{-1}]\)... this is easy.
+
+    Show \(A^{-1}\) is lower triangle: in the previous process, we only need to multiply the above row and add to the below row.
+\end{proof}
+
+
+\section{QR Factorization}
+\begin{problem}[Book Chapter 2.5 Exercise 24]
+    Suppose \(A = QR\), where \(Q\) and \(R\) are \(n \times n\), 
+    \(R\) is invertible and upper triangle, 
+    and \(Q\) has the property that \(Q^TQ = I\).   
+
+    Show that for each \(b\) in \(R^n\), the equation \(Ax = b\) has a unique solution.   
+    What computations with \(Q\) and \(R\) will produce the solution.  
+\end{problem}
+\begin{proof}[Solution]
+    \begin{align*}
+        Ax &= b \\
+        QR x &= b \\
+        Q^T Q R x &= Q^T b \\
+        R x &= Q^T b \\
+        R^{-1} R x &= R^{-1} Q^T b
+    \end{align*}
+
+    \(R\) is a triangle and we already it is invertible; \(Q\) we don't even need to do the inverse, just need to transpose it.  
+\end{proof}
+
+
+\section{SVD Decomposition}
+\begin{problem}[Book Chapter 2.5 Exercise 25]
+    Suppose \(A = UDV^T\), where \(U\) and \(V\) are \(n \times n\) matrices with the property that \(U^T U = I\) and \(V^T V = I\),
+    and where \(D\) is a diagonal matrix with positive numbers \(\sigma_1, \cdots \sigma_n \) on the diagonal.        
+
+    Show that \(A\) is invertible, and find a formula for \(A ^{-1}\).  
+\end{problem}
+\begin{proof}[Solution]
+    Reducing \([D \quad I]\) we can easily find \([I \quad D^{-1}]\), and \(D^{-1}\) is diagonal matrix with positive numbers \(1/\sigma_1, \cdots, 1/\sigma_n\).  
+
+    \begin{align*}
+        A &= UDV^T \\
+        U^TA &= DV^T \\
+        D^{-1} U^T A &= V^T \\
+        V D^{-1} U^T A &= I
+    \end{align*}
+
+    So \(A^{-1} = VD^{-1} U^T\).
+\end{proof}
+
+\section{Spectral Factorization}
+\begin{problem}[Book Chapter 2.5 Excercise 26]
+    Supppose a \(3 \times 3\) matrix \(A\) admits a factorization as \(A = PDP^{-1}\),
+    where \(P\) is some invertible \(3 \times 3\) matrix and \(D\) is the diagonal matrix     
+    \[
+        D = \begin{bmatrix}
+            1 & 0 &  0 \\
+            0 & 1/2 &  0 \\
+            0 & 0 &  1/3 \\
+        \end{bmatrix}   
+    \]
+    Show that this factorization is useful when computing high powers of \(A\). 
+    Find fairly simple formulas for \(A^2\), \(A^3\), and \(A^k\) (\(k\) is a positive integer), using \(P\) and the entries in \(D\).   
+\end{problem}
+\begin{proof}[Solution]
+    Easily find \(A^k = (PDP^{-1})^k = P D^k P^{-1}\).  
+
+    Also we find power of a diagonal matrix is easy to compute:
+    \(D^k = \begin{bmatrix}
+        1^k & 0 & 0  \\
+        0 & (1/2)^k & 0  \\
+        0 & 0 & (1/3)^3  \\
+    \end{bmatrix}\) 
+\end{proof}
+
+\section{Cholesky Factorization}
+
+\section{Eigenvalue Decomposition}
+
+\section{Schur Factorization}
+
