@@ -83,6 +83,36 @@ But to understand it, we need to get to know some concepts about orthogonality a
 \end{definition}
 
 \subsection{The Gram-Schmidt Process}\label{sec: gram-schmidt process}
+The Gram-Schmidt process takes a set of linearly independent vectors and produces an orthogonal set of vectors that spans the same subspace.
+
+\begin{example}
+    Suppose we have:
+    \[
+        a_1 = \begin{bmatrix}
+             3 \\
+             1 \\
+        \end{bmatrix},
+        a_2 = \begin{bmatrix}
+             2 \\
+             2 \\
+        \end{bmatrix}
+    \]
+
+    We want to use Gram-Schmidt process to turn it into orthogonal basis \(q_ 1, q_2\). 
+\end{example}
+\begin{proof}[solution]
+    We can first choose one of them and normalize it as a basis:
+    \[
+        q_1 = \dfrac{a_1}{||a_1||} 
+            = 1/\sqrt{3^2 + 1^2} a_1
+            = \dfrac{1}{10} \begin{bmatrix}
+                 3 \\
+                 1 \\
+            \end{bmatrix}
+    \]
+    Then, we decompose \(a2\) in 2 directions, one is the same direction with \(q_1\) (projection), another one is orthogonal with it.
+
+\end{proof}
 
 
 \section{Similarity} \label{sec: Similarity}
